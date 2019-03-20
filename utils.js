@@ -36,3 +36,7 @@ exports.sendpm = function(user, message) {
 exports.toId = function(ting) {
 	return ('' + ting).toLowerCase().replace(/[^a-z0-9]+/g, '');
 };
+
+exports.getRoom = function(room) {
+	return room.replace(">", "").replace("\n", "")
+};

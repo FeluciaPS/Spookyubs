@@ -1,0 +1,13 @@
+{
+  "name": "uopbot-main",
+  "description": "UOP is bot mainframe",
+  "author": "UnleashOurPassion <TheMezStrikes@gmail.com>",
+  "dependencies": {
+    "colors": "1.x.x",
+    "request": "^2.85.0",
+    "websocket": "1.x.x"
+  },
+  "scripts": {
+    "start": "node app.js"
+  }
+}

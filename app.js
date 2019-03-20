@@ -14,14 +14,14 @@ global.Send = Utils.send;
 global.Sendpm = Utils.sendpm;
 global.FS = require('fs');
 global.colors = require('colors');
-global.logger = require('logger.js');
+global.logger = require('./logger.js');
 
 // Config
 try {
     global.Config = require('./config.js');
 } catch (e) {
     global.Config = require('./config-example.js');
-    logger.emit('')
+    logger.emit('error', 'Config.js doesn\'t exist. Cloning from config-example.js...')
     FS.copyFile('config-example.js', 'config.js', function() {});
 }
 

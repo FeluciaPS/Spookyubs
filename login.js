@@ -2,13 +2,12 @@
 let url = require('url');
 let https = require('https');
 
-let autojoin = ["botdev"];
 let psurl = "ws://sim.smogon.com:8000/showdown/websocket";
 let loginurl = "https://play.pokemonshowdown.com/~~showdown/action.php";
 
 let autoJoin = function(index) {
-    for (let r in autojoin) {
-        Send("", "/j "  + autojoin[r])
+    for (let r in Config.rooms) {
+        Send("", "/j "  + Config.rooms[r])
     }
 }
 

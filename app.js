@@ -13,14 +13,17 @@ let events = require('events');
 global.bot = new events.EventEmitter();
 
 // Globals
+global.FS = require('fs');
+global.colors = require('colors');
+global.logger = require('./logger.js');
+global.Parse = require('./parser.js');
+global.Rooms = require('./Room.js');
+global.Users = require('./User.js');
+global.Commands = require('./commands.js');
 global.Utils = require('./utils.js');
 global.toId = Utils.toId;
 global.Send = Utils.send;
 global.Sendpm = Utils.sendpm;
-global.FS = require('fs');
-global.colors = require('colors');
-global.logger = require('./logger.js');
-global.parse = require('./parser.js');
 
 // Config
 try {
@@ -43,8 +46,7 @@ websocket.on('connect', function (connection) {
 	connection.on('message', function (message) {
 		let data = message.utf8Data;
         let parts = data.split('|');
-        if (parts[1] !== 'init') console.log(data);
-        bot.emit(toId(parts[1]), parts);
+        bot.emit(toId(parts[1]), parts, data);
 	});
 });
 
@@ -52,20 +54,28 @@ let files = {
     'logger': ['logger', 'logger.js'],
     'parser': ['Parse', 'parser.js'],
     'commands': ['Commands', 'commands.js'],
-    'config': ['Config', 'config.js']
+    'config': ['Config', 'config.js'],
+    'utils': ['Utils', 'utils.js'],
+    'rooms': ['Rooms', 'Room.js'],
+    'users': ['Users', 'User.js']
 };
 
-console.log("this works");
 bot.on('reload', (file, room) => {
     logger.emit('cmd', 'reload', file);
     let all = file === "all";
+    if (file === "parser" || all) {
+        let events = bot.eventNames();
+        for (let e in events) {
+            let ev = events[e];
+            if (ev === "reload") continue;
+            bot.removeAllListeners(ev);
+        }
+    }
     for (let f in files) {
         if (file !== f && !all) continue;
         let dt = files[f];
         eval("delete require.cache[require.resolve('./" + dt[1] + "')];");
-        eval(dt[0] + " = require('./" + dt[1] + ");");
+        eval(dt[0] + " = require('./" + dt[1] + "');");
         Send(room, f + " reloaded.");
     }
 });
-
-bot.emit('reload');

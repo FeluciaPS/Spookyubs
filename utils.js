@@ -40,3 +40,23 @@ exports.toId = function(ting) {
 exports.getRoom = function(room) {
 	return room.replace(">", "").replace("\n", "")
 };
+
+global.Ranks = { 
+	"~": 0,
+	"&": 1,
+	"#": 2,
+	"*": 3,
+	"@": 4,
+	"%": 5,
+	"+": 6,
+	" ": 7,
+    "!": 8,
+};
+
+exports.SplitMessage = function (message) {
+    let a = message.startsWith(Config.char) ? message.split(" ")[0].substring(Config.char.length) : false;
+    let b = message.substring(a.length + 2).replace(/, /g, ",").split(",");
+    let c = message.substring(message.indexOf(",") + 1);
+    if (c.startsWith(" ")) c = c.substring(1);
+    return [a, b, c];
+}

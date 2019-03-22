@@ -3,6 +3,7 @@ class User {
         this.rooms = {};
         this.name = name.substring(1);
         this.id = toId(name);
+        this.checkmail();
     }
     
     send(message) {
@@ -15,25 +16,51 @@ class User {
         Sendpm(this.name, message);
     }
     
+    checkmail() {
+        let self = this;
+        FS.readFile(`mail/${self.id}.json`, (err, data) => {
+            let maildata = [];
+            if (err) { return; }
+            else maildata = JSON.parse(data);
+            while (maildata.length) {
+                let mail = maildata.shift();
+                self.send(mail);
+            }
+            FS.writeFile(`mail/${self.id}.json`, JSON.stringify(maildata, null, 4), (err) => {
+                if (err) throw err;
+            });
+        });
+    }
+    
     join(room, name) {
         this.rooms[room] = name.charAt(0);
         Rooms[room].users[this.id] = this;
     }
     
     leave(room) {
+        logger.emit('log', this.id + " leaving " + room);
         delete this.rooms[room];
         delete Rooms[room].users[this.id];
         if (!Object.keys(this.rooms).length) bot.emit('dereg', 'user', this.id);
     }
     
+    rename(name) {
+        this.id = toId(name);
+        this.name = name.substring(1);
+        this.checkmail();
+    }
+    
     can(room, rank) {
+        if (!room) return false;
+        if (this.id === toId(Config.username)) return false;
         if (rank === "all") return Config.devs.indexOf(this.id) !== -1;
+        if (room.id) room = room.id;
         return Ranks[this.rooms[room]] <= Ranks[rank];
     }
 }
 
-User.prototype.toString = function userToString() {
-	return this.userid;
+User.prototype.toString = function() {
+	return this.id;
 }
 
 exports.add = function(name) {

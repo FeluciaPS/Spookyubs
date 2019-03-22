@@ -56,7 +56,25 @@ global.Ranks = {
 exports.SplitMessage = function (message) {
     let a = message.startsWith(Config.char) ? message.split(" ")[0].substring(Config.char.length) : false;
     let b = message.substring(a.length + 2).replace(/, /g, ",").split(",");
-    let c = message.substring(message.indexOf(",") + 1);
+    let c = message.substring(message.indexOf(" ") + 1);
     if (c.startsWith(" ")) c = c.substring(1);
     return [a, b, c];
+}
+
+exports.ObjectRename = function(object, oldkey, newkey) {
+    if (oldkey !== newkey) {
+        //console.log(object);
+        Object.defineProperty(object, newkey,
+            Object.getOwnPropertyDescriptor(object, oldkey));
+        delete object[oldkey];
+    }
+}
+
+exports.select = function(arr) {
+    return arr[Math.floor(Math.random() * arr.length)]
+}
+
+String.prototype.capitalize = function() {
+    let str = this.toLowerCase();
+    return str.charAt(0).toUpperCase() + str.substring(1);
 }

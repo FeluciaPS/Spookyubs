@@ -19,6 +19,7 @@ global.logger = require('./logger.js');
 global.Parse = require('./parser.js');
 global.Rooms = require('./Room.js');
 global.Users = require('./User.js');
+global.Tournament = require('./Tournament.js');
 global.Commands = require('./commands.js');
 global.Utils = require('./utils.js');
 global.toId = Utils.toId;
@@ -46,7 +47,8 @@ websocket.on('connect', function (connection) {
 	connection.on('message', function (message) {
 		let data = message.utf8Data;
         let parts = data.split('|');
-        bot.emit(toId(parts[1]), parts, data);
+        if (toId(parts[1]) == 'error') { console.log(data); }
+        else bot.emit(toId(parts[1]), parts, data);
 	});
 });
 
@@ -61,7 +63,6 @@ let files = {
 };
 
 bot.on('reload', (file, room) => {
-    logger.emit('cmd', 'reload', file);
     let all = file === "all";
     if (file === "parser" || all) {
         let events = bot.eventNames();

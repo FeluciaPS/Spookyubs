@@ -1,0 +1,23 @@
+{
+    "1v1": ["Arceus", "Darkrai", "Deoxys-Base", "Deoxys-Attack", "Deoxys-Defense", "Dialga", "Giratina", "Groudon", "Ho-Oh", "Kangaskhan-Mega", "Kyogre", "Kyurem-Black", "Kyurem-White", "Lugia", "Lunala", "Marshadow", "Mewtwo", "Mimikyu", "Necrozma-Dawn-Wings", "Necrozma-Dusk-Mane", "Palkia", "Rayquaza", "Reshiram", "Salamence-Mega", "Shaymin-Sky", "Snorlax", "Solgaleo", "Tapu Koko", "Xerneas", "Yveltal", "Zekrom"],
+    "tc": {
+        "Bug": ["Crustle", "Genesect"],
+        "Dark": [],
+        "Dragon": ["Altaria-Mega", "Dragonite", "Kyurem"],
+        "Electric": [],
+        "Fairy": ["Magearna"],
+        "Fighting": ["Gallade-Mega", "Hawlucha", "Kommonium Z"],
+        "Fire": ["Camerupt-Mega", "Volcanion"],
+        "Flying": ["Dragonite"],
+        "Ghost": ["Sableye-Mega"],
+        "Grass": ["Gourgeist"],
+        "Ground": [],
+        "Ice": ["Kyurem"],
+        "Normal": ["Meloetta"],
+        "Poison": ["Naganadel"],
+        "Psychic": [],
+        "Rock": ["Relicanth"],
+        "Steel": [],
+        "Water": ["Greninja", "Rotom-Wash"]
+    }
+}

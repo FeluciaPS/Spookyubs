@@ -1,7 +1,7 @@
 
 let canMakeTour = function(room, user) {
     // I'm gonna use this a lot so why not make a function for it
-    if (room != '1v1') return false;
+    if (room != '1v1' && room != '1v1typechallenge') return false;
     if (!user.can(room, "%")) return false;
     if (room.tournament) {
         room.send("A tournament is already going on.");

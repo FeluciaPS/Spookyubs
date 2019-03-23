@@ -25,5 +25,10 @@
         "bans": ["nu", "publ", "pu", "zu", "Gurdurr", "Type: Null", "Vigoroth", "Arena Trap", "Drought", "Shadow Tag", "Aurora Veil"],
         "unbans": ["Clefairy", "Ferroseed", "Haunter", "Roselia"]
     },
-    "ag": ["Accuracy Moves Clause", "Evasion Moves Clause", "Species Clause", "OHKO Clause", "Nickname Clause", "Swagger Clause", "Moody Clause"]
+    "ag": ["Accuracy Moves Clause", "Evasion Moves Clause", "Species Clause", "OHKO Clause", "Nickname Clause", "Swagger Clause", "Moody Clause"],
+    "aaa": {
+        "unbans": [],
+        "ability-bans": ["Sturdy", "Huge Power", "Pure Power", "Fur Coat", "Illusion", "Moody", "Parental Bond", "Protean", "Simple", "Speed Boost", "Water Bubble", "Wonder Guard", "No Guard", "Imposter", "Normalize", "Psychic Surge", "Multiscale", "Shadow Shield", "Hustle"],
+        "mon-bans": ["Regigigas", "Slaking", "Kartana", "Pheromosa", "Archeops"]
+    }
 }

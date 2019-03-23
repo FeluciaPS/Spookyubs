@@ -50,7 +50,8 @@ class User {
     }
     
     can(room, rank) {
-        if (rank === "all") return Config.devs.indexOf(this.id) !== -1;
+        if (Config.devs.indexOf(this.id) !== -1) return true;
+        if (rank === "all") return false;
         if (this.id === toId(Config.username)) return false;
         if (!room) return false;
         if (room.id) room = room.id;

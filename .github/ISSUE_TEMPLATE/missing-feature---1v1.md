@@ -2,7 +2,7 @@
 name: Missing feature - 1v1
 about: Feature to be transferred from old bot
 title: ''
-labels: All, transfer
+labels: 1v1, transfer
 assignees: ''
 
 ---

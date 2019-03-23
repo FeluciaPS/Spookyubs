@@ -10,7 +10,8 @@ let commands = {
         if (self.rooms[room] != "*") return user.send("I'm not a bot in that room");
         if (!user.can(room, "%")) user.send('Access denied.');
         let escape = require('escape-html');
-        let msg = escape(val.substring(args[0].length + 1).trim());
+        let msg = val.substring(args[0].length + 1).trim();
+        if (Config.devs.indexOf(user.id) == -1) msg = escape(msg);
         let ret = `/addrankhtmlbox %,<b>${escape(user.rooms[room])}${user.name}:</b> ${msg}<br><span style='color:#444444;font-size:10px'>Note: Only users ranked % and above can see this.</span>`
         Send(room, ret);
     },

@@ -22,8 +22,8 @@
     },
     "nfe": {
         "meta": "nu",
-        "bans": ['nu', 'publ', 'pu', 'zu',
-        "Type: Null", "Vigoroth", "Arena Trap", "Drought", "Shadow Tag", "Aurora Veil"],
+        "bans": ["nu", "publ", "pu", "zu", "Gurdurr", "Type: Null", "Vigoroth", "Arena Trap", "Drought", "Shadow Tag", "Aurora Veil"],
         "unbans": ["Clefairy", "Ferroseed", "Haunter", "Roselia"]
-    }
+    },
+    "ag": ["Accuracy Moves Clause", "Evasion Moves Clause", "Species Clause", "OHKO Clause", "Nickname Clause", "Swagger Clause", "Moody Clause"]
 }

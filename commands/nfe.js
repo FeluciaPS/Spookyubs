@@ -66,12 +66,16 @@ module.exports = {
         // -------------------------------- //
         // Start sending things to the room //
         // -------------------------------- //
-        room.send("!code " + ruleset + "\n");
+        room.send(ruleset);
         
         // Set tour name
 		if (mode === "inverse") room.send("/tour name Inverse NFE");
         else if (mode === "monotype") room.send("/tour name Monotype NFE");
         else if (mode === "1v1") room.send("/tour name [Gen 7] NFE 1v1");
         else room.send("/tour name [Gen 7] NFE");
+    },
+    board: function (room, user, args) {
+        let pm = user.can(room, "+") ? room : user;
+        pm.send('Leaderboards are temporarily out of order.');
     }
 }

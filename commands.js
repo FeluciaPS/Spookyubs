@@ -1,6 +1,25 @@
 global.Banlist = JSON.parse(FS.readFileSync('data/banlist.json'));
 
 let commands = {
+    modnote: function(room, user, args, val) {
+        if (!!room) return;
+        if (!args[0]) return user.send("Usage: ``.modnote [room], [message]``");
+        room = toId(args[0]);
+        if (!Rooms[room]) return user.send("Room doesn't exist, or I'm not in it");
+        let self = Users[toId(Config.username)];
+        if (self.rooms[room] != "*") return user.send("I'm not a bot in that room");
+        if (!user.can(room, "%")) user.send('Access denied.');
+        let msg = val.substring(args[0].length + 1).trim();
+        let ret = `/addrankhtmlbox %,<b>${user.rooms[room]}${user.name}:</b> ${msg}<br><span style='color:#444444;font-size:10px'>Note: Only users ranked % and above can see this.</span>`
+        Send(room, ret);
+    },
+    git: function(room, user, args) {
+        let pm = !user.can(room, '+');
+        let msg = "No git url is configured for this bot."
+        if (Config.git) msg = Config.git;
+        if (pm) user.send(msg);
+        else room.send(msg);
+    },
     tc: function (room, user, args) {
         if (room != '1v1typechallenge') return;
         if (!user.can(room, '%')) return;

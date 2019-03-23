@@ -213,14 +213,6 @@
         ],
         "gen": 1
     },
-    "raticatealolatotem": {
-        "species": "Raticate-Alola-Totem",
-        "types": [
-            "Dark",
-            "Normal"
-        ],
-        "gen": 1
-    },
     "spearow": {
         "species": "Spearow",
         "types": [
@@ -1088,14 +1080,6 @@
     },
     "marowakalola": {
         "species": "Marowak-Alola",
-        "types": [
-            "Fire",
-            "Ghost"
-        ],
-        "gen": 1
-    },
-    "marowakalolatotem": {
-        "species": "Marowak-Alola-Totem",
         "types": [
             "Fire",
             "Ghost"
@@ -6011,13 +5995,6 @@
         ],
         "gen": 6
     },
-    "floetteeternal": {
-        "species": "Floette-Eternal",
-        "types": [
-            "Fairy"
-        ],
-        "gen": 6
-    },
     "florges": {
         "species": "Florges",
         "types": [
@@ -6607,13 +6584,6 @@
         ],
         "gen": 7
     },
-    "gumshoostotem": {
-        "species": "Gumshoos-Totem",
-        "types": [
-            "Normal"
-        ],
-        "gen": 7
-    },
     "grubbin": {
         "species": "Grubbin",
         "types": [
@@ -6631,14 +6601,6 @@
     },
     "vikavolt": {
         "species": "Vikavolt",
-        "types": [
-            "Bug",
-            "Electric"
-        ],
-        "gen": 7
-    },
-    "vikavolttotem": {
-        "species": "Vikavolt-Totem",
         "types": [
             "Bug",
             "Electric"
@@ -6702,14 +6664,6 @@
     },
     "ribombee": {
         "species": "Ribombee",
-        "types": [
-            "Bug",
-            "Fairy"
-        ],
-        "gen": 7
-    },
-    "ribombeetotem": {
-        "species": "Ribombee-Totem",
         "types": [
             "Bug",
             "Fairy"
@@ -6804,14 +6758,6 @@
         ],
         "gen": 7
     },
-    "araquanidtotem": {
-        "species": "Araquanid-Totem",
-        "types": [
-            "Water",
-            "Bug"
-        ],
-        "gen": 7
-    },
     "fomantis": {
         "species": "Fomantis",
         "types": [
@@ -6821,13 +6767,6 @@
     },
     "lurantis": {
         "species": "Lurantis",
-        "types": [
-            "Grass"
-        ],
-        "gen": 7
-    },
-    "lurantistotem": {
-        "species": "Lurantis-Totem",
         "types": [
             "Grass"
         ],
@@ -6859,14 +6798,6 @@
     },
     "salazzle": {
         "species": "Salazzle",
-        "types": [
-            "Poison",
-            "Fire"
-        ],
-        "gen": 7
-    },
-    "salazzletotem": {
-        "species": "Salazzle-Totem",
         "types": [
             "Poison",
             "Fire"
@@ -7143,40 +7074,8 @@
         ],
         "gen": 7
     },
-    "togedemarutotem": {
-        "species": "Togedemaru-Totem",
-        "types": [
-            "Electric",
-            "Steel"
-        ],
-        "gen": 7
-    },
     "mimikyu": {
         "species": "Mimikyu",
-        "types": [
-            "Ghost",
-            "Fairy"
-        ],
-        "gen": 7
-    },
-    "mimikyubusted": {
-        "species": "Mimikyu-Busted",
-        "types": [
-            "Ghost",
-            "Fairy"
-        ],
-        "gen": 7
-    },
-    "mimikyutotem": {
-        "species": "Mimikyu-Totem",
-        "types": [
-            "Ghost",
-            "Fairy"
-        ],
-        "gen": 7
-    },
-    "mimikyubustedtotem": {
-        "species": "Mimikyu-Busted-Totem",
         "types": [
             "Ghost",
             "Fairy"
@@ -7224,14 +7123,6 @@
     },
     "kommoo": {
         "species": "Kommo-o",
-        "types": [
-            "Dragon",
-            "Fighting"
-        ],
-        "gen": 7
-    },
-    "kommoototem": {
-        "species": "Kommo-o-Totem",
         "types": [
             "Dragon",
             "Fighting"
@@ -7388,14 +7279,6 @@
     },
     "magearna": {
         "species": "Magearna",
-        "types": [
-            "Steel",
-            "Fairy"
-        ],
-        "gen": 7
-    },
-    "magearnaoriginal": {
-        "species": "Magearna-Original",
         "types": [
             "Steel",
             "Fairy"

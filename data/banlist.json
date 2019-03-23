@@ -19,5 +19,11 @@
         "Rock": ["Relicanth"],
         "Steel": [],
         "Water": ["Greninja", "Rotom-Wash"]
+    },
+    "nfe": {
+        "meta": "nu",
+        "bans": ['nu', 'publ', 'pu', 'zu',
+        "Type: Null", "Vigoroth", "Arena Trap", "Drought", "Shadow Tag", "Aurora Veil"],
+        "unbans": ["Clefairy", "Ferroseed", "Haunter", "Roselia"]
     }
 }

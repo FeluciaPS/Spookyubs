@@ -38,7 +38,6 @@ class User {
     }
     
     leave(room) {
-        logger.emit('log', this.id + " leaving " + room);
         delete this.rooms[room];
         delete Rooms[room].users[this.id];
         if (!Object.keys(this.rooms).length) bot.emit('dereg', 'user', this.id);
@@ -51,9 +50,9 @@ class User {
     }
     
     can(room, rank) {
-        if (!room) return false;
-        if (this.id === toId(Config.username)) return false;
         if (rank === "all") return Config.devs.indexOf(this.id) !== -1;
+        if (this.id === toId(Config.username)) return false;
+        if (!room) return false;
         if (room.id) room = room.id;
         return Ranks[this.rooms[room]] <= Ranks[rank];
     }

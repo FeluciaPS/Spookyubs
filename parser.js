@@ -61,11 +61,16 @@ bot.on('deinit', (parts) => {
     Rooms[room].leave();
 });
 
-bot.on('tournament', (parts) => {
+bot.on('tournament', (parts, data) => {
     let room = Rooms[Utils.getRoom(parts[0])];
-    let type = parts[2];
-    if (type === "create") if (!room.tournament) room.startTour(false);
-    if (type === "end" || type === "forceend") room.endTour();
+    let dt = data.split('\n');
+    dt.shift();
+    for (let line of dt) {
+        parts = line.split("|");
+        let type = parts[2];
+        if (type === "create") if (!room.tournament) room.startTour(false);
+        if (type === "end" || type === "forceend") room.endTour();
+    }
 });
 
 bot.on('dereg', (type, name) => {

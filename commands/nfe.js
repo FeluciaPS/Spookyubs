@@ -16,9 +16,10 @@ let isGenerator = function(arg) {
 }
 
 module.exports = {
-    nfe: function (room, user, args, message, val) {
+    nfebl: function (room, user, args, val) {
         if (room.id !== 'nfe') return;
         if (!user.can(room, '%')) return;
+        //if (room.tournament) return room.send("A tournament is already going on");
         let mode = "none";
         let meta = Banlist.nfe.meta;
         if (args) {
@@ -56,16 +57,16 @@ module.exports = {
         if (!args[2]) args[2] = "";
         
         // Tour mode things
-        if (mode === "inverse") ruleset += "Inverse Mod";
-        if (mode === "monotype") ruleset += "Same Type Clause";
+        if (mode === "inverse") ruleset += "Inverse Mod, ";
+        if (mode === "monotype") ruleset += "Same Type Clause, ";
         
-        if (Banlist.nfe.bans.length) ruleset += ", -" + Banlist.nfe.bans.join(", -");
-        if (Banlist.nfe.unbans.length) ruleset += ", +" + Banlist.nfe.bans.join(", +");
+        if (Banlist.nfe.bans.length) ruleset += "-" + Banlist.nfe.bans.join(", -");
+        if (Banlist.nfe.unbans.length) ruleset += ", +" + Banlist.nfe.unbans.join(", +");
         
         // -------------------------------- //
         // Start sending things to the room //
         // -------------------------------- //
-        room.send(ruleset);
+        room.send("!code " + ruleset + "\n");
         
         // Set tour name
 		if (mode === "inverse") room.send("/tour name Inverse NFE");

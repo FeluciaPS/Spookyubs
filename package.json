@@ -4,6 +4,7 @@
   "author": "UnleashOurPassion <TheMezStrikes@gmail.com>",
   "dependencies": {
     "colors": "1.x.x",
+    "escape-html": "^1.0.3",
     "request": "^2.85.0",
     "websocket": "1.x.x"
   },

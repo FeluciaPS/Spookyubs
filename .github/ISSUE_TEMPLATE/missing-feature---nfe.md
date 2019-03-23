@@ -8,9 +8,9 @@ assignees: ''
 ---
 
 __Room__
-- [ ] All
-- [ ] 1v1
-- [x] NFE
-- [ ] Other
+- All
+- 1v1
+- **NFE**
+- Other
 
 __Issue__

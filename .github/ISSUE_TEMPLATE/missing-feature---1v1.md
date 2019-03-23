@@ -2,15 +2,15 @@
 name: Missing feature - 1v1
 about: Feature to be transferred from old bot
 title: ''
-labels: transfer, All
+labels: All, transfer
 assignees: ''
 
 ---
 
 __Room__
-- [ ] All
-- [x] 1v1
-- [ ] NFE
-- [ ] Other
+- All
+- **1v1**
+- NFE
+- Other
 
 __Issue__

@@ -1,6 +1,5 @@
 class Tournament {
     constructor(room, type) {
-        logger.emit('log', 'Tour created in ' + room);
         this.room = room;
         this.official = type === 'official' || type === 'o';
         this.chill = type === 'chill';
@@ -9,21 +8,24 @@ class Tournament {
         if (type === "late") return;
         if (Config.tours[tourcheck]) {
             let t = Config.tours[tourcheck];
-            this.room.send([`/tour autostart ${t[0]}`, `/tour autodq ${t[1]}`]);
+            this.room.send(`/tour autostart ${t[0]}`);
+            this.room.send(`/tour autodq ${t[1]}`);
+            if (t[2]) this.room.send('/tour scouting disallow');
         }
         else if (Config.tours[room.id]) {
             let t = Config.tours[room.id];
-            this.room.send([`/tour autostart ${t[0]}`, `/tour autodq ${t[1]}`]);
+            this.room.send(`/tour autostart ${t[0]}`);
+            this.room.send(`/tour autodq ${t[1]}`);
+            if (t[2]) this.room.send('/tour scouting disallow');
         }
         else {
-            this.room.send([`/tour autostart 2`, `/tour autodq 2`]);
+            this.room.send(`/tour autostart 2`);
+            this.room.send(`/tour autodq 2`);
         }
     }
     
     end() {
-        logger.emit('log', 'Tour ended in ' + this.room.id);
         if (this.chill) this.room.send('/modchat ac');
-        if (this.room.id === '1v1typechallenge') this.room.send("Tournament ended");
     }
 }
 

@@ -28,7 +28,7 @@ class Room {
     }
     
     endTour() {
-        if (!!this.tournament) this.tournament.end();
+        if (this.tournament) this.tournament.end();
         this.tournament = false;
     }
     

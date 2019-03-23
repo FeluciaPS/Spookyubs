@@ -16,10 +16,10 @@ let isGenerator = function(arg) {
 }
 
 module.exports = {
-    nfebl: function (room, user, args, val) {
+    nfe: function (room, user, args, val) {
         if (room.id !== 'nfe') return;
         if (!user.can(room, '%')) return;
-        //if (room.tournament) return room.send("A tournament is already going on");
+        if (room.tournament) return room.send("A tournament is already going on");
         let mode = "none";
         let meta = Banlist.nfe.meta;
         if (args) {

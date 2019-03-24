@@ -3,7 +3,8 @@ class Tournament {
         this.room = room;
         this.official = type === 'official' || type === 'o';
         this.chill = type === 'chill';
-        let tourcheck = room.id + ((this.official || type === "monopoke") ? "-o" : "");
+        let tourcheck = room.id + (this.official ? "-o" : "");
+        if (type === "monopoke") tourcheck = '1v1-0';
         
         if (type === "late") return;
         if (Config.tours[tourcheck]) {

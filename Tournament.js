@@ -22,6 +22,7 @@ class Tournament {
             this.room.send(`/tour autostart 2`);
             this.room.send(`/tour autodq 2`);
         }
+        if (this.official) room.send('.official');
     }
     
     end() {

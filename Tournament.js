@@ -23,6 +23,7 @@ class Tournament {
             this.room.send(`/tour autodq 2`);
         }
         if (this.official) room.send('.official');
+        if (this.chill) room.send('/modchat +');
     }
     
     end() {

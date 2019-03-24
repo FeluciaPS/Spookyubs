@@ -1,5 +1,6 @@
 {
     "1v1": ["Arceus", "Darkrai", "Deoxys-Base", "Deoxys-Attack", "Deoxys-Defense", "Dialga", "Giratina", "Groudon", "Ho-Oh", "Kangaskhan-Mega", "Kyogre", "Kyurem-Black", "Kyurem-White", "Lugia", "Lunala", "Marshadow", "Mewtwo", "Mimikyu", "Necrozma-Dawn-Wings", "Necrozma-Dusk-Mane", "Palkia", "Rayquaza", "Reshiram", "Salamence-Mega", "Shaymin-Sky", "Snorlax", "Solgaleo", "Tapu Koko", "Xerneas", "Yveltal", "Zekrom"],
+    "1v1-allowed": ["ZU", "NU", "RU", "UU", "OU", "UUBL", "RUBL", "NUBL", "PUBL", "PU", "NFE", "LC", "LC Uber", "Uber"],
     "tc": {
         "Bug": ["Crustle", "Genesect"],
         "Dark": [],

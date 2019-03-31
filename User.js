@@ -21,7 +21,14 @@ class User {
         FS.readFile(`mail/${self.id}.json`, (err, data) => {
             let maildata = [];
             if (err) { return; }
-            else maildata = JSON.parse(data);
+            
+            try { 
+                maildata = JSON.parse(data);
+            }
+            catch (e) {
+                maildata = ["[mailerror] Your mail data crashed. Some mail may have gotten lost."];
+                FS.unlinkSync(`mail/${self.id}.json`);
+            }
             while (maildata.length) {
                 let mail = maildata.shift();
                 self.send(mail);

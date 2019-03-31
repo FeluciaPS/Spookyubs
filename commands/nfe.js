@@ -75,6 +75,7 @@ module.exports = {
         else room.send("/tour name [Gen 7] NFE");
     },
     board: function (room, user, args) {
+        if (room.id !== "nfe") return;
         let pm = user.can(room, "+") ? room : user;
         pm.send('Leaderboards are temporarily out of order.');
     }

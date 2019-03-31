@@ -1,3 +1,4 @@
+let request = require('request');
 
 module.exports = {
     tc: function (room, user, args) {
@@ -33,6 +34,7 @@ module.exports = {
         this['1v1'](room, user, ['rr2']);
         room.send(ruleset);
         room.send('/tour name Type Challenge: ' + type + "!");
+        if (Config.tchook) request({url:Config.tchook, body: {content:`Type Challenge: ${type}! Tournament started.`}, method:"POST", json:true})
         room.send('$settype ' + type)
     },
     rt: function(room, user, args) {

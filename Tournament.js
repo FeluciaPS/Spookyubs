@@ -4,7 +4,7 @@ class Tournament {
         this.official = type === 'official' || type === 'o';
         this.chill = type === 'chill';
         let tourcheck = room.id + (this.official ? "-o" : "");
-        if (type === "monopoke") tourcheck = '1v1-0';
+        if (type === "monopoke") tourcheck = '1v1-o'; // I know this looks ugly
         
         if (type === "late") return;
         if (Config.tours[tourcheck]) {

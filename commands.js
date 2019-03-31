@@ -1,8 +1,99 @@
 global.Banlist = JSON.parse(FS.readFileSync('data/banlist.json'));
+global.PokeDex = require('./data/pokedex.js');
+
 
 let commands = {
     // Utilities
+    stat: function(room, user, args) {
+        let target = user.can(room, '+') ? room : user;
+        args = args[0].split(" ");
+        let pokemon = args[0];
+        let stat = toId(args[1]);
+        let invest = args[2];
+        let boost = args[3];
+        let stats = ["hp", "atk", "def", "spa", "spd", "spe"];
+        
+        if (!pokemon) {
+            Send(room, "Usage: .stat [pokemon], [hp/atk/def/spa/spd/spe], [ivs:evs], [boost]");
+            return [null];
+        }
+        
+        if (!stat || stats.indexOf(stat) === -1) {
+            Send(room, "No valid stat given. (hp/atk/def/spa/spd/spe)");
+            return [null];
+        }
+        
+        if (!invest) invest = "0";
+        if (!boost) boost = "0";
+        let invests = invest.split(":");
+        let ev, iv, nature = 1;
+        if (invests[1]) {
+            if (invests[1].indexOf("+") != -1) {
+                nature = "1.1";
+                invests[1] = invests[1].substring(0, invests[1].length - 1);
+            }
+            if (invests[1].indexOf("-") != -1) {
+                nature = "0.9";
+                invests[1] = invests[1].substring(0, invests[1].length - 1);
+            }
+            ev = parseInt(invests[1]);
+            iv = parseInt(invests[0]);
+        }
+        else {
+            if (invests[0].indexOf("+") != -1) {
+                nature = "1.1";
+                invests[0] = invests[0].substring(0, invests[0].length - 1);
+            }
+            if (invests[0].indexOf("-") != -1) {
+                nature = "0.9";
+                invests[0] = invests[0].substring(0, invests[0].length - 1);
+            }
+            ev = parseInt(invests[0]);
+            iv = 31; 
+        }
+        let mon = PokeDex[toId(pokemon)];
+        if (!mon) {
+            Send(room, `${pokemon} is not a valid pokemon`);
+            return [null];
+        }
 
+        if (boost.startsWith("+")) {
+            boost = 1 + 0.5 * parseInt(boost.substring(1));
+        }
+        else if (boost.startsWith("-")) {
+            boost = 1 / (1 + 0.5 * parseInt(boost.substring(1)));
+        }
+        else {
+            boost = 1;
+        }
+
+        // Check for dumb shit
+        if (boost > 4 || boost < 0.25) {
+            Send(room, "Boost must be between +6 and -6");
+            return [null]
+        }
+
+        if (ev > 252 || ev < 0) {
+            Send(room, "ev must be between 0 and 252");
+            return [null]
+        }
+
+        if (iv > 31 || iv < 0) {
+            Send(room, "iv must be between 0 and 31");
+            return [null];
+        }
+
+        let fin = 0;
+        if (stat === "hp") {
+            fin = Math.floor(mon.baseStats[stat] * 2 + iv + (ev / 4) + 110); 
+        }
+        else {
+            fin = Math.floor((mon.baseStats[stat] * 2 + iv + (ev / 4) + 5) * nature);
+            fin = Math.floor(fin * boost);
+        }
+
+        room.send(fin)
+    },
     hangman: function(room, user, args) {
         if (!user.can(room, '%')) return;
         if (room != '1v1typechallenge') return;
@@ -39,16 +130,16 @@ let commands = {
         if (!user.can(room, '%')) return;
         let type = args[0];
         if (!type) return;
-        
+        console.log(type);
         if (type.startsWith("rr")) {
             let count = parseInt(type.substring(2));
             if (count) room.send("/tour settype rr,, " + count);
-            else room.send("/tour settype, rr");
+            else room.send("/tour settype rr");
         }
         else if (type.startsWith("e")){
             let count = parseInt(type.substring(1));
-            if (count) room.send("/tour settype, elim,, " + count);
-            else room.send("/tour settype, elim");
+            if (count) room.send("/tour settype elim,, " + count);
+            else room.send("/tour settype elim");
         }
         else {
             room.send('Invalid type.');
@@ -56,9 +147,13 @@ let commands = {
     },    
     
     modnote: function(room, user, args, val) {
-        if (!!room) return;
+        console.log("test");
+        if (room != user) return;
+        console.log("test 2");
         if (!args[0]) return user.send("Usage: ``.modnote [room], [message]``");
-        room = toId(args[0]);
+        room = Utils.toRoomId(args[0]);
+        console.log(Object.keys(Rooms));
+        console.log(Rooms[room]);
         if (!Rooms[room]) return user.send("Room doesn't exist, or I'm not in it");
         let self = Users[toId(Config.username)];
         if (self.rooms[room] != "*") return user.send("I'm not a bot in that room");
@@ -73,6 +168,7 @@ let commands = {
     // Dev stuff
     git: function(room, user, args) {
         let target = user.can(room, '+') ? room : user;
+        if (!target) target = user;
         let msg = "No git url is configured for this bot."
         if (Config.git) msg = Config.git;
         target.send(msg);
@@ -81,11 +177,14 @@ let commands = {
     rl: 'reload',
     reload: function(room, user, args) {
         if (!user.can(room, 'all')) return;
+        if (!room) room = user;
         bot.emit('reload', args[0], room);
     },
     
     eval: function(room, user, args, val) {
         if (!user.can(room, 'all')) return;
+        if (!room) room = user;
+        if (!val) return;
         let ret = eval(val)
         if (ret !== undefined) {
             ret = ret.toString();
@@ -96,7 +195,15 @@ let commands = {
     
     ping: function(room, user, args) {
         if (!user.can(room, 'all')) return; 
+        if (!room) room = user;
         room.send("pong!");
+    },
+    
+    join: 'joinroom',
+    joinroom: function(room, user, args) {
+        if (!user.can(room, 'all')) return;
+        if (!args[0]) return user.send('No room given.');
+        Send('', '/j ' + args[0]);
     }
 };
 

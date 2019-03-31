@@ -31,7 +31,7 @@ class Room {
         if (this.tournament) this.tournament.end();
         this.tournament = false;
     }
-    
+
     rename(oldname, newname) {
         let id = toId(newname);
         let name = newname.substring(1);

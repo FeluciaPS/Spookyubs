@@ -37,6 +37,11 @@ exports.toId = function(ting) {
 	return ('' + ting).toLowerCase().replace(/[^a-z0-9]+/g, '');
 };
 
+exports.toRoomId = function(ting) {
+	return ('' + ting).toLowerCase().replace(/[^a-z0-9\-]+/g, '');
+};
+
+
 exports.getRoom = function(room) {
 	return room.replace(">", "").replace("\n", "")
 };
@@ -72,6 +77,10 @@ exports.ObjectRename = function(object, oldkey, newkey) {
 
 exports.select = function(arr) {
     return arr[Math.floor(Math.random() * arr.length)]
+}
+
+exports.clean = function(thing) {
+    return thing.toString().replace(/\r\n/g, '\n');
 }
 
 String.prototype.capitalize = function() {

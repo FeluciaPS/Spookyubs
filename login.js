@@ -1,6 +1,7 @@
 'use strict';
 let url = require('url');
 let https = require('https');
+let sys = require('sys');
 
 let psurl = "ws://sim.smogon.com:8000/showdown/websocket";
 let loginurl = "https://play.pokemonshowdown.com/~~showdown/action.php";

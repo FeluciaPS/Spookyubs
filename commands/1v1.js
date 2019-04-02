@@ -18,7 +18,7 @@ module.exports = {
     },
     chill: function(room, user, args) {
         if (!canMakeTour(room, user)) return;
-        this['1v1'](room, user, ["rr"]);
+        Commands['1v1'](room, user, ["rr"]);
         room.startTour("chill");
     },
     '1v1': function(room, user, args) {
@@ -123,7 +123,7 @@ module.exports = {
     aaa: function(room, user, args) {
         if (!canMakeTour(room, user)) return;
         let ruleset = "/tour rules Ignore Illegal Abilities, -" + Banlist.aaa['ability-bans'].join(', -') + ", -" + Banlist.aaa['mon-bans'].join(', -'); // Yes I realize this doesn't properly work if there aren't any ability-bans or mon-bans. I'll tackle that if we ever get to that point
-        this['1v1'](room, user, args);
+        Commands['1v1'](room, user, args);
         room.send(ruleset);
         room.send("/tour name [Gen 7] AAA 1v1");
     },
@@ -131,7 +131,7 @@ module.exports = {
     ag: function(room, user, args) {
         if (!canMakeTour(room, user)) return;
         let ruleset = "/tour rules !" + Banlist.ag.join(', !') + ", +" + Banlist['1v1'].join(', +');
-        this['1v1'](room, user, args);
+        Commands['1v1'](room, user, args);
         room.send(ruleset);
         room.send("/tour name [Gen 7] AG 1v1");
     },
@@ -141,7 +141,7 @@ module.exports = {
         if (Banlist.inverse.bans.length) ruleset += "-" + Banlist.inverse.bans.join(", -") + ", ";
         if (Banlist.inverse.unbans.length) ruleset += "+" + Banlist.inverse.unbans.join(", +") + ", ";
         ruleset = ruleset.substring(0, ruleset.length - 2);
-        this['1v1'](room, user, args);
+        Commands['1v1'](room, user, args);
         room.send(ruleset);
         room.send("/tour name [Gen 7] Inverse 1v1");
     },
@@ -152,13 +152,13 @@ module.exports = {
         if (Banlist.monotype.bans.length) ruleset += "-" + Banlist.monotype.bans.join(", -") + ", ";
         if (Banlist.monotype.unbans.length) ruleset += "+" + Banlist.monotype.unbans.join(", +") + ", ";
         ruleset = ruleset.substring(0, ruleset.length - 2);
-        this['1v1'](room, user, args);
+        Commands['1v1'](room, user, args);
         room.send(ruleset);
         room.send("/tour name [Gen 7] Monotype 1v1");
     },
     noz: function(room, user, args) {
         if (!canMakeTour(room, user)) return;
-        this['1v1'](room, user, args);
+        Commands['1v1'](room, user, args);
         room.send("/tour rules Z-Move Clause");
         room.send("/tour name [Gen 7] No Z 1v1");
     },
@@ -169,7 +169,7 @@ module.exports = {
         if (Banlist.stabmons.bans.length) ruleset += "-" + Banlist.stabmons.bans.join(", -") + ", ";
         if (Banlist.stabmons.unbans.length) ruleset += "+" + Banlist.stabmons.unbans.join(", +") + ", ";
         ruleset = ruleset.substring(0, ruleset.length - 2);
-        this['1v1'](room, user, args);
+        Commands['1v1'](room, user, args);
         room.send(ruleset);
         room.send("/tour name [Gen 7] STABmons 1v1");
     },
@@ -177,7 +177,7 @@ module.exports = {
     uu1v1: function(room, user, args) {
         if (!canMakeTour(room, user)) return;
         let ruleset = "/tour rules -" + Banlist.uu.join(', -');
-        this['1v1'](room, user, args);
+        Commands['1v1'](room, user, args);
         room.send(ruleset);
         room.send("/tour name [Gen 7] UU 1v1");
     }

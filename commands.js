@@ -22,7 +22,6 @@ let commands = {
             Send(room, "No valid stat given. (hp/atk/def/spa/spd/spe)");
             return [null];
         }
-        
         if (!invest) invest = "0";
         if (!boost) boost = "0";
         let invests = invest.split(":");
@@ -56,7 +55,8 @@ let commands = {
             Send(room, `${pokemon} is not a valid pokemon`);
             return [null];
         }
-
+        
+        if (stat === "hp" && toId(pokemon) === 'shedinja') return 1;
         if (boost.startsWith("+")) {
             boost = 1 + 0.5 * parseInt(boost.substring(1));
         }
@@ -114,7 +114,10 @@ let commands = {
         FS.readFile(`mail/${targetid}.json`, (err, data) => {
             let maildata = [];
             if (err) {}
-            else maildata = JSON.parse(data);
+            else {
+                try { maildata = JSON.parse(data); }
+                catch (e) { };
+            }
             if (maildata.length === Config.mail.inboxSize) return user.send("That user's mailbox is full.");
             maildata.push(message);
             FS.writeFile(`mail/${targetid}.json`, JSON.stringify(maildata, null, 4), (err) => {

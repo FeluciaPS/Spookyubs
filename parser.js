@@ -51,14 +51,9 @@ bot.on('j', (parts) => {
 bot.on('l', (parts) => {
     let room = Utils.getRoom(parts[0]);
     let user = toId(parts[2]);
-    // This crashes sometimes and I don't yet know why, so we're using crash mail until I figure it out.
-    try {
-        Users[user].leave(room);
-    }
-    catch (e) {
-        for (let dev in Config.devs) Parse.cmd(null, Users[toId(Config.username)], `.mail ${Config.devs[dev]}, ${user} can't leave ${room}`)
-        logger.emit('error', `${user} can't leave ${room}`);
-    }
+    // This sometimes crashes when PS sends a message to the client that a Guest is leaving the room when the guest never joined the room in the first place which honestly makes no sense.
+    if (Users[user]) Users[user].leave(room);
+    else logger.emit('error', `${user} can't leave ${room}`);
 });
 
 bot.on('n', (parts) => {

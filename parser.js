@@ -2,9 +2,14 @@ bot.on('challstr', function(parts) {
     require("./login.js")(parts[2], parts[3])
 });
 
+bot.on('updateuser', (parts) => {
+    logger.emit('log', 'Logged in as ' + parts[2]);
+});
+
 bot.on('c', (parts) => {
     let room = Utils.getRoom(parts[0]);
     let user = Users[toId(parts[3])];
+    if (!parts[4]) return;
     let message = parts[4].trim();
     logger.emit('chat', Utils.getRoom(parts[0]), user.name, message);
     let time = parts[2];
@@ -65,7 +70,7 @@ bot.on('n', (parts) => {
 
 bot.on('deinit', (parts) => {
     let room = Utils.getRoom(parts[0]);
-    Rooms[room].leave();
+    if (Rooms[room]) Rooms[room].leave();
 });
 
 bot.on('tournament', (parts, data) => {
@@ -92,6 +97,7 @@ bot.on('dereg', (type, name) => {
 
 bot.on('init', (parts, data) => {
     let room = Utils.getRoom(parts[0]);
+    logger.emit('log', 'Joined ' + room);
     Rooms.add(room);
     parts = data.split("\n");
     for (let l in parts) {

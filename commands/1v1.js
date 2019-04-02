@@ -14,7 +14,7 @@ module.exports = {
     '1v1om': function(room, user, args) {
         if (room != '1v1' && room != '1v1typechallenge') return false;
         if (!user.can(room, "%")) return false;
-        room.send("/addhtmlbox [Gen 7] 1v1<br>[Gen 6] 1v1<br>AAA 1v1, AG 1v1, Inverse 1v1, Monotype 1v1");
+        room.send("/addhtmlbox [Gen 7] 1v1<br>[Gen 6] 1v1<br>AAA 1v1, AG 1v1, Inverse 1v1, Monotype 1v1, No Z 1v1, STABmons 1v1");
     },
     chill: function(room, user, args) {
         if (!canMakeTour(room, user)) return;
@@ -39,6 +39,26 @@ module.exports = {
             }
         }
         else room.send("/tour create 1v1, elim");
+        if (args[0] === 'o') room.startTour("o"); // Make a tour object manually instead of doing it in parser so the "Official" flag can be passed
+    },
+    '2v2': function(room, user, args) {
+        if (!canMakeTour(room, user)) return;
+        if (args) {
+            if (args[0].startsWith("rr")) {
+                let count = parseInt(args[0].substring(2));
+                if (count) room.send("/tour create 2v2, rr,, " + count);
+                else room.send("/tour create 2v2, rr");
+            }
+            else if (args[0].startsWith("e")){
+                let count = parseInt(args[0].substring(1));
+                if (count) room.send("/tour create 2v2, elim,, " + count);
+                else room.send("/tour create 2v2, elim");
+            }
+            else {
+                room.send("/tour create 2v2, elim")
+            }
+        }
+        else room.send("/tour create 2v2, elim");
         if (args[0] === 'o') room.startTour("o"); // Make a tour object manually instead of doing it in parser so the "Official" flag can be passed
     },
     oras: 'gen61v1',

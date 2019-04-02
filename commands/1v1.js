@@ -14,7 +14,7 @@ module.exports = {
     '1v1om': function(room, user, args) {
         if (room != '1v1' && room != '1v1typechallenge') return false;
         if (!user.can(room, "%")) return false;
-        room.send("/addhtmlbox [Gen 7] 1v1, [Gen 7] UU 1v1<br>[Gen 6] 1v1, [Gen 5] 1v1, [Gen 4] 1v1, [Gen 3] 1v1<br>AAA 1v1, AG 1v1, Inverse 1v1, Monotype 1v1, No Z 1v1, STABmons 1v1");
+        room.send("/addhtmlbox [Gen 7] 1v1, [Gen 7] UU 1v1, [Gen 7] 2v2 Doubles<br>[Gen 6] 1v1, [Gen 5] 1v1, [Gen 4] 1v1, [Gen 3] 1v1<br>AAA 1v1, AG 1v1, Inverse 1v1, Monotype 1v1, No Z 1v1, STABmons 1v1");
     },
     chill: function(room, user, args) {
         if (!canMakeTour(room, user)) return;

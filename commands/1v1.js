@@ -11,6 +11,11 @@ let canMakeTour = function(room, user) {
 }
 
 module.exports = {
+    '1v1om': function(room, user, args) {
+        if (room != '1v1' && room != '1v1typechallenge') return false;
+        if (!user.can(room, "%")) return false;
+        room.send("/addhtmlbox [Gen 7] 1v1<br>[Gen 6] 1v1<br>AAA 1v1, AG 1v1, Inverse 1v1, Monotype 1v1");
+    },
     chill: function(room, user, args) {
         if (!canMakeTour(room, user)) return;
         this['1v1'](room, user, ["rr"]);
@@ -93,5 +98,22 @@ module.exports = {
         this['1v1'](room, user, args);
         room.send(ruleset);
         room.send("/tour name [Gen 7] Monotype 1v1");
+    },
+    noz: function(room, user, args) {
+        if (!canMakeTour(room, user)) return;
+        this['1v1'](room, user, args);
+        room.send("/tour rules Z-Move Clause");
+        room.send("/tour name [Gen 7] No Z 1v1");
+    },
+    stabmons: 'stab',
+    stab: function(room, user, args) {
+        if (!canMakeTour(room, user)) return;
+        let ruleset = "/tour rules STABmons Move Legality, "
+        if (Banlist.stabmons.bans.length) ruleset += "-" + Banlist.stabmons.bans.join(", -") + ", ";
+        if (Banlist.stabmons.unbans.length) ruleset += "+" + Banlist.stabmons.unbans.join(", +") + ", ";
+        ruleset = ruleset.substring(0, ruleset.length - 2);
+        this['1v1'](room, user, args);
+        room.send(ruleset);
+        room.send("/tour name [Gen 7] STABmons 1v1");
     },
 };

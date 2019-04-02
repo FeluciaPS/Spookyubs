@@ -214,6 +214,7 @@ let files = FS.readdirSync('commands');
 for (let f in files) {
     let file = files[f];
     if (file.substring(file.length-3) !== ".js") continue;
+    if (require.cache[require.resolve('./commands/' + file)]) delete require.cache[require.resolve('./commands/' + file)];
     let contents = require('./commands/' + file);
     Object.assign(commands, contents);
 }

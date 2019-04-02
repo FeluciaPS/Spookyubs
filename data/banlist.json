@@ -40,5 +40,9 @@
     "monotype": {
         "bans": [],
         "unbans": []
+    },
+    "stabmons": {
+        "bans": ["Tapu Lele", "Spore"],
+        "unbans": []
     }
 }

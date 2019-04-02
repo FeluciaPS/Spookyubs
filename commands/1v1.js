@@ -136,4 +136,12 @@ module.exports = {
         room.send(ruleset);
         room.send("/tour name [Gen 7] STABmons 1v1");
     },
+    uu: 'uu1v1',
+    uu1v1: function(room, user, args) {
+        if (!canMakeTour(room, user)) return;
+        let ruleset = "/tour rules -" + Banlist.uu.join(', -');
+        this['1v1'](room, user, args);
+        room.send(ruleset);
+        room.send("/tour name [Gen 7] UU 1v1");
+    }
 };

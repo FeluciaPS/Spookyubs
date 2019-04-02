@@ -1,7 +1,7 @@
 'use strict';
 let url = require('url');
 let https = require('https');
-let sys = require('sys');
+let util = require('util');
 
 let psurl = "ws://sim.smogon.com:8000/showdown/websocket";
 let loginurl = "https://play.pokemonshowdown.com/~~showdown/action.php";
@@ -65,7 +65,7 @@ module.exports = function (id, challstr) {
 		});
 	});
 	req.on('error', function (err) {
-		console.log('login error: ' + sys.inspect(err));
+		console.log('login error: ' + util.inspect(err));
 		return;
 	});
 	if (data) {

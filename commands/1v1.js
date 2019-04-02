@@ -14,7 +14,7 @@ module.exports = {
     '1v1om': function(room, user, args) {
         if (room != '1v1' && room != '1v1typechallenge') return false;
         if (!user.can(room, "%")) return false;
-        room.send("/addhtmlbox [Gen 7] 1v1, [Gen 7] UU 1v1<br>[Gen 6] 1v1<br>AAA 1v1, AG 1v1, Inverse 1v1, Monotype 1v1, No Z 1v1, STABmons 1v1");
+        room.send("/addhtmlbox [Gen 7] 1v1, [Gen 7] UU 1v1<br>[Gen 6] 1v1, [Gen 5] 1v1, [Gen 4] 1v1, [Gen 3] 1v1<br>AAA 1v1, AG 1v1, Inverse 1v1, Monotype 1v1, No Z 1v1, STABmons 1v1");
     },
     chill: function(room, user, args) {
         if (!canMakeTour(room, user)) return;
@@ -80,6 +80,43 @@ module.exports = {
             }
         }
         else room.send("/tour create gen61v1, elim");
+        if (args[0] === 'o') room.startTour("o"); // Make a tour object manually instead of doing it in parser so the "Official" flag can be passed
+    },
+    bw: 'gen51v1',
+    gen51v1: function(room, user, args) {
+        if (!canMakeTour(room, user)) return;
+        let bl = Banlist.gen51v1;
+        let ruleset = "/tour rules Team Preview, "
+        if (bl.bans.length) ruleset += "-" + bl.bans.join(", -") + ", ";
+        if (bl.unbans.length) ruleset += "+" + bl.unbans.join(", +") + ", ";
+        ruleset = ruleset.substring(0, ruleset.length - 2);
+        room.send("/tour create " + bl.meta + ", elim");
+        room.send("/tour name [Gen 5] 1v1");
+        if (args[0] === 'o') room.startTour("o"); // Make a tour object manually instead of doing it in parser so the "Official" flag can be passed
+    },
+    dp: 'gen41v1',
+    gen41v1: function(room, user, args) {
+        if (!canMakeTour(room, user)) return;
+        let bl = Banlist.gen41v1;
+        let ruleset = "/tour rules Team Preview, "
+        if (bl.bans.length) ruleset += "-" + bl.bans.join(", -") + ", ";
+        if (bl.unbans.length) ruleset += "+" + bl.unbans.join(", +") + ", ";
+        ruleset = ruleset.substring(0, ruleset.length - 2);
+        room.send("/tour create " + bl.meta + ", elim");
+        room.send("/tour name [Gen 4] 1v1");
+        if (args[0] === 'o') room.startTour("o"); // Make a tour object manually instead of doing it in parser so the "Official" flag can be passed
+    },
+    adv: 'gen31v1',
+    gsc: 'gen31v1',
+    gen31v1: function(room, user, args) {
+        if (!canMakeTour(room, user)) return;
+        let bl = Banlist.gen31v1;
+        let ruleset = "/tour rules Team Preview, "
+        if (bl.bans.length) ruleset += "-" + bl.bans.join(", -") + ", ";
+        if (bl.unbans.length) ruleset += "+" + bl.unbans.join(", +") + ", ";
+        ruleset = ruleset.substring(0, ruleset.length - 2);
+        room.send("/tour create " + bl.meta + ", elim");
+        room.send("/tour name [Gen 3] 1v1");
         if (args[0] === 'o') room.startTour("o"); // Make a tour object manually instead of doing it in parser so the "Official" flag can be passed
     },
     aaa1v1: 'aaa',

@@ -45,5 +45,22 @@
         "bans": ["Tapu Lele", "Spore"],
         "unbans": []
     },
-    "uu": ["Aegislash", "Charizard-Mega-X", "Charizard-Mega-Y", "Donphan", "Dragonite", "Gardevoir-Mega", "Greninja", "Gyarados-Mega", "Kommo-o", "Lopunny-Mega", "Magearna", "Magnezone", "Mawile-Mega", "Metagross-Mega", "Mew", "Porygon-Z", "Tapu Fini", "Tapu Lele", "Venusaur-Mega", "Victini", "Zeraora", "Zygarde"]
+    "uu": ["Aegislash", "Charizard-Mega-X", "Charizard-Mega-Y", "Donphan", "Dragonite", "Gardevoir-Mega", "Greninja", "Gyarados-Mega", "Kommo-o", "Lopunny-Mega", "Magearna", "Magnezone", "Mawile-Mega", "Metagross-Mega", "Mew", "Porygon-Z", "Tapu Fini", "Tapu Lele", "Venusaur-Mega", "Victini", "Zeraora", "Zygarde"],
+    
+    "gen51v1": {
+        "meta": "gen5ou",
+        "bans": ["Focus Sash"],
+        "unbans": ["Genesect", "Landorus-Incarnate", "Thundurus-Incarnate", "Tornadus-Therian", "Dugtrio", "Manaphy"]
+    },
+    "gen41v1": {
+        "meta": "gen4ou",
+        "bans": ["Porygon Z", "Mew", "Focus Sash", "Mirror Shot", "Mud Bomb", "Flash", "Octazooka", "Mud-Slap", "Muddy Water", "Sand Attack", "Smoke Screen", "Kinesis", "Dark Void", "Grass Whistle", "Hypnosis", "Lovely Kiss", "Sing", "Sleep Powder", "Spore", "Yawn", "Perish Song"],
+        "unbans": ["Wobbuffet", "Wynaut", "Manaphy"]
+    },
+    "gen31v1": {
+        "meta": "gen3ubers",
+        "bans": ["Deoxys", "Deoxys-Attack", "Deoxys-Defense", "Deoxys-Speed", "Groudon", "Ho-Oh", "Kyogre", "Latias", "Latios", "Lugia", "Mew", "Mewtwo", "Rayquaza", "Snorlax", "Suicune", "Wobbuffet", "Wynaut", "Flash", "Ingrain", "Kinesis", "Mud-Slap", "Muddy Water", "Octazooka", "Perish Song", "Sand Attack", "Smokescreen"],
+        "unbans": []
+    }
 }
+ 

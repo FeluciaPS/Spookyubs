@@ -29,6 +29,7 @@ class User {
                 maildata = ["[mailerror] Your mail data crashed. Some mail may have gotten lost."];
                 FS.unlinkSync(`mail/${self.id}.json`);
             }
+            if (!maildata.length) return;
             while (maildata.length) {
                 let mail = maildata.shift();
                 self.send(mail);

@@ -1,0 +1,21 @@
+{
+    "nom": "Tonfa",
+    "branch": "fighter",
+    "stats": {
+        "hp": "40+5",
+        "mag": "1+1",
+        "atk": "6+1",
+        "md": "9+1",
+        "pd": "9+1",
+        "mp": "2"
+    },
+    "moves": {
+        "1": "Disarm",
+        "2": "Figure 8",
+        "3": "Dazing Shot",
+        "4": "Defensive Stance",
+        "5": "Yin Yang",
+        "6": "Standoff",
+        "7": "Block"
+    }
+}

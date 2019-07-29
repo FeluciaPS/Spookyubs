@@ -1,0 +1,21 @@
+{
+    "nom": "Guardian",
+    "alts": ["Guard"],
+    "stats": {
+        "hp": "45+5",
+        "mag": "2,3,3,4,4,5,5",
+        "atk": "2,3,3,4,4,5,5",
+        "md": "18+2",
+        "pd": "18+2",
+        "mp": "2"
+    },
+    "moves": {
+        "1": "Strike Guard", 
+        "2": "Aegis", 
+        "3": "Radiance",
+        "4": "Rampart", 
+        "5": "Vanguard",
+        "6": "Spurn", 
+        "7": "Oath of Mercy"
+    }
+}

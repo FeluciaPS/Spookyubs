@@ -1,0 +1,21 @@
+{
+    "nom": "Athame",
+    "branch": "sorcerer",
+    "stats": {
+        "hp": "40+5",
+        "mag": "4,5,6,7,7,8,9",
+        "atk": "0+1",
+        "md": "4,5,6,7,8,9,9",
+        "pd": "9+1",
+        "mp": "2"
+    },
+    "moves": {
+        "1": ["Crimson Pact", "Bloodrush"], 
+        "2": "Infusion", 
+        "3": "Purloin Youth", 
+        "4": "Defile", 
+        "5": "Siphon Soul", 
+        "6": "Sanctified Blade",
+        "7": "Massacre"
+    }
+}

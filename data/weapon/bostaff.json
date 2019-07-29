@@ -1,0 +1,22 @@
+{
+    "nom": "Bo Staff",
+    "alts": ["Bo"],
+    "branch": "fighter",
+    "stats": {
+        "hp": "40,45,50,50,55,60,65",
+        "mag": "0,1,2,3,4,5,5",
+        "atk": "7,8,8,9,10,10,11",
+        "md": "8+1",
+        "pd": "8+1",
+        "mp": "2"
+    },
+    "moves": {
+        "1": ["Stance Change", "Sweep"], 
+        "2": "Flowing Strike",
+        "3": "Whirlwind",
+        "4": "Reverse Strike",
+        "5": "Defiance",
+        "6": "Reprisal",
+        "7": "Martial Art"
+    }
+}

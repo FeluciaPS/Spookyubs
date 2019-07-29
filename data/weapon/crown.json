@@ -1,0 +1,21 @@
+{
+    "nom": "Crown",
+    "branch": "regal",
+    "stats": {
+        "hp": "40+5",
+        "mag": "4+1",
+        "atk": "0,1,1,2,2,3,4",
+        "md": "5,6,7,9,11,12,14",
+        "pd": "5,6,7,9,11,12,14",
+        "mp": "2"
+    },
+    "moves": {
+        "1": ["Declaration of War", "Frontal Assault"], 
+        "2": "Flanking Maneuver", 
+        "3": "Order to Charge", 
+        "4": "Catapult Campaign", 
+        "5": "Oppressive Tactics",
+        "6": "War of Attrition", 
+        "7": "Sheer Might"
+    }
+}

@@ -1,0 +1,2504 @@
+{
+  "format": {
+    "nom": "Name",
+    "Level": "Level X",
+    "Frequency": "Frequency",
+    "Accuracy": "Accuracy",
+    "Roll": "Roll",
+    "Type": "Damage Type/Action Type",
+    "Target": "Number of Targets/Applicable Targets/Range",
+    "Desc": "Description"
+  },
+  "guardiansting": {
+    "nom": "Guardian Sting",
+    "Level": "Bee 1",
+    "Frequency": "OaT",
+    "Accuracy": "3",
+    "Roll": "1d6+4",
+    "Type": "Physical/Standard",
+    "Target": "One/Foe/Melee",
+    "Desc": "If this ability hits, the target deals 3 less damage to the Queen Bee through their next action. May be applied a maximum of three times."
+  },
+  "royalprivilege": {
+    "nom": "Royal Privilege",
+    "Level": "Queen Bee 1",
+    "Frequency": "Passive",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "-/Passive",
+    "Target": "-/-/-",
+    "Desc": "The Queen Bee spawns a Bee (%addm bee) at the end of every other turn, which moves directly before the Queen. Place Bee on an available melee space of the Queen Bee. Queen Bee is not affected by Honey Tiles."
+  },
+  "inspiringstab": {
+    "nom": "Inspiring Stab",
+    "Level": "Queen Bee 1",
+    "Frequency": "OaT",
+    "Accuracy": "2",
+    "Roll": "1d8+2",
+    "Type": "Physical/Standard",
+    "Target": "One/Foe/Line: 2",
+    "Desc": "Bees, excluding the Queen, within Burst: 2 receive +2 damage and +2 evasions until the end of the Queen Bee's next turn."
+  },
+  "primaryconsumer": {
+    "nom": "Primary Consumer",
+    "Level": "Queen Bee 1",
+    "Frequency": "E2T",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "Action/Swift",
+    "Target": "-/-/-",
+    "Desc": "The Queen Bee may consume an adjacent honey tile to heal itself for 2d10+X hp, where X is the total number of living bees (including the Queen Bee). Replace that tile with a normal one."
+  },
+  "stingerflurry": {
+    "nom": "Stinger Flurry",
+    "Level": "Queen Bee 2",
+    "Frequency": "EoT",
+    "Accuracy": "2",
+    "Roll": "1d6+2",
+    "Type": "Physical/Standard",
+    "Target": "One/Foe/Melee",
+    "Desc": "This attack hits X times, where X is bees including Queen within burst 2 (maximum of 4 hits). Only apply attack to the first hit."
+  },
+  "wingrush": {
+    "nom": "Wing Rush",
+    "Level": "Queen Bee 3",
+    "Frequency": "Twice/EoT",
+    "Accuracy": "4",
+    "Roll": "2d10+5",
+    "Type": "Physical/Standard",
+    "Target": "One/Foe/Line: 5 (push-3)",
+    "Desc": "The Queen Bee may choose to move as close as possible to the target after this attack hits. If the target is on a sticky tile, instead deal +5 damage and do not push the target"
+  },
+  "royalcommand": {
+    "nom": "Royal Command",
+    "Level": "Queen Bee 4",
+    "Frequency": "Once",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "Action/Swift",
+    "Target": "-/-/Global",
+    "Desc": "Place a sticky tile on the tile the target is on and one adjacent tile to the same target. (Target may be anyone including Bees, the User, or the Foe)"
+  },
+  "defendorder": {
+    "nom": "Defend Order",
+    "Level": "Queen Bee 5",
+    "Frequency": "Once",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "Action/Swift",
+    "Target": "-/-/-",
+    "Desc": "Until the beginning of the Queen Bee's next turn, all damage taken is redirected to another Bee, unless there are no Bees."
+  },
+  "swarm": {
+    "nom": "Swarm",
+    "Level": "Queen Bee 6",
+    "Frequency": "Passive",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "-/Passive",
+    "Target": "-/-/-",
+    "Desc": "When the user reaches below half HP, the Queen Bee instead spawns a Bee Defender at the end of every turn."
+  },
+  "furyofthehive": {
+    "nom": "Fury of the Hive",
+    "Level": "Queen Bee 7",
+    "Frequency": "Once",
+    "Accuracy": "5",
+    "Roll": "2d10+8",
+    "Type": "Physical/Standard",
+    "Target": "One/Foe/Line: 2",
+    "Desc": "This attack deals X*5 more damage, where X is the total number of bees killed this game."
+  },
+  "fleshconsumption": {
+    "nom": "Flesh Consumption",
+    "Level": "Wolfo 1",
+    "Frequency": "Passive",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "Passive/-",
+    "Target": "-/-/-",
+    "Desc": "Wolfos Heal 30% of all damage dealt to targets. If the target of an attack is poisoned heal 50% of the damage dealt instead"
+  },
+  "rapidmutations": {
+    "nom": "Rapid Mutations",
+    "Level": "Wolfo 1",
+    "Frequency": "Passive",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "Passive/-",
+    "Target": "-/-/-",
+    "Desc": "All Poison dealt by wolfos are unsupressable and unremovable."
+  },
+  "feast": {
+    "nom": "Feast",
+    "Level": "Alicanto 1",
+    "Frequency": "EoT",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "Buff/Swift",
+    "Target": "One/Foe/Melee",
+    "Desc": "If the target has an item equipped, remove one item from the target. If the item was a passive item, the Alicanto is now 'Silver', if the item was an activatable item, the Alicanto is now 'Gold'."
+  },
+  "metallicstorm": {
+    "nom": "Metallic Storm",
+    "Level": "Alicanto 1",
+    "Frequency": "OaT",
+    "Accuracy": "3",
+    "Roll": "2d10+8",
+    "Type": "Physical/Standard",
+    "Target": "Range/Foes/Burst: 1",
+    "Desc": "User in Silver: The Alicanto takes -10 damage from the next attack that targets it. <br/> User in Gold: This attack deals +10 damage."
+  },
+  "adapt": {
+    "nom": "Adapt",
+    "Level": "Alicanto 2",
+    "Frequency": "EoT",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "Buff/Free",
+    "Target": "One/Self/-",
+    "Desc": "The Alicanto may use the effect of an item it has stolen as a free action. Each separate item's effect can only be used once."
+  },
+  "featherflurry": {
+    "nom": "Feather Flurry",
+    "Level": "Alicanto 3",
+    "Frequency": "EoT",
+    "Accuracy": "4",
+    "Roll": "3d10+10",
+    "Type": "Physical/Standard",
+    "Target": "One/Foe/Melee",
+    "Desc": "This attack crits on 14+ on a target whose item was stolen. <br/> User in Silver: The target's next attack has it's MR increased by 3. <br/> User in Gold: The Alicanto's next attack his it's MR reduced by 3."
+  },
+  "clawstrike": {
+    "nom": "Claw Strike",
+    "Level": "Alicanto 4",
+    "Frequency": "EoT",
+    "Accuracy": "3",
+    "Roll": "1d8+8",
+    "Type": "Physical/Standard",
+    "Target": "One/Foe/Melee",
+    "Desc": "Roll for damage 3 times. Roll accuracy for each hit and apply attack bonus to the first hit. <br/> User in Silver: For every hit on this attack the Alicanto gains 5 DR for 1 turn. <br/> User in Gold: For every hit on this attack the Alicanto's next attack deals an extra 5 damage."
+  },
+  "nosedive": {
+    "nom": "Nose Dive",
+    "Level": "Alicanto 5",
+    "Frequency": "Twice/EoT",
+    "Accuracy": "4",
+    "Roll": "3d10+8",
+    "Type": "Physical/Standard",
+    "Target": "Range/Foes/Cone: 2",
+    "Desc": "User in Silver: The Alicanto takes no damage from the next attack that targets it. <br/> User in Gold: The Alicanto may use an EoT attack as a swift action after using this attack."
+  },
+  "flash": {
+    "nom": "Flash",
+    "Level": "Alicanto 6",
+    "Frequency": "Twice",
+    "Accuracy": "4",
+    "Roll": "3d10+12",
+    "Type": "Physical/Standard",
+    "Target": "One/Foe/Range: 2",
+    "Desc": "If the target had their item stolen this turn, roll 4d10+15 for damage instead. The Alicanto may switch from Silver to Gold or vice versa after using this attack. "
+  },
+  "danceoflight": {
+    "nom": "Dance of Light",
+    "Level": "Alicanto 6",
+    "Frequency": "Twice/E2T",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "Action/Swift",
+    "Target": "One/Self/-",
+    "Desc": "The Alicanto's next attack stuns the target (only one if the attack hit multiple foes). <br/> User in Silver: The Alicanto takes a maximum of 20 damage from any attack until it's next turn. <br/> User in Gold: The Alicanto's next attack deals +20 damage."
+  },
+  "daboflight": "danceoflight",
+  "mineralburst": {
+    "nom": "Mineral Burst",
+    "Level": "Alicanto 7",
+    "Frequency": "Once",
+    "Accuracy": "5",
+    "Roll": "4d10+15",
+    "Type": "Physical/Standard",
+    "Target": "One/Foe/Range: 3",
+    "Desc": "If the target's item was stolen, this attack's miss rate becomes 0. <br/> User in Silver: Heal the Alicanto for 30 HP. <br/> User in Gold: Roll 8d10+15 for damage instead."
+  },
+  "seadominance": {
+    "nom": "Sea Dominance",
+    "Level": "Abyssal King 1",
+    "Frequency": "Passive",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "Passive/-",
+    "Target": "-/-/-",
+    "Desc": "In water tiles the Abyssal King gains +2 dice on all attacks. The Abyssal King also inverts water tile debuffs affecting it. These water tiles are not affected by the item effect of stiletto."
+  },
+  "tidalsweep": {
+    "nom": "Tidal Sweep",
+    "Level": "Abyssal King 1",
+    "Frequency": "OaT",
+    "Accuracy": "3",
+    "Roll": "2d8+8",
+    "Type": "Physical/Standard",
+    "Target": "One/Foe/Range: 4",
+    "Desc": "This attack roots the target for one turn if they are on a water tile. Next turn, the water tile buffs are inverted and doubled for the target."				
+  },
+  "whirlpool": {
+    "nom": "Whirlpool",
+    "Level": "Abyssal King 2",
+    "Frequency": "EoT",
+    "Accuracy": "4",
+    "Roll": "2d8+10",
+    "Type": "Physical/Standard",
+    "Target": "Range/Foes/Burst: 1",
+    "Desc": "Before this attack hits, all foes within Burst 2 of the user are pulled into the user’s melee range."
+  },
+  "abyssaldrag": {
+    "nom": "Abyssal Drag",
+    "Level": "Abyssal King 3",
+    "Frequency": "EoT",
+    "Accuracy": "4",
+    "Roll": "3d8+10",
+    "Type": "Physical/Standard",
+    "Target": "One/Foe/Global",
+    "Desc": "If the target does not enter the users melee range by the end of their turn, they take 10 damage. This effect lasts until they do so. Do not add ATK/MAG to the roll of this attack."
+  },
+  "stormsurge": {
+    "nom": "Storm Surge",
+    "Level": "Abyssal King 4",
+    "Frequency": "E2T",
+    "Accuracy": "3",
+    "Roll": "1d8+8",
+    "Type": "Physical/Swift",
+    "Target": "Range/Foes/Burst: 1",
+    "Desc": "All tiles within your Burst 1 range are now considered to be water tiles untill the end of your next turn. Do not add MAG."
+  },
+  "counterwake": {
+    "nom": "Counter Wake",
+    "Level": "Abyssal King 5",
+    "Frequency": "Twice",
+    "Accuracy": "3",
+    "Roll": "-",
+    "Type": "Re-Action/Swift, Interrupt",
+    "Target": "Range/Foes/Global",
+    "Desc": "If an enemy rolls an attack dealing 50+ damage against the Abyssal King, he may decide to use this. The dealt damage is capped to 50, and deal any removed damage to all foes in Burst 2."
+  },
+  "luminousbolt": {
+    "nom": "Luminous Bolt",
+    "Level": "Abyssal King 6",
+    "Frequency": "Twice/EoT",
+    "Accuracy": "5",
+    "Roll": "3d8+12",
+    "Type": "Physical/Standard",
+    "Target": "One/Foe/Range: 6",
+    "Desc": "On a roll of 16+, all hit targets are stunned for one turn. If the target is on a water tile, this attack gains Splash 1 range."				
+  },
+  "poseidonswrath": {
+    "nom": "Poseidon's Wrath",
+    "Level": "Abyssal King 7",
+    "Frequency": "Once",
+    "Accuracy": "4",
+    "Roll": "4d8+15",
+    "Type": "Physical/Standard",
+    "Target": "One/Foe/Burst: 2 ",
+    "Desc": "All tiles on the map are now considered to be water tiles. This effect lasts for two turns."
+  },
+  "crystalweb": {
+    "nom": "Crystal Web",
+    "Level": "Crystal Crawler 1",
+    "Frequency": "Passive",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "Passive/-",
+    "Target": "-/-/-",
+    "Desc": "Crystal Crawlers are immune to Stuns and Slows, and they can move through foes and Sticky tiles at no penalty."
+  },
+  "webshot": {
+    "nom": "Web Shot",
+    "Level": "Crystal Crawler 1",
+    "Frequency": "OaT",
+    "Accuracy": "3",
+    "Roll": "2d10+9",
+    "Type": "Physical/Standard",
+    "Target": "One/Foe/Range: 5(Splash)",
+    "Desc": "Targets hit are Slowed until the end of the Crystal Crawler's next turn, and the tile the original target is on is turned into a Sticky tile."
+  },
+  "spiderstrike": {
+    "nom": "Spider Strike",
+    "Level": "Crystal Crawler 2",
+    "Frequency": "EoT",
+    "Accuracy": "3",
+    "Roll": "2d10+12",
+    "Type": "Physical/Standard",
+    "Target": "One/Foe/Melee",
+    "Desc": "If hit, inflict confusion until the end of your next turn."
+  },
+  "crystalbinding": {
+    "nom": "Crystal Binding",
+    "Level": "Crystal Crawler 3",
+    "Frequency": "Once",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "Action/Swift",
+    "Target": "-/-/-",
+    "Desc": "Place 3 Sticky Tiles on unoccupied tiles in your Burst 2. Until the start of your next turn, Sticky tiles take 2 MP to enter and leave. (Instead of just on entry)"
+  },
+  "radiantflash": {
+    "nom": "Radiant Flash",
+    "Level": "Crystal Crawler 4",
+    "Frequency": "Once",
+    "Accuracy": "4",
+    "Roll": "2d8+10",
+    "Type": "Magical/Standard",
+    "Target": "Range/Foes/Burst:2",
+    "Desc": "If a target hit is on a Sticky tile, they take 5 extra damage from attacks until the end of your next turn. If a target hit is Confused, they deal 5 less damage on their attacks."
+  },
+  "shimmering": {
+    "nom": "Shimmering",
+    "Level": "Crystal Crawler 5",
+    "Frequency": "Once",
+    "Accuracy": "0",
+    "Roll": "-",
+    "Type": "Debuff/Swift",
+    "Target": "Range/Foes/Range:2",
+    "Desc": "Until the start of your next turn, if a foe fails their Confusion check, they attack themselves with a random one of their Weapon attacks that has its frequency available. In addition, the number players need to roll to bypass Confusion is increased by 2."
+  },
+  "shatter": {
+    "nom": "Shatter",
+    "Level": "Crystal Crawler 6",
+    "Frequency": "Once",
+    "Accuracy": "4",
+    "Roll": "1d8+2",
+    "Type": "Magical/Standard",
+    "Target": "Range/Foes/Range:3",
+    "Desc": "Choose a Sticky tile. DMG all foes within Burst 1 of that tile. If a Sticky is within Burst 1 of the original tile, you may repeat this attack's effect on that tile. Remove all sticky tiles targeted. Don't repeat this ability more than twice in one use. Only add half of MAG to each hit."
+  },
+  "diamondstorm": {
+    "nom": "Diamond Storm",
+    "Level": "Crystal Crawler 7",
+    "Frequency": "Once",
+    "Accuracy": "4",
+    "Roll": "3d10+9",
+    "Type": "Physical/Standard",
+    "Target": "Range/Foes/Burst:1",
+    "Desc": "This move does +10 damage to foes on Sticky tiles and +5 damage to Confused foes. If a foe hit is Confused and standing on a Sticky tile, they are sealed for one turn."
+  },
+  "zombifiedslice": {
+    "nom": "Zombified Slice",
+    "Level": "Wolfo 1",
+    "Frequency": "OaT",
+    "Accuracy": "2",
+    "Roll": "2d8+6",
+    "Type": "Physical/Standard",
+    "Target": "One/Foe/Melee",
+    "Desc": "On accuracy rolls of 15+, the target is inflicted with Poison 5/2."
+  },
+  "ambush": {
+    "nom": "Ambush",
+    "Level": "Wolfo 2",
+    "Frequency": "EoT",
+    "Accuracy": "3",
+    "Roll": "2d8+2",
+    "Type": "Physical/Standard",
+    "Target": "One/Foe/Range-5",
+    "Desc": "The wolf moves into the target's melee range, if they are in range of this move. Deal 1d8+3 damage to all foes in burst 1 range of the wolf."
+  },
+  "infection": {
+    "nom": "Infection",
+    "Level": "Wolfo 3",
+    "Frequency": "Twice/EoT",
+    "Accuracy": "3",
+    "Roll": "2d8+5",
+    "Type": "Physical/Standard",
+    "Target": "One/Foe/Melee",
+    "Desc": "If the target is currently poisoned, deal an extra dice."
+  },
+  "savageassault": {
+    "nom": "Savage Assault",
+    "Level": "Wolfo 4",
+    "Frequency": "EoT",
+    "Accuracy": "4",
+    "Roll": "2d8+3",
+    "Type": "Physical/Standard",
+    "Target": "One/Foe/Melee",
+    "Desc": "If this attack hits, the target is inflicted with Poison 5/1. If the target is already inflicted with Poison, deal 10 extra damage to the target."
+  },
+  "midnighthowl": {
+    "nom": "Midnight Howl",
+    "Level": "Wolfo 5",
+    "Frequency": "Twice/EoT",
+    "Accuracy": "4",
+    "Roll": "3d8+6",
+    "Type": "Magical/Standard",
+    "Target": "Range/Foe/Cone-1",
+    "Desc": "A rallying cry! If this attack hits, all Wolfos in Burst 1 of the user (including the user) gain 5 ATK and 1 MP."
+  },
+  "fleshtear": {
+    "nom": "Flesh Tear",
+    "Level": "Wolfos 6",
+    "Frequency": "Once",
+    "Accuracy": "4",
+    "Roll": "2d8+8",
+    "Type": "Physical/Standard",
+    "Target": "One/Foe/Melee",
+    "Desc": "If this attack hits, the target is inflicted with Poison 10/1.This poison inflicts -5 damage alongside with the normal -2 evasions debuff."
+  },
+  "jawsoffury": {
+    "nom": "Jaws of Fury",
+    "Level": "Wolfo 7",
+    "Frequency": "Twice",
+    "Accuracy": "4",
+    "Roll": "1d8+5",
+    "Type": "Physical/Standard",
+    "Target": "One/Foe/Melee (Multi-Hit)",
+    "Desc": "For each Wolfo in Burst 2 of the target, this attack gains 1 extra hit. Only apply the user's ATK bonus to the first hit. If a target can be hit more than once, inflict Poison 5/2 on the target. This poison inflicts -5 damage alongside with the normal -2 evasions debuff."
+  },
+  "rhinestoneburst": {
+    "nom": "Rhinestone Burst",
+    "Level": "Devil's Dragon (Phase 1) 1",
+    "Frequency": "OaT",
+    "Accuracy": "3",
+    "Roll": "2d8+8",
+    "Type": "Physical/Standard",
+    "Target": "One/Foe/Range 4",
+    "Desc": "This attack Critical Hits on 16+."
+  },
+  "quartzcrunch": {
+    "nom": "Quartz Crunch",
+    "Level": "Devil's Dragon (Phase 1) 2",
+    "Frequency": "EoT",
+    "Accuracy": "4",
+    "Roll": "2d10+8",
+    "Type": "Physical/Standard",
+    "Target": "One/Foe/Melee",
+    "Desc": "If the target used an attack on the user on their last turn, the target is Rooted until the end of their next turn and deal 10 less damage until the end of their next turn."
+  },
+  "tigerseye": {
+    "nom": "Tiger's Eye",
+    "Level": "Devil's Dragon (Phase 1) 4",
+    "Frequency": "Once",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "Action/Swift",
+    "Target": "One/Self/-",
+    "Desc": "The user's next attacking move automatically hits and becomes a Critical Hit. The user loses 10HP after their attack hits."
+  },
+  "stonepillar": {
+    "nom": "Stone Pillar",
+    "Level": "Devil's Dragon (Phase 1) 5",
+    "Frequency": "Twice/EoT",
+    "Accuracy": "5",
+    "Roll": "3d8+10",
+    "Type": "Physical/Standard",
+    "Target": "One/Foe/Line 7",
+    "Desc": "The user is Rooted until the end of their next turn."
+  },
+  "evolution": {
+    "nom": "Evolution",
+    "Level": "Devil's Dragon (Phase 2/3) 1",
+    "Frequency": "Passive",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "-/-",
+    "Target": "One/Self/-",
+    "Desc": "Devil's Dragon may use any skill from its previous form(s). Once/Twice moves do not have their frequencies reset. In Phase 2, Phase 1 moves get 1 additional dice. In Phase 3, Phase 1 and Phase 2 moves get 1 additional dice."
+  },
+  "stonebarrage": {
+    "nom": "Stone Barrage",
+    "Level": "Devil's Dragon (Phase 2) 1",
+    "Frequency": "EoT",
+    "Accuracy": "3",
+    "Roll": "1d10+5",
+    "Type": "Physical/Standard",
+    "Target": "One/Foe/Range 5",
+    "Desc": "This attack may hit up to 3 times. The user may choose how many times this attack hits.Only add ATK to the first hit."
+  },
+  "volcanicoutburst": {
+    "nom": "Volcanic Outburst",
+    "Level": "Devil's Dragon (Phase 2) 3",
+    "Frequency": "Once",
+    "Accuracy": "4",
+    "Roll": "3d10+5",
+    "Type": "Magical/Standard",
+    "Target": "One/Foe/Global",
+    "Desc": "The target is pushed one square in any direction of the user's choice. The square the target was previously on becomes a Lava tile."
+  },
+  "ironscales": {
+    "nom": "Iron Scales",
+    "Level": "Devil's Dragon (Phase 2) 5",
+    "Frequency": "Once",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "Re-Action/Interrupt",
+    "Target": "One/Self/-",
+    "Desc": "The user may interrupt any attack that targets them (after the accuracy roll is done) and negate any damage that would usually be dealt. Reduce the user's evasions to 0/0 until the end of the user's next turn."
+  },
+  "plateshift": {
+    "nom": "Plate Shift",
+    "Level": "Devil's Dragon (Phase 3) 2",
+    "Frequency": "Once",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "Action/Swift",
+    "Target": "One/Foe/Global",
+    "Desc": "The user may place two Lava Blocks on any open space adjacent to the target."
+  },
+  "hypercharge": {
+    "nom": "Hyper Charge",
+    "Level": "Devil's Dragon (Phase 3) 4",
+    "Frequency": "Twice/EoT",
+    "Accuracy": "-",
+    "Roll": "1d3",
+    "Type": "Buff/Free",
+    "Target": "One/Self/-",
+    "Desc": "The user must pay 5HP to use this move. Add the result of the roll to the user's next attack's damage dice. This will fail if it was used on the user’s last turn. (This boost is added after a Critical Hit is applied)"
+  },
+  "crystalscales": {
+    "nom": "Crystal Scales",
+    "Level": "Devil's Dragon (Phase 3) 5",
+    "Frequency": "Passive",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "Passive",
+    "Target": "-/-/-",
+    "Desc": "If a foe does 45+ damage to the user in one turn, the Devil's Dragon gains two dice on their next attack."
+  },
+  "infernalguardian": {
+    "nom": "Infernal Guardian",
+    "Level": "Gatekeeper 1",
+    "Frequency": "Passive",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "Passive",
+    "Target": "One/Self/-",
+    "Desc": "While the Gate is still alive, the Gatekeeper has 15 damage resistance."
+  },
+  "wendigopsychosis": {
+    "nom": "Wendigo Psychosis",
+    "Level": "Wendigo 1",
+    "Frequency": "Passive",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "-/-",
+    "Target": "-/-/-",
+    "Desc": "Whenever a player dies on the field, a Corrupted Soul immediately takes it place. (Same tile, same place in the TO)"
+  },
+  "blooddrain": {
+    "nom": "Blood Drain",
+    "Level": "Wendigo 1",
+    "Frequency": "OaT",
+    "Accuracy": "3",
+    "Roll": "2d8+5",
+    "Type": "Physical/Standard",
+    "Target": "One/Foe/Melee",
+    "Desc": "Inflict 5 bleed for one turn. The user heals 5 HP after the inflicted takes the Bleed damage. If another Wendigo is in melee range of the target, increase bleed to 10 and heal 10 HP instead."
+  },
+  "sharpfangs": {
+    "nom": "Sharp Fangs",
+    "Level": "Wendigo 2",
+    "Frequency": "EoT",
+    "Accuracy": "4",
+    "Roll": "2d10+6",
+    "Type": "Physical/Standard",
+    "Target": "One/Foe/Melee",
+    "Desc": "Deal an additional 1d10+6 if another Wendigo is in melee range of the target."
+  },
+  "emaciated": {
+    "nom": "Emaciated",
+    "Level": "Wendigo 3",
+    "Frequency": "Twice",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "Buff/Swift",
+    "Target": "One/Self/-",
+    "Desc": "Increase Sharp Fangs or Blood Drain's range to burst 1 for this turn only. You must pay 5 HP to use this ability."
+  },
+  "fleshcarve": {
+    "nom": "Flesh Carve",
+    "Level": "Wendigo 4",
+    "Frequency": "Twice/EoT",
+    "Accuracy": "4",
+    "Roll": "2d10+8",
+    "Type": "Physical/Standard",
+    "Target": "One/Foe/Melee",
+    "Desc": "Inflict the target with 5 bleed for two turns."
+  },
+  "cannibalism": {
+    "nom": "Cannibalism",
+    "Level": "Wendigo 5",
+    "Frequency": "Once",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "Buff/Swift",
+    "Target": "One/Ally/-",
+    "Desc": "Target a Corrupted Soul within range. Remove that Corrupted Soul from the game and heal the user by half of the Corrupted Soul’s remaining HP."
+  },
+  "multislash": {
+    "nom": "Multi-Slash",
+    "Level": "Wendigo 6",
+    "Frequency": "Twice/EoT",
+    "Accuracy": "4",
+    "Roll": "2d10+6",
+    "Type": "Physical/Standard",
+    "Target": "One or Two (2 hit)/Foe/Melee",
+    "Desc": "Only add your Attack Bonus on the first hit. After dealing damage, you may use your movement action again. Moving again does not activate Attacks of Opportunity."
+  },
+  "massacre": {
+    "nom": "Massacre",
+    "Level": "Wendigo 7",
+    "Frequency": "Once",
+    "Accuracy": "5",
+    "Roll": "3d10+9",
+    "Type": "Physical/Standard",
+    "Target": "One/Foe/Melee",
+    "Desc": "If the target is above 75 HP (but not at full HP), roll an additional two dice. Add these dice after a Critical Hit."
+  },
+  "starving": {
+    "nom": "Starving",
+    "Level": "Corrupted Soul 1",
+    "Frequency": "Passive",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "Movement",
+    "Target": "One/Self/-",
+    "Desc": "If a player dies within Burst 3 of a Corrupted Soul, the Corrupted Soul may choose to move to a spot adjacent to the dead player’s. This movement does not trigger AoO’s and takes up the Corrupted Soul’s movement action on its next turn."
+  },
+  "desecrate": {
+    "nom": "Desecrate",
+    "Level": "Corrupted Soul 2",
+    "Frequency": "Twice",
+    "Accuracy": "3",
+    "Roll": "2d8+3",
+    "Type": "Physical/Standard",
+    "Target": "One/Foe/Range-4",
+    "Desc": "Bleeding targets are slowed and have their evasions lowered by 2."
+  },
+  "bloodbath": {
+    "nom": "Bloodbath",
+    "Level": "Corrupted Soul 4",
+    "Frequency": "Once",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "Status/Standard",
+    "Target": "One/Foe/Melee",
+    "Desc": "Choose a target within range. Until the end of the user’s next turn, all moves that target that player get 1 extra dice. (Does not affect AoE abilities)"
+  },
+  "sharpclaws": {
+    "nom": "sharpclaws",
+    "Level": "Wyvern 1",
+    "Frequency": "Passive",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "Passive",
+    "Target": "-",
+    "Desc": "The user‘s Basic Attack has a base roll of 2d10+2 with MR 1."
+  },
+  "dragonheart": {
+    "nom": "Dragon Heart",
+    "Level": "Wyvern 1",
+    "Frequency": "Passive",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "-/-",
+    "Target": "-/-/-",
+    "Desc": "A Wyvern cannot be burned or stunned. They are also immune to lava damage. Wyvern's burns cannot be suppressed or removed."
+  },
+  "agnikai": {
+    "nom": "Agni Kai",
+    "Level": "Wyvern 1",
+    "Frequency": "Every other Turn",
+    "Accuracy": "3",
+    "Roll": "2d8+10",
+    "Type": "Varies/Standard",
+    "Target": "One/Foe/Melee",
+    "Desc": "On accuracy rolls of 10+, the target is inflicted with Burn 5/1. The user may choose either to use their ATK or MAG when using this ability."
+  },
+  "kindle": {
+    "nom": "Kindle",
+    "Level": "Wyvern 2",
+    "Frequency": "Every other Turn",
+    "Accuracy": "3",
+    "Roll": "1d8+5",
+    "Type": "Magical/Swift",
+    "Target": "One/Foe/Range-4",
+    "Desc": "If the target is burned change that inficted burn status into infero/1. (Inferno is aa status that inflicts-2 acc and deals 10 damage to the inflicted player. If an ally end within burst 1 of that player they are also inflicted with inferno/1)"
+  },
+  "divebomb": {
+    "nom": "Dive Bomb",
+    "Level": "Wyvern 3",
+    "Frequency": "E2T",
+    "Accuracy": "3",
+    "Roll": "3d10+7",
+    "Type": "Physical/Standard",
+    "Target": "One/Foe/Range-6 (Splash)",
+    "Desc": "If this move hits, the Wyvern may move to an unoccupied space near the target. If used from maximum range, this attack inflicts 5 Burn/1 on all targets hit."
+  },
+  "outrage": {
+    "nom": "Outrage",
+    "Level": "Wyvern 4",
+    "Frequency": "E2T",
+    "Accuracy": "4",
+    "Roll": "2d10+4",
+    "Type": "Physical/Standard",
+    "Target": "Range/Foe/Burst-1",
+    "Desc": "On hit this attack places 5 lava tiles down randomly on the map (placement determined by aa roll of 10d10). Foes within burst 2 of these lava tiles are inflicted with burn 5/1. These lava tiles cannot be placed on pre existing lava or stop tiles reroll for that lava tile if such an occurrence happens."
+  },
+  "scorchedearth": {
+    "nom": "Scorched Earth",
+    "Level": "Wyvern 5",
+    "Frequency": "Twice",
+    "Accuracy": "4",
+    "Roll": "2d6+6",
+    "Type": "Magical/Standard",
+    "Target": "Range/Foes/Global",
+    "Desc": "All targets hit by this attack are infliced with 10/1 burn. Do not add MAG to the roll."
+  },
+  "eternalflame": {
+    "nom": "Eternal Flame",
+    "Level": "Wyvern 5",
+    "Frequency": "Twice",
+    "Accuracy": "3",
+    "Roll": "3d10+6",
+    "Type": "Magical/Standard",
+    "Target": "One/Foe/Range-4",
+    "Desc": "If the target is currently burned, this attack crits and extends the burn for one more turn."
+  },
+  "Infernalbreath": {
+    "nom": "infernalbreath",
+    "Level": "Wyvern 6",
+    "Frequency": "Twice/EoT",
+    "Accuracy": "4",
+    "Roll": "3d10+9",
+    "Type": "Magical/Standard",
+    "Target": "One/Foe/Cone-2",
+    "Desc": "If this attack hits, all foes hit are inflicted with 'Inferno/1.' (Inferno is a status that can spread to other allies if you end within their melee, it also inflicts -2 accuracy) All foes inflicted with this status take 5 damage."
+  },
+  "dracometeor": {
+    "nom": "Draco Meteor",
+    "Level": "Wyvern 7",
+    "Frequency": "Once",
+    "Accuracy": "5",
+    "Roll": "5d10+10",
+    "Type": "Magical/Full",
+    "Target": "Range/Foe/Burst-2",
+    "Desc": "Regardless if this attack hits, the Wyvern is sealed on its next turn."
+  },
+  "cellwall": {
+    "nom": "Cell Wall",
+    "Level": "Flytrap 1",
+    "Frequency": "Passive",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "-/-",
+    "Target": "-/-/-",
+    "Desc": "Immunity to all forms of status. Cannot be pulled or pushed, and takes 1/2 damage from global attacks. (Push effects like Etruia and Crush don't deal the extra damage)"
+  },
+  "germination": {
+    "nom": "Germination",
+    "Level": "Flytrap 1",
+    "Frequency": "EoT",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "Passive/-",
+    "Target": "-/-/Global",
+    "Desc": "At the beginning of the game, the Flytrap may place 2 Mini Flytraps on unoccupied spaces. The Mini Flytraps may not be within Burst 1 of an entity. Starting on the Flytrap’s turn, it may plant 1 Mini Flytrap anywhere on the map. No more than 3 Mini Flytraps can be on the map at once."
+  },
+  "ingrain": {
+    "nom": "Ingrain",
+    "Level": "Flytrap 1",
+    "Frequency": "OaT",
+    "Accuracy": "3",
+    "Roll": "1d8+4",
+    "Type": "Physical/Standard",
+    "Target": "One/Foe/Global",
+    "Desc": "On accuracy rolls of 12+, the target hit is rooted for one turn."
+  },
+  "vinedrag": {
+    "nom": "Vine Drag",
+    "Level": "Flytrap 2",
+    "Frequency": "EoT",
+    "Accuracy": "3",
+    "Roll": "2d10+4",
+    "Type": "Physical/Standard",
+    "Target": "One/Foe/Homing-8",
+    "Desc": "Drag the target to a space adjacent to the Flytrap. The Flytrap cannot be targeted by surrounding AoO’s when using this move."
+  },
+  "devour": {
+    "nom": "Devour",
+    "Level": "Flytrap 2",
+    "Frequency": "OaT",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "Status/Swift",
+    "Target": "One/Ally/Foe/Global",
+    "Desc": "Choose 1 player within Melee range of a Mini-Flytrap. The player is consumed by the target and is unable to perform any actions until the Mini-Flytrap is defeated. When the Mini-Flytrap is defeated, any extra damage done by the killing attack is done to the player. Can be used after a standard action. Devoured players can use Basic Attacks to hurt the Mini Flytrap that devoured them. The devoured player cannot be pulled or pushed out of the mini flytrap's melee."
+  },
+  "respiration": {
+    "nom": "Respiration",
+    "Level": "Flytrap 3",
+    "Frequency": "Passive",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "Passive",
+    "Target": "One/Self/-",
+    "Desc": "If the Flytrap missed an attack, they may use their standard action once more. (This may only happen ONCE per turn)"
+  },
+  "naturesrage": {
+    "nom": "Nature’s Rage",
+    "Level": "Flytrap 4",
+    "Frequency": "Twice/EoT",
+    "Accuracy": "4",
+    "Roll": "3d8+5",
+    "Type": "Magical/Standard",
+    "Target": "Range/Foe/Global",
+    "Desc": "The Flytrap chooses 1 Forest tile on the map. Players within Burst 1 (and the player on that tile, if any) take damage equal to the roll."
+  },
+  "naturesfury": "naturesrage",
+  "overgrowth": {
+    "nom": "Overgrowth",
+    "Level": "Flytrap 5",
+    "Frequency": "Twice/EoT",
+    "Accuracy": "3",
+    "Roll": "2d10+8",
+    "Type": "Physical/Standard",
+    "Target": "Range/Foes/Burst 2",
+    "Desc": "Push all players hit by this attack 2 spaces away from the Flytrap."
+  },
+  "photoburst": {
+    "nom": "Photo-Burst",
+    "Level": "Flytrap 6",
+    "Frequency": "Once",
+    "Accuracy": "4",
+    "Roll": "2d10+10",
+    "Type": "Magical/Setup",
+    "Target": "One/Foe/Global (Splash)",
+    "Desc": "Targets hit are inflicted with 10 burn/1."
+  },
+  "predatorreversal": {
+    "nom": "Predator Reversal",
+    "Level": "Flytrap 7",
+    "Frequency": "Once",
+    "Accuracy": "4",
+    "Roll": "4d10+0",
+    "Type": "Physical/Standard",
+    "Target": "Range/Foe/Burst 1",
+    "Desc": "Deal the damage to all players in Burst 1 of a Flytrap or Mini Flytrap. This attack gains +5 damage for every Mini-Flytrap on the field. After this is used, all Mini Flytraps are removed."
+  },
+  "snap": {
+    "nom": "Snap",
+    "Level": "Mini Flytrap 1",
+    "Frequency": "Passive",
+    "Accuracy": "-",
+    "Roll": "1d8+0",
+    "Type": "Physical/Passive",
+    "Target": "-",
+    "Desc": "Whenever a player enters a Mini-Flytrap's melee, they automatically take damage equal to the roll."
+  },
+  "bite": {
+    "nom": "Bite",
+    "Level": "Mini Flytrap 1",
+    "Frequency": "Every Turn",
+    "Accuracy": "2",
+    "Roll": "1d8+5",
+    "Type": "Physical/Standard",
+    "Target": "One/Foe/Melee",
+    "Desc": "-"
+  },
+  "digest": {
+    "nom": "Digest",
+    "Level": "Mini Flytrap 1",
+    "Frequency": "Every Turn",
+    "Accuracy": "-",
+    "Roll": "1d8+5",
+    "Type": "Physical/Free",
+    "Target": "One/Foe",
+    "Desc": "If the Mini-flytrap has digested a player, deal the damage equal to the roll to that player. Then, the main Flytrap heals HP equal to half the roll. This ability fails if the Mini-Flytrap is currently not digesting a player."
+  },
+  "firebreath": {
+    "nom": "Fire Breath",
+    "Level": "Fire Golem 1",
+    "Frequency": "OaT",
+    "Accuracy": "3",
+    "Roll": "2d8+5",
+    "Type": "Physical/Standard",
+    "Target": "Range/Foe/Cone-1",
+    "Desc": "Targets hit are inflicted with 5 burn for one turn."
+  },
+  "ringoffire": {
+    "nom": "Ring of Fire",
+    "Level": "Fire Golem 2",
+    "Frequency": "EoT",
+    "Accuracy": "3",
+    "Roll": "2d8+7",
+    "Type": "Physical/Standard",
+    "Target": "Range/Foe/Cone-2",
+    "Desc": "This moves MR becomes 0 on targets that are burned, stunned or rooted."
+  },
+  "combustion": {
+    "nom": "Combustion",
+    "Level": "Fire Golem 3",
+    "Frequency": "Twice",
+    "Accuracy": "4",
+    "Roll": "2d8+10",
+    "Type": "Physical/Standard",
+    "Target": "Range/Foe/Burst-1",
+    "Desc": "This move crits on accuracy rolls of 17+."
+  },
+  "maelstrom": {
+    "nom": "Maelstrom",
+    "Level": "Fire Golem 4",
+    "Frequency": "Once",
+    "Accuracy": "3",
+    "Roll": "1d8+5",
+    "Type": "Magical/Swift",
+    "Target": "One/Foe/Range-4",
+    "Desc": "If this attack hits, the target takes the roll as damage. For the next two turns, reroll this move's damage and apply it to the target. The Fire Golem cannot use any Swift or Free actions while this move is in effect. This move is not affected by outside factors (including MAG)"
+  },
+  "thermogenesis": {
+    "nom": "Thermogenesis",
+    "Level": "Fire Golem 5",
+    "Frequency": "Twice/Every other Turn",
+    "Accuracy": "4",
+    "Roll": "3d8+5",
+    "Type": "Physical/Standard",
+    "Target": "One/Foe/Range-6 (Splash)",
+    "Desc": "The original target takes 5 burn damage for two turns. Those in Splash range take 5 burn damage for one turn."
+  },
+  "sacredfire": {
+    "nom": "Sacred Fire",
+    "Level": "Fire Golem 6",
+    "Frequency": "Once",
+    "Accuracy": "5",
+    "Roll": "5d8+10",
+    "Type": "Physical/Standard",
+    "Target": "Range/Foe/Cone-1",
+    "Desc": "All targets hit are inflicted with 10 burn damage for one turn. If the target is already inflicted with burn, heal them and this move does 10 extra damage."
+  },
+  "fracture": {
+    "nom": "Fracture",
+    "Level": "Earth Golem 1",
+    "Frequency": "OaT",
+    "Accuracy": "3",
+    "Roll": "1d6+7",
+    "Type": "Physical/Standard",
+    "Target": "One/Foe/Line-3",
+    "Desc": "The target hit is rooted for 1 turn."
+  },
+  "duststorm": {
+    "nom": "Dust Storm",
+    "Level": "Earth Golem 2",
+    "Frequency": "Twice/EoT",
+    "Accuracy": "2",
+    "Roll": "2d6+8",
+    "Type": "Physical/Standard",
+    "Target": "Range/Foe/Burst-2",
+    "Desc": "Targets within range lose 2 accuracy for one turn. If they are still within the Earth Golem’s Burst 2 by the end of their next turn, they take 2d6+5 more damage."
+  },
+  "powerthrust": {
+    "nom": "Power Thrust",
+    "Level": "Earth Golem 3",
+    "Frequency": "Every other Turn",
+    "Accuracy": "3",
+    "Roll": "3d6+0",
+    "Type": "Physical/Standard",
+    "Target": "One/Foe/Melee(Push-4)",
+    "Desc": "The Earth Golem is pushed the same number of spaces as the target in the opposite direction. This ability automatically crits if the target is pushed into any entity."
+  },
+  "stonebarrier": {
+    "nom": "Stone Barrier",
+    "Level": "Earth Golem 4",
+    "Frequency": "Twice/Every other Turn",
+    "Accuracy": "4",
+    "Roll": "2d6+5",
+    "Type": "Physical/Foe",
+    "Target": "One/Foe/Range-4",
+    "Desc": "The user gains 10 DR until the end of its next turn."
+  },
+  "disintigrate": {
+    "nom": "Disintigrate",
+    "Level": "Earth Golem 5",
+    "Frequency": "Twice",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "Status/Movement",
+    "Target": "-/Ally and Self/Global",
+    "Desc": "The Earth Golem can switch places with another Golem. This takes up the Earth Golem's movement action."
+  },
+  "fissure": {
+    "nom": "fissure",
+    "Level": "Earth Golem 6",
+    "Frequency": "Once",
+    "Accuracy": "5",
+    "Roll": "3d6+10",
+    "Type": "Physical/Full",
+    "Target": "Range/Foe/Line-6",
+    "Desc": "All targets hit by this attack are slowed by one turn. On accuracy rolls of 16+, targets are rooted for one turn."
+  },
+  "jolt": {
+    "nom": "Jolt",
+    "Level": "Lightning Golem 1",
+    "Frequency": "Every Turn",
+    "Accuracy": "3",
+    "Roll": "1d10+5",
+    "Type": "Magical/Standard",
+    "Target": "One/Foe/Line-4",
+    "Desc": "If this move attacks the same target three times in a row (and successfully hits), the third hit automatically stuns the target."
+  },
+  "discharge": {
+    "nom": "Discharge",
+    "Level": "Lightning Golem 2",
+    "Frequency": "Every other Turn",
+    "Accuracy": "3",
+    "Roll": "2d10+2",
+    "Type": "Magical/Standard",
+    "Target": "Range/Foe/Burst-2",
+    "Desc": "If one of the targets hit is rooted, burned, or stunned, this move gains an extra dice. (Does not stack)"
+  },
+  "infuse": {
+    "nom": "Infuse",
+    "Level": "Lightning Golem 3",
+    "Frequency": "Twice",
+    "Accuracy": "-",
+    "Roll": "2d10",
+    "Type": "Buff/Standard",
+    "Target": "One/Ally or Self/Range-3",
+    "Desc": "Add the amount rolled to the user's next attack. (This effect can also be passed to an ally)."
+  },
+  "reverberate": {
+    "nom": "Reverberate",
+    "Level": "Lightning Golem 4",
+    "Frequency": "Every other Turn",
+    "Accuracy": "3",
+    "Roll": "1d10+10",
+    "Type": "Magical/Standard",
+    "Target": "One/Foe/Range-4(Splash)",
+    "Desc": "On accuracy rolls of 17+, this move seals the original target."
+  },
+  "forkedlightning": {
+    "nom": "Forked Lightning",
+    "Level": "Lightning Golem 5",
+    "Frequency": "Twice/Every other Turn",
+    "Accuracy": "4",
+    "Roll": "2d10+8",
+    "Type": "Magical/Standard",
+    "Target": "Range/Foe/Burst-2",
+    "Desc": "Reduce the evasions of all targets hit by 2 for one turn."
+  },
+  "roarofthunder": {
+    "nom": "Roar of Thunder",
+    "Level": "Lightning Golem 6",
+    "Frequency": "Once",
+    "Accuracy": "5",
+    "Roll": "1d10+5",
+    "Type": "Magical/Full",
+    "Target": "One/Foe/Global",
+    "Desc": "The target is stunned until the end of the user's next turn. Only add half of the user's MAG to the roll."
+  },
+  "brokenskies": {
+    "nom": "Broken Skies",
+    "Level": "Lightning Golem 7",
+    "Frequency": "Once",
+    "Accuracy": "5",
+    "Roll": "3d10+15",
+    "Type": "Magical/Full",
+    "Target": "One/Foe/Global",
+    "Desc": "On accuracy rolls of 14+, foes within burst 1 range of the targets take 1d10+MAG damage and are slowed for one turn."
+  },
+  "possess": {
+    "nom": "Possess",
+    "Level": "Kanaima 1",
+    "Frequency": "Every other Turn",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "Status/Swift",
+    "Target": "One/Foe/Global",
+    "Desc": "Move a player up to their full MP, without triggering Kanaima's Attack of Opportunity. This uses up Kanaima's Movement action. (The same Player may not be targeted twice in a row."
+  },
+  "spiritassault": {
+    "nom": "Spirit Assault",
+    "Level": "Kanaima 1",
+    "Frequency": "Every Turn",
+    "Accuracy": "3",
+    "Roll": "2d8+2",
+    "Type": "Magical/Standard",
+    "Target": "One/Foe/Melee",
+    "Desc": "On an accuracy roll of 16+, the target is sealed for one turn."
+  },
+  "shriek": {
+    "nom": "Shriek",
+    "Level": "Kanaima 2",
+    "Frequency": "Every other Turn",
+    "Accuracy": "3",
+    "Roll": "3d8+5",
+    "Type": "Magical/Standard",
+    "Target": "Range/Foe/Cone-1",
+    "Desc": "On an accuracy roll of 18+, all targets hit are stunned for one turn."
+  },
+  "takeover": {
+    "nom": "Takeover",
+    "Level": "Kanaima 3",
+    "Frequency": "Twice/Every other Turn",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "Status/Swift",
+    "Target": "One/Foe/Range-8",
+    "Desc": "You may use one of the target's standard actions as long as Kanaima meets the Range and Level requirement. This uses up Kanaima's Standard action."
+  },
+  "nightmareveil": {
+    "nom": "Nightmare Veil",
+    "Level": "Kanaima 4",
+    "Frequency": "Twice",
+    "Accuracy": "4",
+    "Roll": "3d8+8",
+    "Type": "Magical/Standard",
+    "Target": "Range/Foe/Burst-2",
+    "Desc": "All targets lose 4 accuracy when attacking Kanaima. This effect lasts until Kanaima's next turn."
+  },
+  "paranoia": {
+    "nom": "Paranoia",
+    "Level": "Kanaima 5",
+    "Frequency": "Twice/Every other Turn",
+    "Accuracy": "4",
+    "Roll": "2d10+5",
+    "Type": "Magical/Standard",
+    "Target": "Range/Foe/Burst-1",
+    "Desc": "If hit, targets are inflicted with confuse for one turn. If this hits only one target, inflict confuse for two turns."
+  },
+  "deathglare": {
+    "nom": "Death Glare",
+    "Level": "Kanaima 6",
+    "Frequency": "Once",
+    "Accuracy": "4",
+    "Roll": "2d8+10",
+    "Type": "Magical/Standard",
+    "Target": "Range/Foe/Line-4",
+    "Desc": "Targets hit by this attack are stunned for one turn."
+  },
+  "puppetmaster": {
+    "nom": "Puppetmaster",
+    "Level": "Kanaima 7",
+    "Frequency": "Once",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "Status/Swift",
+    "Target": "One/Foe/Global",
+    "Desc": "Kanaima can use the the target's Movement and Standard action instead of its own. Damaging actions gain one extra dice."
+  },
+  "shockabsorption": {
+    "nom": "Shock Absorption",
+    "Level": "Guardian 1",
+    "Frequency": "Passive",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "-/-",
+    "Target": "-/-/-",
+    "Desc": "Guardians do not take damage from AoE attacks (unless they are specifically targetting them), or moves that hit through multiple targets (such as Pierce)."
+  },
+  "monsterdna": {
+    "nom": "Monster DNA",
+    "Level": "All Mobs 1",
+    "Frequency": "Passive",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "-/-",
+    "Target": "-/-/-",
+    "Desc": "Every mob is immune to Stun, Seal, Stat Lowering, and Confusion. Some mobs have more immunities than just these so be sure to check!"
+  },
+  "thewalls": {
+    "nom": "The Walls",
+    "Level": "Guardian 1",
+    "Frequency": "Passive",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "-/-",
+    "Target": "-/-/-",
+    "Desc": "Guardians cannot be pushed or pulled. Wormhole may not be used on this map, and Tunneling cannot be used in conjunction with Dash."
+  },
+  "secretpassageway": {
+    "nom": "Secret Passageway",
+    "Level": "Guardian 1",
+    "Frequency": "Passive",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "-/-",
+    "Target": "-/-/-",
+    "Desc": "The Guardians may move freely across Stop tiles. Additionally, Ice tiles on this map are immune to AoE attacks. If they would be hit with an AoE attack, it only hits one of them. (For splash moves deal damage to only the original target)."
+  },
+  "slash": {
+    "nom": "Slash",
+    "Level": "Guardian 1",
+    "Frequency": "Every Turn",
+    "Accuracy": "3",
+    "Roll": "2d10+7",
+    "Type": "Physical/Standard",
+    "Target": "One/Foe/Melee",
+    "Desc": "On 15+, inflict 5 Bleed/2 on the target."
+  },
+  "shieldbash": {
+    "nom": "Shield Bash",
+    "Level": "Guardian 2",
+    "Frequency": "EoT",
+    "Accuracy": "3",
+    "Roll": "3d10+0",
+    "Type": "Physical/Standard",
+    "Target": "One/Foe/Melee",
+    "Desc": "Add the user's Physical Evasion to the roll, as well as its attack. The user gains 5 DR/1."
+  },
+  "earthshatter": {
+    "nom": "Earth Shatter",
+    "Level": "Guardian 3",
+    "Frequency": "EoT",
+    "Accuracy": "4",
+    "Roll": "2d10+4",
+    "Type": "Physical/Standard",
+    "Target": "Range/Foes/Cone: 2",
+    "Desc": "Targets hit by this attack are inflicted with Root/1."
+  },
+  "blockade": {
+    "nom": "Blockade",
+    "Level": "Guardian 4",
+    "Frequency": "Once",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "-/Standard",
+    "Target": "-/-/-",
+    "Desc": "Set an ice tile in your melee, with 75HP. This tile lasts for 3 turns. Players that end thier turn next to this ice tile take 10 damage. Guardians do not take damage from ice terrain. <i>(Use %addtiletext (HP), (Letter), (Number) for HP</i>."
+  },
+  "protection": {
+    "nom": "Protection",
+    "Level": "Guardian 5",
+    "Frequency": "Twice/EoT",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "Buff/Swift",
+    "Target": "One/Self or Ally/Global",
+    "Desc": "The target gains 10 DR until the end of the users next turn. This effect does not stack if the target already has damage resistance."
+  },
+  "defensiveform": {
+    "nom": "Defensive Form",
+    "Level": "Guardian 6",
+    "Frequency": "Once",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "Buff/Standard",
+    "Target": "One/Self or Ally/Melee",
+    "Desc": "If another Guardian is within range, they may form a 2x1 line, or a 3x1 line (Treat the tile in between the Guardians as a Stop tile). Both gain 10 damage resistance for one turn, but lose 10 damage on all of their attacks for one turn. Both the user and its ally are rooted until the end of their next turn. This can only be used once per game."
+  },
+  "collisioncourse": {
+    "nom": "Collision Course",
+    "Level": "Guardian 7",
+    "Frequency": "Once",
+    "Accuracy": "5",
+    "Roll": "3d8+10",
+    "Type": "Physical/Standard",
+    "Target": "Range/Foes/Burst: 1",
+    "Desc": "-"
+  },
+  "mastermind": {
+    "nom": "Mastermind",
+    "Level": "C.O.R.E. 1",
+    "Frequency": "-",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "-/-",
+    "Target": "-/-/-",
+    "Desc": "Party wins once they defeat C.O.R.E. It is immune to global attacks and all status, and cannot be pushed/pulled. Ranged attacks deal half damage to it."
+  },
+  "whirlwind": {
+    "nom": "Whirlwind",
+    "Level": "C.O.R.E. 1",
+    "Frequency": "EoT",
+    "Accuracy": "3",
+    "Roll": "2d8+6",
+    "Type": "Magical/Standard",
+    "Target": "Range/Foes/Cone: 2(Push-4)",
+    "Desc": "Push all targets hit by this attack 4 spaces away from the user. Add an extra 1d8+4 if the target is pushed into an entity or wall."
+  },
+  "electricsurge": {
+    "nom": "Electric Surge",
+    "Level": "C.O.R.E. 2",
+    "Frequency": "OaT",
+    "Accuracy": "5",
+    "Roll": "2d10+10",
+    "Type": "Magical/Standard",
+    "Target": "One/Foe/Global",
+    "Desc": "This move stuns the target if it is used on the same target twice in a row without missing. Players can only be stunned once per game this way."
+  },
+  "aidc": {
+    "nom": "AIDC",
+    "Level": "C.O.R.E. 3",
+    "Frequency": "Twice/EoT",
+    "Accuracy": "4",
+    "Roll": "3d10+2",
+    "Type": "Magical/Standard",
+    "Target": "Two/Foes/Global",
+    "Desc": "-"
+  },
+  "soothingserum": {
+    "nom": "Soothing Serum",
+    "Level": "C.O.R.E. 4",
+    "Frequency": "Once",
+    "Accuracy": "-",
+    "Roll": "1d10",
+    "Type": "Magical/Swift",
+    "Target": "One/Self or Ally/Global",
+    "Desc": "The target heals the amount rolled at the end of the round for 3 rounds."
+  },
+  "failsafe": {
+    "nom": "Failsafe",
+    "Level": "C.O.R.E. 5",
+    "Frequency": "Twice",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "Re-Action/Interrupt",
+    "Target": "One/Self or Ally/Range: 4",
+    "Desc": "The user may choose to use this ability if an ally in range is attacking an opponent. If this ability does not miss, the attacking ally gains one die on their attack."
+  },
+  "overload": {
+    "nom": "Overload",
+    "Level": "C.O.R.E. 6",
+    "Frequency": "Once",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "Status/Full",
+    "Target": "One/Ally/Global",
+    "Desc": "End the C.O.R.E.'s turn. Choose a Guardian, that Guardian may take a full turn directly after the CORE. Attacks used in this turn use the C.O.R.E.'s ATK over the Guardians."
+  },
+  "selfdestruct": {
+    "nom": "Self Destruct",
+    "Level": "C.O.R.E. 7",
+    "Frequency": "Once",
+    "Accuracy": "4",
+    "Roll": "4d10+7",
+    "Type": "Magical/Full",
+    "Target": "Two/Foes/Global",
+    "Desc": "The C.O.R.E. takes 10 damage as recoil."
+  },
+  "forestscurse": {
+    "nom": "Forest's Curse",
+    "Level": "Woodkid 1",
+    "Frequency": "Passive",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "-/-",
+    "Target": "-/-/-",
+    "Desc": "Whenever the user is in a forest tile, gain 5 DR. If an foe enters a Forest Tile, they lose 5 HP. (This cannot reactivate on the same target unless that target enters a normal tile.)"
+  },
+  "tikitiki": {
+    "nom": "Tiki Tiki",
+    "Level": "Woodkid 1",
+    "Frequency": "Every Turn",
+    "Accuracy": "3",
+    "Roll": "1d10+8",
+    "Type": "Magical/Standard",
+    "Target": "One/Foe/Range: 5(Splash)",
+    "Desc": "If hit, confuse the original target for one turn (cannot target the same target with this attack twice in a row). If an accuracy of 17+ is rolled, confuse for two turns."
+  },
+  "naturetrail": {
+    "nom": "Nature Trail",
+    "Level": "Woodkid 2",
+    "Frequency": "EoT",
+    "Accuracy": "3",
+    "Roll": "2d10+9",
+    "Type": "Physical/Standard",
+    "Target": "One/Foe/Range: 5",
+    "Desc": "If the target or user is standing in a forest tile, the user gains 5 DR/1. Even if both are on a forest tile, only gain 5 DR/1."
+  },
+  "leafarmor": {
+    "nom": "Leaf Armor",
+    "Level": "Woodkid 3",
+    "Frequency": "Twice",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "Buff/Interrupt",
+    "Target": "-/Self/-",
+    "Desc": "This move may only be used when an enemy has declared an attack on you. Gain 10 DR until the start of your turn."
+  },
+  "cursedforage": {
+    "nom": "Cursed Forage",
+    "Level": "Woodkid 4",
+    "Frequency": "Thrice/EoT",
+    "Accuracy": "4",
+    "Roll": "3d10+5",
+    "Type": "Physical/Standard",
+    "Target": "Range/Foes/Global",
+    "Desc": "Woodkid chooses 1 Forest tile on the map. Players within Burst 1 (and the player on that tile, if any) take damage equal to the roll. That forest tile becomes a stop block."
+  },
+  "earthabsorb": {
+    "nom": "Earth Absorb",
+    "Level": "Woodkid 5",
+    "Frequency": "Once",
+    "Accuracy": "-",
+    "Roll": "2d10+2",
+    "Type": "Acton/Swift",
+    "Target": "-/Self/-",
+    "Desc": "Gain HP equal to the roll. Do not add ATK or MAG to this roll."
+  },
+  "strengthdrain": {
+    "nom": "Strength Drain",
+    "Level": "Woodkid 5",
+    "Frequency": "Twice/EoT",
+    "Accuracy": "4",
+    "Roll": "2d10+4",
+    "Type": "Magical/Standard",
+    "Target": "Range/Foes/Cone: 2",
+    "Desc": "The user gains +X ATK and MAG until the end of the user's next turn. X = Two times Targets Hit. Additionally, all targets hit has -2 ATK and MAG for one turn."
+  },
+  "souldrain": {
+    "nom": "Soul Drain",
+    "Level": "Woodkid 6",
+    "Frequency": "Twice/E2T",
+    "Accuracy": "4",
+    "Roll": "2d10+8",
+    "Type": "Magical/Standard",
+    "Target": "Range/Foes/Cone: 2",
+    "Desc": "All targets hit has one move disabled for 2 turns. The user decides which move is disabled. You cannot disable Level One Abilities."
+  },
+  "essencedrain": {
+    "nom": "Essence Drain",
+    "Level": "Woodkid 7",
+    "Frequency": "Once",
+    "Accuracy": "4",
+    "Roll": "3d10+7",
+    "Type": "Physical/Standard",
+    "Target": "Range/Foes/Burst: 2",
+    "Desc": "The user may pick only one move from any target hit's movepool to use against a target(s) within the ability chosen's range on this turn only. This move cannot be Full moves. If it is an attacking move, they deal One/2 damage and the user takes 10 hp recoil."
+  },
+  "ritualofblood": {
+    "nom": "Ritual of Blood",
+    "Level": "Quetzalcoatl 1",
+    "Frequency": "Passive",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "-/-",
+    "Target": "-/-/-",
+    "Desc": "Quetzalcoatl cannot use any action (bar Godly Wrath) and cannot be damaged until a player has been killed. Players who kill another player are immune to damage from Quetzal. for one turn."
+  },
+  "godlywrath": {
+    "nom": "Godly Wrath",
+    "Level": "Quetzalcoatl 1",
+    "Frequency": "Every Turn",
+    "Accuracy": "2",
+    "Roll": "2d10+5",
+    "Type": "Magical/Swift",
+    "Target": "Range/Foe/Global",
+    "Desc": "This can only be used when no players have been killed in 3 turns. Then, this can be used until a player dies."
+  },
+  "coil": {
+    "nom": "Coil",
+    "Level": "Quetzalcoatl 1",
+    "Frequency": "Every Turn",
+    "Accuracy": "3",
+    "Roll": "1d10+8",
+    "Type": "Physical/Standard",
+    "Target": "One/Foe/Melee",
+    "Desc": "On an accuracy roll of 12+, the target is rooted for two turns."
+  },
+  "drainsoul": {
+    "nom": "Drain Soul",
+    "Level": "Quetzalcoatl 2",
+    "Frequency": "Twice/Every other Turn",
+    "Accuracy": "3",
+    "Roll": "1d8+5",
+    "Type": "Physical/Standard",
+    "Target": "One/Foe/Melee",
+    "Desc": "If this kills the target, the user heals twice the damage this move dealt. Add half the user's attack to the roll."
+  },
+  "aviate": {
+    "nom": "Aviate",
+    "Level": "Quetzalcoatl 3",
+    "Frequency": "Every other Turn",
+    "Accuracy": "4",
+    "Roll": "2d10+5",
+    "Type": "Physical/Standard",
+    "Target": "One/Foe/Melee",
+    "Desc": "Push the user four spaces away from the target."
+  },
+  "acrimony": {
+    "nom": "Acrimony",
+    "Level": "Quetzalcoatl 4",
+    "Frequency": "Twice/Every other Turn",
+    "Accuracy": "5",
+    "Roll": "2d8+8",
+    "Type": "Magical/Standard",
+    "Target": "One/Foe/Range-4",
+    "Desc": "If the target didn't deal damage on their last turn, this automatically crits."
+  },
+  "blessing": {
+    "nom": "Blessing",
+    "Level": "Quetzalcoatl 5",
+    "Frequency": "Once",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "Status/Swift",
+    "Target": "Two/Ally/Global",
+    "Desc": "Targets are immune to all damage from Quetzalcoatl and cannot damage the Quetzal. for the rest of the game. The targets as well as Quetzalcoatl can choose to remove this at any time."
+  },
+  "danceofthedead": {
+    "nom": "Dance of the Dead",
+    "Level": "Quetzalcoatl 6",
+    "Frequency": "Once",
+    "Accuracy": "4",
+    "Roll": "1d10+10",
+    "Type": "Magical/Standard",
+    "Target": "Range/Foe/Burst-1",
+    "Desc": "This move gains dice equal to the number of players who have died."
+  },
+  "draconicoutburst": {
+    "nom": "Draconic Outburst",
+    "Level": "Quetzalcoatl 7",
+    "Frequency": "Once",
+    "Accuracy": "5",
+    "Roll": "4d10+5",
+    "Type": "Physical/Full",
+    "Target": "Range/Foe/Burst-2",
+    "Desc": "This move gains 5 damage equal to the number of players alive."
+  },
+  "tankup": {
+    "nom": "Tank Up",
+    "Level": "Turtle 1",
+    "Frequency": "Passive",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "-/-",
+    "Target": "-/-/-",
+    "Desc": "The Turtle has passive damage resistance, equal to its level, which doubles below half health"
+  },
+  "lightningspeed": {
+    "nom": "Lightning Speed",
+    "Level": "Turtle 1",
+    "Frequency": "Passive",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "-/-",
+    "Target": "-/-/-",
+    "Desc": "The Turtle has +2MP if it starts its turn in a water tile."
+  },
+  "reptilerush": {
+    "nom": "Reptile Rush",
+    "Level": "Turtle 1",
+    "Frequency": "OaT",
+    "Accuracy": "3",
+    "Roll": "2d8+4",
+    "Type": "Magical/Standard",
+    "Target": "Range/Foes/Line 5",
+    "Desc": "The user moves as close to the main target as possible after this move hits."
+  },
+  "bitingbolt": {
+    "nom": "Biting Bolt",
+    "Level": "Turtle 2",
+    "Frequency": "EoT",
+    "Accuracy": "3",
+    "Roll": "2d8+6",
+    "Type": "Magical/Standard",
+    "Target": "One/Foe/Line 3",
+    "Desc": "On accuracy rolls of 16+, the target recieves -2ACC until the end of their next turn."
+  },
+  "mistmischief": {
+    "nom": "Mist Mischief",
+    "Level": "Turtle 3",
+    "Frequency": "Once",
+    "Accuracy": "0",
+    "Roll": "-",
+    "Type": "Buff/Swift",
+    "Target": "One/Foe/Range 3",
+    "Desc": "The target gets Confusion/1. The accuracy range for which they would take confusion damage is increased by 1 for each ally within their Burst 2."
+  },
+  "tempestoustumble": {
+    "nom": "Tempestous Tumble",
+    "Level": "Turtle 4",
+    "Frequency": "Twice",
+    "Accuracy": "4",
+    "Roll": "1d10+10",
+    "Type": "Magical/Standard",
+    "Target": "One/Foe/Global",
+    "Desc": "Move the target into the melee range of the user."
+  },
+  "thundertail": {
+    "nom": "Thunder Tail",
+    "Level": "Turtle 5",
+    "Frequency": "EoT",
+    "Accuracy": "3",
+    "Roll": "3d8+8",
+    "Type": "Physical and Magical/Standard",
+    "Target": "One/Foe/Melee",
+    "Desc": "If the original target is standing in water, this move becomes Range/Foes/Melee (Splash). The Splash damage is Magical."
+  },
+  "shellslam": {
+    "nom": "Shell Slam",
+    "Level": "Turtle 6",
+    "Frequency": "Twice/EoT",
+    "Accuracy": "3",
+    "Roll": "3d10+6",
+    "Type": "Physical/Standard",
+    "Target": "One/Foe/Range 4",
+    "Desc": "The user moves as close to the target as possible. If the user is below half HP, this move is Range/Foes/Range 4 (Splash)."
+  },
+  "shellshocker": {
+    "nom": "Shell Shocker",
+    "Level": "Turtle 7",
+    "Frequency": "Once",
+    "Accuracy": "4",
+    "Roll": "1d10+6",
+    "Type": "Magical/Standard",
+    "Target": "One/Foe/Line 4",
+    "Desc": "After this move hits, it may hit another target within Line: 4 of the target (Reroll accuracy for this hit). This effect may only happen once per target."
+  },
+  "illusoryform": {
+    "nom": "Illusory Form",
+    "Level": "Magician 1",
+    "Frequency": "Passive",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "-/-",
+    "Target": "-/-/-",
+    "Desc": "At the beginning of every turn, the Magician's attack and magic swap. When its attack is higher, all attacks are physical, and when magic is higher, all attacks are magical."
+  },
+  "animalassistants": {
+    "nom": "Animal Assistants",
+    "Level": "Magician 1",
+    "Frequency": "Passive",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "-/-",
+    "Target": "-/-/-",
+    "Desc": "At 75% HP, summon a Dove to fight. At 50% HP, summon a Bunny to fight. The summoned monsters can only use the move 'Familiar Attack'. These summoned monsters die once Magician does. Spawn them in a melee tile next to the Magician. (%addm dove or %addm bunny)"
+  },
+  "cardtoss": {
+    "nom": "Card Toss",
+    "Level": "Magician 1",
+    "Frequency": "OaT",
+    "Accuracy": "2",
+    "Roll": "2d8",
+    "Type": "Varies/Standard",
+    "Target": "One/Foe/Range: 3",
+    "Desc": "If this attack is physical, roll 2d6 after this move hits. If this attack is magical, roll 1d13 after this move hits. Add the result rolled as damage to this move."
+  },
+  "topsyturvy": {
+    "nom": "Topsy-Turvy",
+    "Level": "Magician 2",
+    "Frequency": "EoT",
+    "Accuracy": "3",
+    "Roll": "1d8+8",
+    "Type": "Varies/Standard",
+    "Target": "Range/Foes/Burst: 1",
+    "Desc": "If this attack is physical, it also inflicts -3 atk/mag through the user's next turn. If this attack is magical, it also inflicts -1 to both evasions through the user's next turn."
+  },
+  "hypnotise": {
+    "nom": "Hypnotise",
+    "Level": "Magician 3",
+    "Frequency": "EoT",
+    "Accuracy": "1",
+    "Roll": "-",
+    "Type": "Status/Standard",
+    "Target": "One/Foe/Range: 3",
+    "Desc": "The target uses one of their Oat/EoT abilities with its frequency available on a target within range."
+  },
+  "magictrick": {
+    "nom": "Magic Trick",
+    "Level": "Magician 4",
+    "Frequency": "Twice/EoT",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "Buff/Swift",
+    "Target": "Range/All/Global",
+    "Desc": "One player picks a number from 1-10. The user rolls 1d10. If the player's choice was within 2 of the rolled amount, all players gain +1 accuracy through their next turn. Regardless, the user and allies gain +2 acc through their next turns."
+  },
+  "hattrick": {
+    "nom": "Hat Trick",
+    "Level": "Magician 5",
+    "Frequency": "Twice",
+    "Accuracy": "3",
+    "Roll": "2d10+10",
+    "Type": "Varies/Standard",
+    "Target": "Varies/Foe(s)/Range: 4",
+    "Desc": "If this attack is magical, it hits two targets each for half damage."
+  },
+  "disappearingact": {
+    "nom": "Disappearing Act",
+    "Level": "Magician 6",
+    "Frequency": "Once",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "Status/Swift",
+    "Target": "Range/All/Global",
+    "Desc": "All players and monsters become immune to damage until the beginning of the user's next turn, and have their position randomly changed."
+  },
+  "phantasmalroar": {
+    "nom": "Phantasmal Roar",
+    "Level": "Magician 7",
+    "Frequency": "Once",
+    "Accuracy": "4",
+    "Roll": "3d10+12",
+    "Type": "Varies/Standard",
+    "Target": "Range/Foes/Varies",
+    "Desc": "If this attack is physical, it has Melee range, deals damage to all foes in splash range and has +5 damage. If this attack is magical, it has Cone-2 range and +1 accuracy."
+  },
+  "voraciousvortex": {
+    "nom": "Voracious Vortex",
+    "Level": "Turtle 4",
+    "Frequency": "Twice",
+    "Accuracy": "4",
+    "Roll": "1d10+2",
+    "Type": "Magical/Standard",
+    "Target": "One/Foes/Range: 4, Splash",
+    "Desc": "Move all targets hit into melee range of the Turtle."
+  },
+  "armourupgrade": {
+    "nom": "Armour Upgrade",
+    "Level": "A.W.P.B 1",
+    "Frequency": "Passive",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "-/-",
+    "Target": "-/-/-",
+    "Desc": "Gain +2 Permanent DR at the end of each of your turns. DR caps at 10. This DR cannot be ignored or suppresed."
+  },
+  "mirrorarmour": {
+    "nom": "Mirror Armour",
+    "Level": "A.W.P.B 1",
+    "Frequency": "Every Turn",
+    "Accuracy": "-",
+    "Roll": "1d8+X",
+    "Type": "Action/Interrupt",
+    "Target": "One/Foe/Global",
+    "Desc": "This attack may only be used after the user is hit. Deal 1d8+X damage to the attacker where X = the user's current passive DR. This may only be used twice every turn."
+  },
+  "mirrorarmor": {
+    "nom": "Mirror Armour",
+    "Level": "A.W.P.B 1",
+    "Frequency": "Every Turn",
+    "Accuracy": "-",
+    "Roll": "1d8+X",
+    "Type": "Action/Interrupt",
+    "Target": "One/Foe/Global",
+    "Desc": "This attack may only be used after the user is hit. Deal 1d8+X damage to the attacker where X = the user's current passive DR. This may only be used twice every turn."
+  },
+  "brutalexchange": {
+    "nom": "Brutal Exchange",
+    "Level": "A.W.P.B 1",
+    "Frequency": "OaT",
+    "Accuracy": "3",
+    "Roll": "2d10+7",
+    "Type": "Physical/Standard",
+    "Target": "One/Foe/Melee",
+    "Desc": "If this is used while at 50% or less HP, it gains +2 ACC and +3 DMG."
+  },
+  "armourstrike": {
+    "nom": "Armour Strike",
+    "Level": "A.W.P.B 2",
+    "Frequency": "EoT",
+    "Accuracy": "4",
+    "Roll": "2d10+12",
+    "Type": "Physical/Standard",
+    "Target": "One/Foe/Range 3",
+    "Desc": "If you have 5+ DR when using this ability, attacks targeting you cannot deal over 40 damage. You gain +1 DR for each damage point over 40.  These effects last one turn."
+  },
+  "avalanche": {
+    "nom": "Avalanche",
+    "Level": "A.W.P.B 3",
+    "Frequency": "Twice",
+    "Accuracy": "4",
+    "Roll": "3d10+10",
+    "Type": "Physical/Standard",
+    "Target": "One/Foe/Melee",
+    "Desc": "This move may be made Range/Foes/Burst 1. If the user does this, its damage roll is 2d10+8."
+  },
+  "warstrategy": {
+    "nom": "War Strategy",
+    "Level": "A.W.P.B 4",
+    "Frequency": "Passive",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "Passive",
+    "Target": "-",
+    "Desc": "AWPB may move and attack in any order. This includes moving part of is MP, attacking, and then moving its remaining MP."
+  },
+  "polarrush": {
+    "nom": "Polar Rush",
+    "Level": "A.W.P.B 4",
+    "Frequency": "E2T",
+    "Accuracy": "4",
+    "Roll": "3d10+6",
+    "Type": "Physical/Standard",
+    "Target": "One/Foe/Range 5 (Splash)",
+    "Desc": "If this misses, lose all DR until the end of your next turn. If this hits, push the foe 4 spaces away. If they cannot be pushed the full distance, inflict the foe with Seal/1. If they were sealed due to a player, deal 2d10+5 raw damage to that player."
+  },
+  "battleresponse": {
+    "nom": "Battle Response",
+    "Level": "A.W.P.B 5",
+    "Frequency": "EoT",
+    "Accuracy": "4",
+    "Roll": "2d8+10",
+    "Type": "Physical/Standard",
+    "Target": "One/Foe/Melee",
+    "Desc": "If the target has full HP, this is MR0 and they take +5 damage from your attack until the end of your next turn. If the foe isn't at full HP, they deal -5 damage to you next turn."
+  },
+  "execute": {
+    "nom": "Execute",
+    "Level": "A.W.P.B 6",
+    "Frequency": "Twice/EoT",
+    "Accuracy": "4",
+    "Roll": "3d10+8",
+    "Type": "Physical/Standard",
+    "Target": "Range/Foes/Cone 2",
+    "Desc": "If this hits one foe, this inflicts Confusion/2. If this hits more than one foe, those foes deal -1 dice on their attacks when attacking you next turn."
+  },
+  "order66": {
+    "nom": "Order 66",
+    "Level": "A.W.P.B 7",
+    "Frequency": "Once",
+    "Accuracy": "6",
+    "Roll": "4d10+15",
+    "Type": "Physical/Standard",
+    "Target": "One/Foe/Melee",
+    "Desc": "If you have 10 Passive DR, you may choose to drop it to 0 in exchange for +15 damage on this attack. If the target is Confused, this attack is MR 0."
+  },
+  "scavengedwings": {
+    "nom": "Scavenged Wings",
+    "Level": "Bone Dragon 1",
+    "Frequency": "Passive",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "-/-",
+    "Target": "-/-/-",
+    "Desc": "The Bone Dragon may move through Bone Tiles and through players, though it may not stop on one. Bone Dragon's are immune to all statuses (Except Claws Bleed and Solar Rod's Burn)"
+  },
+  "calcify": {
+    "nom": "Calcify",
+    "Level": "Bone Dragon 1",
+    "Frequency": "OaT",
+    "Accuracy": "2",
+    "Roll": "2d10+8",
+    "Type": "Physical/Standard",
+    "Target": "One/Foe/Melee",
+    "Desc": "If this move kills a player, the tile they were on becomes a Bone tile."
+  },
+  "abomination": {
+    "nom": "Abomination",
+    "Level": "Bone Dragon 2",
+    "Frequency": "OaT",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "Buff/Standard",
+    "Target": "-/-/-",
+    "Desc": "Activate this ability only if the Bone Dragon is adjacent to a Bone tile. The Bone Dragon gets +2ATK, +2MAG and +[# of Players]*10HP (this can overheal), then destroy that bone tile. If this is used after Elder Dragons Fury this abilitys action type is changed to Swift for that turn."
+  },
+  "twistedimage": {
+    "nom": "Twisted Image",
+    "Level": "Bone Dragon 3",
+    "Frequency": "EoT",
+    "Accuracy": "3",
+    "Roll": "2d10+10",
+    "Type": "Magical/Standard",
+    "Target": "One/Foe/Range 3",
+    "Desc": "The target gets -2 Accuracy on their next attack. If the target is adjacent to a Bone tile, they also get -2 to each of their evasions until the end of the user's next turn."
+  },
+  "bansheehowl": {
+    "nom": "Banshee Howl",
+    "Level": "Bone Dragon 4",
+    "Frequency": "Twice/EoT",
+    "Accuracy": "3",
+    "Roll": "2d10+4",
+    "Type": "Magical/Standard",
+    "Target": "Range/Foes/Cone 3",
+    "Desc": "This attack destroys any Bone tiles in range. For each Bone tile destroyed, this attack gets +5 damage."
+  },
+  "onthehunt": {
+    "nom": "On the Hunt",
+    "Level": "Bone Dragon 5",
+    "Frequency": "Twice",
+    "Accuracy": "4",
+    "Roll": "4d10+4",
+    "Type": "Physical/Standard",
+    "Target": "One/Foe/Homing 6",
+    "Desc": "The Bone Dragon moves to a tile adjacent to the target, regardless of whether the attack hits or misses. This attack has +2ACC if the target is adjacent to a Bone Tile."
+  },
+  "frenziedconsumption": {
+    "nom": "Frenzied Consumption",
+    "Level": "Bone Dragon 6",
+    "Frequency": "Twice/EoT",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "Buff/Swift",
+    "Target": "-/-/-",
+    "Desc": "The next time the Bone Dragon consumes a tile through Abomination, it deals 1d10+8 damage to each target in Burst 2. Each target hit this way gets 5 Poison/2. The buffs gained from that bone tile is multiplied by 1.5 and the Bone Dragon gains +3 attack and magic instead of the normal +2."
+  },
+  "elderdragonsfury": {
+    "nom": "Elder Dragon's Fury",
+    "Level": "Bone Dragon 6",
+    "Frequency": "Once",
+    "Accuracy": "5",
+    "Roll": "4d10+8",
+    "Type": "Magical/Standard",
+    "Target": "One/Foe/Line 4",
+    "Desc": "If one Bone Tile was consumed by Abomination this attack inflicts Confusion/1. If two Bone Tiles were consumed, this attack inflicts Seal/1. If three or more tiles were consumed, this attack inflicts Stun/1, and changes the target into a bone tile that can be consumed for 1 turn. If that tile is consumed the target is changed back into a normal player."
+  },
+  "disintegrate": {
+    "nom": "Disintegrate",
+    "Level": "Bone Dragon 7",
+    "Frequency": "Passive",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "Passive/-",
+    "Target": "-/-/-",
+    "Desc": "When the Bone Dragon goes below 50% HP, destroy it. Anywhere within Burst 1 of the Bone Dragon's original position, place 2 Bone Dragons (can be placed on players, stop tiles, and bone tiles) - each with 25% HP of the max HP (including Abomination). These Bone Dragons have halved ATK/MAG, though they keep any buffs from Abomination."
+  },
+  "familiarattack": {
+    "nom": "Familiar Attack",
+    "Level": "Animal 1",
+    "Frequency": "OaT",
+    "Accuracy": "2",
+    "Roll": "1d8+0",
+    "Type": "Varies",
+    "Target": "One/Foe/Melee",
+    "Desc": "The bunny and dove may only use this attack. If they have more attack than magic, this attack is physical, and if more magic than attack, this attack is magical."
+  },
+  "seasonalblast": {
+    "nom": "Seasonal Blast",
+    "Level": "Spirit of the Seasons 1",
+    "Frequency": "OaT",
+    "Accuracy": "3",
+    "Roll": "2d8+12",
+    "Type": "Magical/Standard",
+    "Target": "One/Foe/Range 4",
+    "Desc": "This move's effect depends on the user's season.<br/> Spring: Restore HP equal to 50% of the damage dealt.<br/>Summer: Inflict 10 Burn/1 on the target.<br/>Autumn: Inflict Root/1 on the target.<br/>Winter: This move's roll is 2d8+2 and inflicts Seal/1 on the target."
+  },
+  "channelelements": {
+    "nom": "Channel Elements",
+    "Level": "Spirit of the Seasons 3",
+    "Frequency": "Once",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "Buff/Full",
+    "Target": "-/Self/-",
+    "Desc": "The user counts as being in all Seasons until the end of their next turn. At the end of their next turn, they go back to whatever season they were in before they used this move."
+  },
+  "furyofnature": {
+    "nom": "Fury of Nature",
+    "Level": "Spirit of the Seasons 7",
+    "Frequency": "Once",
+    "Accuracy": "5",
+    "Roll": "3d10+8",
+    "Type": "Magical/Standard",
+    "Target": "One/Foe/Range 4",
+    "Desc": "This move's effect depends on the user's season.<br/> Spring: Restore HP equal to the damage dealt.<br/>Summer: The tile the target is standing on becomes a Lava tile.<br/>Autumn: Turn all tiles within splash range of the target to Forest tiles.<br/>Winter: Inflict Stun/1 on the target, except if they are the last player alive.<br/>If the user has multiple Seasons when using this move, stun them after using this move for 1 turn (This stun bypasses Monster DNA)."
+  },
+  "forestaffinity": {
+    "nom": "Forest Affinity",
+    "Level": "Spirit of the Seasons (Spring) 1",
+    "Frequency": "Passive",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "-/-",
+    "Target": "-/-/-",
+    "Desc": "Double the positive effects and invert the negative effects of any Forest tile you are standing on. When you start your turn on a Forest tile, heal 15 HP. In addition, enemies take 10 damage when they start their turn on a Forest tile."
+  },
+  "cleansingrain": {
+    "nom": "Cleansing Rain",
+    "Level": "Spirit of the Seasons (Spring) 2",
+    "Frequency": "Passive",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "-/-",
+    "Target": "-/-/-",
+    "Desc": "Whenever you heal damage, you are cured of one random status or debuff affecting you."
+  },
+  "plantgrowth": {
+    "nom": "Plant Growth",
+    "Level": "Spirit of the Seasons (Spring) 3",
+    "Frequency": "EoT",
+    "Accuracy": "3",
+    "Roll": "2d8+8",
+    "Type": "Magical/Standard",
+    "Target": "One/Foe/Range 4",
+    "Desc": "The tile the target is standing on becomes a Forest tile"
+  },
+  "regrowth": {
+    "nom": "Regrowth",
+    "Level": "Spirit of the Seasons (Spring) 5",
+    "Frequency": "Twice",
+    "Accuracy": "-",
+    "Roll": "2d10+5",
+    "Type": "Buff/Free",
+    "Target": "One/Self or Ally/Range 4",
+    "Desc": "The user heals equal to the result. Activate this ability only when next to a Forest tile."
+  },
+  "awaken": {
+    "nom": "Awaken",
+    "Level": "Spirit of the Seasons (Spring) 6",
+    "Frequency": "-",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "Buff/Full",
+    "Target": "-/-/Range 4",
+    "Desc": "Turn up to 2 Forest tiles in range into Treants. They can only Batk, but deal +1 die and +5 damage on Batks. They can't attack on the first turn they are summoned, and have 5 passive DR."
+  },
+  "lavaaffinity": {
+    "nom": "Lava Affinity",
+    "Level": "Spirit of the Seasons (Summer) 1",
+    "Frequency": "Passive",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "-/-",
+    "Target": "-/-/-",
+    "Desc": "You are immune to the effects of Lava tiles. You deal +5 damage while standing on a Lava tile. In addition, you are immune to Burn (except unsupressable burn.) even if you're not on a Lava tile."
+  },
+  "flamebody": {
+    "nom": "Flame Body",
+    "Level": "Spirit of the Seasons (Summer) 2",
+    "Frequency": "Passive",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "-/-",
+    "Target": "-/-/-",
+    "Desc": "Whenever an enemy hits you in your melee, they take 5 Burn/1. This burn is unremovable and unsupressable."
+  },
+  "ultravioletblast": {
+    "nom": "Ultraviolet Blast",
+    "Level": "Spirit of the Seasons (Summer) 3",
+    "Frequency": "EoT",
+    "Accuracy": "3",
+    "Roll": "2d8+9",
+    "Type": "Magical/Standard",
+    "Target": "One/Foe/Range 4",
+    "Desc": "If the target is burned, increase the Burn by 5 and extend it for 1 turn."
+  },
+  "eruption": {
+    "nom": "Eruption",
+    "Level": "Spirit of the Seasons (Summer) 5",
+    "Frequency": "Twice",
+    "Accuracy": "5",
+    "Roll": "3d8+6",
+    "Type": "Magical/Standard",
+    "Target": "One/Foe/Range 4 (Push 1)",
+    "Desc": "Push the target 1 space away from you and turn the tile they were standing on into a Lava tile."
+  },
+  "searingspear": {
+    "nom": "Searing Spear",
+    "Level": "Spirit of the Seasons (Summer) 6",
+    "Frequency": "Once",
+    "Accuracy": "5",
+    "Roll": "1d10+8",
+    "Type": "Magical/Standard",
+    "Target": "All/Foes/Line 4",
+    "Desc": "Deals 1d10 additional damage for each burned target or lava tile in the line."
+  },
+  "pineconeshot": {
+    "nom": "Pinecone Shot",
+    "Level": "Spirit of the Seasons (Autumn) 2",
+    "Frequency": "OaT",
+    "Accuracy": "2",
+    "Roll": "1d8+2",
+    "Type": "Physical/Movement",
+    "Target": "One/Foe/Range 4",
+    "Desc": "In any order: Move up to your MP, and deal 1d8+2 damage to a player in Range 4. (acir) This move can't be affected by outside factors."
+  },
+  "ensnaringroots": {
+    "nom": "Ensnaring Roots",
+    "Level": "Spirit of the Seasons (Autumn) 3",
+    "Frequency": "EoT",
+    "Accuracy": "4",
+    "Roll": "2d8+11",
+    "Type": "Magical/Standard",
+    "Target": "One/Foe/Range 4",
+    "Desc": "If the target is on a forest tile, destroy that forest tile and root the target for 1 turn."
+  },
+  "leafyprison": {
+    "nom": "Leafy Prison",
+    "Level": "Spirit of the Seasons (Autumn) 5",
+    "Frequency": "Twice",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "Free",
+    "Target": "One/Foe/Range 4",
+    "Desc": "Turn all tiles adjacent to the target into Forest tiles."
+  },
+  "stomatalwave": {
+    "nom": "Stomatal Wave",
+    "Level": "Spirit of the Seasons (Autumn) 6",
+    "Frequency": "Once",
+    "Accuracy": "5",
+    "Roll": "Xd10+2",
+    "Type": "Magical/Standard",
+    "Target": "All/Foes/Cone 2",
+    "Desc": "Destroy all Forest tiles in the cone. X is equal to the number of Forest tiles destroyed this way."
+  },
+  "iceaffinity": {
+    "nom": "Ice Affinity",
+    "Level": "Spirit of the Seasons (Winter) 1",
+    "Frequency": "Passive",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "-/-",
+    "Target": "-/-/-",
+    "Desc": "The user can move through Ice Tiles as well as end their movement on them and may use ranged attacks through them. While standing on an ice tile, the user gains 10 DR; if damage overcomes this DR, destroy the ice tile."
+  },
+  "frozenblood": {
+    "nom": "Frozen Blood",
+    "Level": "Spirit of the Seasons (Winter) 2",
+    "Frequency": "Passive",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "-/-",
+    "Target": "-/-/-",
+    "Desc": "Critical hits only gain half the normal increase of dice against the user. When the user is struck by a critical hit the attacker is sealed/1."
+  },
+  "bittercold": {
+    "nom": "Bitter Cold",
+    "Level": "Spirit of the Seasons (Winter) 3",
+    "Frequency": "EoT",
+    "Accuracy": "3",
+    "Roll": "2d8+5",
+    "Type": "Magical/Standard",
+    "Target": "One/Foe/Range 4",
+    "Desc": "This move deals 1d8 additional damage per Ice Tile adjacent to the target."
+  },
+  "merciless": {
+    "nom": "Merciless",
+    "Level": "Spirit of the Seasons (Winter) 5",
+    "Frequency": "Twice",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "Buff/Free",
+    "Target": "-/-/-",
+    "Desc": "Use this only when you are about to attack a stunned or sealed target. Treat your accuracy roll as a natural 20."
+  },
+  "polarmidnight": {
+    "nom": "Polar Midnight",
+    "Level": "Spirit of the Seasons (Winter) 6",
+    "Frequency": "Once",
+    "Accuracy": "5",
+    "Roll": "1d10+8",
+    "Type": "Magical/Standard",
+    "Target": "Range/Foes/Burst 1",
+    "Desc": "Turn all targets into Ice Tiles until the end of the Spirit's next turn. Targets who are Ice Tiles keep all of their stats, but are stunned and count as Ice Tiles for the purposes of any abilities."
+  },
+  "liftoff": {
+    "nom": "Lift Off",
+    "Level": "Ancient Scarab 1",
+    "Frequency": "EoT",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "Buff/Free",
+    "Target": "Self",
+    "Desc": "Grants the Scarab 'Airborne' until the end of the user's next turn. Airborne: Every ranged attack needs twice as much range when attacking the Scarab. (Ex: Line 4 = Line 2 when attacking target) Under this effect, the Scarab has 1 less MP. The Scarab can also go through Stop, Bone and tiles occupied by players under this effect. It cannot be affected by AoOs when airborne."
+  },
+  "pincer": {
+    "nom": "Pincer",
+    "Level": "Ancient Scarab 1",
+    "Frequency": "OaT",
+    "Accuracy": "3",
+    "Roll": "2d10+6",
+    "Type": "Physical/Standard",
+    "Target":"One/Foe/Melee",
+    "Desc": "If Scarab is airborne, this attack's range is Range-3 instead of Melee."
+  },
+  "scarabsfortune": {
+    "nom": "Scarabs Fortune",
+    "Level": "Ancient Scarab 1",
+    "Frequency": "Twice",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "Status/Free",
+    "Target": "-",
+    "Desc": "The Scarab will get a positive effect. Roll d5 to determine this effect. 1 = +2 acc on the next attack. 2 = +3 PE/ME until the end of its next turn. 3 = +10 damage on the next attack. 4 = Scarab gains 10 DR until the end of its next turn. 5 = Scarab is immune to critical hits until the end of its next turn. If you are airborne, you may choose the desired effect."
+  },
+  "recklesscharge": {
+    "nom": "Reckless Charge",
+    "Level": "Ancient Scarab 2",
+    "Frequency": "EoT",
+    "Accuracy": "3",
+    "Roll": "2d10+4",
+    "Type": "Physical/Standard",
+    "Target": "Range/Foes/Line 6",
+    "Desc": "The user moves to the end of the move's range, regardless of whether it hits. The first target hit is dealt 5 extra damage."
+  },
+  "scarabscry": {
+    "nom": "Scarab's Cry",
+    "Level": "Ancient Scarab 3",
+    "Frequency": "Trigger",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "-",
+    "Target": "-",
+    "Desc": "Once the Scarab reaches half HP, the ATK stat is buffed up to 2x of the original ATK permanently (Rounded down)."
+  },
+  "hornetimpact": {
+    "nom": "Hornet Impact",
+    "Level": "Ancient Scarab 3",
+    "Frequency": "E2T",
+    "Accuracy": "4",
+    "Roll": "2d10+4",
+    "Type": "Physical/Standard",
+    "Target": "Range/Foes/Line 3 (Splash)",
+    "Desc": "Deal damage to all enemies in splash range of the closest target. If the scarab is airborne before using this move, deal damage to all targets in splash 2 instead."
+  },
+  "nosedivecharge": {
+    "nom": "Nosedive Charge",
+    "Level": "Ancient Scarab 4",
+    "Frequency": "Twice/EoT",
+    "Accuracy": "4",
+    "Roll": "3d10+X",
+    "Type": "Physical/Standard",
+    "Target": "Range/Foes/Line 6",
+    "Desc": "The roll is 3d10+X, where X is the amount of targets * 3. This move can only be used when airborne. After using this attack, Scarab loses Airborne status regardless of whether it hits or not. If this attack misses the first target, the user moves to the farthest unoccupied tile of the move's range."
+  },
+  "curseofthepyramid": {
+    "nom": "Curse of the Pyramid",
+    "Level": "Ancient Scarab 5",
+    "Frequency": "Once",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "Status/Free",
+    "Target": "One/Foe/Global",
+    "Desc": "A player will receive a negative effect. Roll d5 to determine this effect. 1 = -2 acc. 2 = -10 damage on the next attack. 3 = Take 5 extra damage from every attack. 4. Inability to get critical hits. 5. The target is locked to OaT. However, if the Scarab is airborne, every player will receive a negative effect. The determined effect has to be rolled for every individual player. All of these effects last for one turn."
+  },
+  "earthstrike": {
+    "nom": "Earth Strike",
+    "Level": "Ancient Scarab 6",
+    "Frequency": "Twice/EoT",
+    "Accuracy": "4",
+    "Roll": "3d10+8",
+    "Type": "Physical/Standard",
+    "Target": "Range/Foes/Cone 2",
+    "Desc": "All targets hit are confused for one turn. If the user is Airborne, deal 5 extra damage to all targets hit, but the attack does not confuse."
+  },
+  "fullthrottlecharge": {
+    "nom": "Full Throttle Charge",
+    "Level": "Ancient Scarab 7",
+    "Frequency": "Once",
+    "Accuracy": "4",
+    "Roll": "4d10+9",
+    "Type": "Physical/Standard",
+    "Target": "Range/Foes/Varies",
+    "Desc": "If user is airborne, Deal 4d10+9 (includes ATK bonus) damage to all targets in Line 6 range. The user then moves to the farthest unoccupied tile of the move's range, regardless of whether it hits or not. Alternatively, if the user isn't airborne, deal 6d10+12 damage to one target in Melee range."
+  },
+  "sanctuarysatrophy": {
+    "nom": "Sanctuary's Atrophy",
+    "Level": "Excalibur 1",
+    "Frequency": "Passive",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "-",
+    "Target": "-",
+    "Desc": "When an enemy player tries to move though a sticky tile they must use 2 MP to enter the tile and 2 MP to exit. If that player has the item stilletto these sticky tiles function as normal sticky tiles."
+  },
+  "basicswordplay": {
+    "nom": "Basic Swordplay",
+    "Level": "Excalibur 1",
+    "Frequency": "Passive",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "-/-",
+    "Target": "-/-/-",
+    "Desc": "This monster has access to BATK, AoO, Dash and Backstep. Accuracy debuffs inflicted by Excalibur cannot be suppressed nor removed."
+  },
+  "gloriousscabbard": {
+    "nom": "Glorious Scabbard",
+    "Level": "Excalibur 1",
+    "Frequency": "Passive",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "-/-",
+    "Target": "-/-/-",
+    "Desc": "Whenever Excalibur is attacked, if the damage dealt was over 40, roll a d2 to decide whether to Block (rolled a 1) or Parry (rolled a 2) the attack. If the attack was Blocked, it deals -15 damage. If it was Parried, you may roll BATK (P) damage and deal it to the opponent. Only 200 damage can be blocked per game."
+  },
+  "flashingdrive": {
+    "nom": "Flashing Drive",
+    "Level": "Excalibur 1",
+    "Frequency": "OaT",
+    "Accuracy": "3",
+    "Roll": "2d8+8",
+    "Type": "Magical/Standard",
+    "Target": "One/Foe/Line 3",
+    "Desc": "If the target is at the end of the line, move to the targets melee. This attack inflicts -2ACC until the end of the user's next turn. (Cannot be suppressed or removed)."
+  },
+  "radiantflash": {
+    "nom": "Radiant Flash",
+    "Level": "Excalibur 2",
+    "Frequency": "E2T",
+    "Accuracy": "4",
+    "Roll": "3d8+10",
+    "Type": "Magical/Standard",
+    "Target": "Range/Foes/Burst 1",
+    "Desc": "If this attack's accuracy roll is 10+, each player hit by this move becomes Blinded permenantly (This effect cannot be removed or suppressed once inflicted). As long as a player has Blindness, each accuracy debuff they would have is doubled in duration and effects."
+  },    
+  "lustrousblade": {
+    "nom": "Lustrous Blade",
+    "Level": "Excalibur 3",
+    "Frequency": "EoT",
+    "Accuracy": "5",
+    "Roll": "2d10+15",
+    "Type": "Magical/Standard",
+    "Target": "One/Foe/Melee",
+    "Desc": "If the target is blinded, this attack gets +10 damage. If the target has an accuracy reduction, gain 10 DR/1."
+  },  
+  "vividshine": {
+    "nom": "Vivid Shine",
+    "Level": "Excalibur 4",
+    "Frequency": "Twice/EoT",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "Buff/Swift",
+    "Target": "Self",
+    "Desc": "Until the end of Excalibur's next turn, whenever a foe misses an attack on Excalibur, you may use a Excalibur Standard attack as an interrupt action on them. Don't add ATK/MAG to attacks used then. (Only hit the target who missed the attack with multi-hit moves). Range, frequency and secondary effects (if any) still apply to the move."
+  },  
+  "holynova": {
+    "nom": "Holy Nova",
+    "Level": "Excalibur 5",
+    "Frequency": "Twice/EoT",
+    "Accuracy": "4",
+    "Roll": "2d8+10",
+    "Type": "Magical/Standard",
+    "Target": "All/Foes/Cone 1",
+    "Desc": "Targets hit with this attack get 5 Burn/2. If they already had an accuracy reduction, they gain Blindness/2 in addition to the burn."
+  },
+  "unleashdivinity": {
+    "nom": "Unleash Divinity",
+    "Level": "Excalibur 6",
+    "Frequency": "Once",
+    "Accuracy": "4",
+    "Roll": "3d8+15",
+    "Type": "Magical/Standard",
+    "Target": "Range/Foes/Burst 1",
+    "Desc": "If this attack hits, players in your Burst 1 can't leave that range until the end of your next turn. This attack gains +1 ACC for each player in range with an accuracy debuff or blindness. If they have both an accuracy debuff and blindness, you get +2ACC."
+  },
+  "exaltedpurge": {
+    "nom": "Exalted Purge",
+    "Level": "Excalibur 7",
+    "Frequency": "Once",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "Magical/Full",
+    "Target": "Self",
+    "Desc": "For 3 turns Excalibur's Glorious Scabbard passive will now parry, block, and inflict -2 ACC on foes who damage it for more than 40 damage. The accuracy debuff cannot be removed or suppressed."
+  },
+  "slurp": {
+    "nom": "Slurp",
+    "Level": "Gelatinous Cube 1",
+    "Frequency": "Passive",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "-/-",
+    "Target": "-/-/-",
+    "Desc": "If the Gelatinous Cube is attacked, if the attack misses, it eats one of the attacker's items (randomly chosen which one, eat their only item if they only have 1), and healing 20 hitpoints. This ability cannot activate if the target has no items. The gelatinous cube is also immune to the effects of sticky tiles, and gains +1 MP upon it's first time reaching 75%, 50%, and 25% hp."
+  },
+  "recycle": {
+    "nom": "Recycle",
+    "Level": "Gelatinous Cube 1",
+    "Frequency": "Passive",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "-/-",
+    "Target": "-/-/-",
+    "Desc": "You have the effects of each Passive item you've eaten. You may use the effects of Active item's you've eaten."
+  },
+  "fortify": {
+    "nom": "Fortify",
+    "Level": "Gelatinous Cube 1",
+    "Frequency": "Once",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "Buff/Swift",
+    "Target": "Self",
+    "Desc": "The user gains permanent DR equal to the number of items it has eaten so far times 2. (Max of 6). This DR cannot be removed or ignored by any effect."
+  },  
+  "slipperyslide": {
+    "nom": "Slippery Slide",
+    "Level": "Gelatinous Cube 1",
+    "Frequency": "Passive",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "-/-",
+    "Target": "-/-/-",
+    "Desc": "When dashing, the Gelatinous Cube may move through players and does not trigger AoO."
+  },
+  "pseudopod": {
+    "nom": "Pseudopod",
+    "Level": "Gelatinous Cube 1",
+    "Frequency": "OaT",
+    "Accuracy": "2",
+    "Roll": "2d10+8",
+    "Type": "Magical/Standard",
+    "Target": "One/Foe/Range: 5",
+    "Desc": "Root the target for one turn on an accuracy roll of 14+."
+  },
+  "corrosiveslam": {
+    "nom": "Corrosive Slam",
+    "Level": "Gelatinous Cube 2",
+    "Frequency": "OaT",
+    "Accuracy": "3",
+    "Roll": "3d8+6",
+    "Type": "Physical/Standard",
+    "Target": "One/Foe/Melee",
+    "Desc": "Inflicts the target with 5 Poison/1 on hit. If the target is rooted, inflict them with 10 Poison/1 instead."
+  },
+  "goopy": {
+    "nom": "Goopy",
+    "Level": "Gelatinous Cube 3",
+    "Frequency": "Passive",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "-/-",
+    "Target": "Self/Foes",
+    "Desc": "Whenever a player or the Gelatinous Cube is damaged, the tile they are standing on becomes sticky. If a critical hit occurs, all non-Stop tiles in a cardinal direction also become sticky. The critical hit bonus does not occur with the cube's multi-target moves."
+  },
+  "splatter": {
+    "nom": "Splatter",
+    "Level": "Gelatinous Cube 3",
+    "Frequency": "E2T",
+    "Accuracy": "4",
+    "Roll": "2d8+10",
+    "Type": "Magical/Standard",
+    "Target": "Range/Foes/Burst: 1",
+    "Desc": "The user must pay 10 HP to use this move. All targets hit have their accuracy reduced by 2 until the Gelatinous Cube's next turn."
+  },
+  "chargedstrike": {
+    "nom": "Charged Strike",
+    "Level": "Gelatinous Cube 4",
+    "Frequency": "Twice",
+    "Accuracy": "3",
+    "Roll": "2d10+12",
+    "Type": "Physical/Standard",
+    "Target": "One/Foe/Range: 2",
+    "Desc": "If the Gelatinous Cube is standing on a sticky tile, gain +1 die on this attack. Gain another extra die if the target is standing on a sticky tile. Consume all sticky tiles used for dealing extra damage in this attack, and this attack does not activate Goopy unless a critical hit occurs. In the case of a critical hit, the extra dice are added after doubling the dice of the main attack."
+  },
+  "overload": {
+    "nom": "Overload",
+    "Level": "Gelatinous Cube 5",
+    "Frequency": "Twice/EoT",
+    "Accuracy": "-",
+    "Roll": "-",
+    "Type": "Swift",
+    "Target": "Self/Burst: 1",
+    "Desc": "Consume each Sticky Tile in Burst 1. For every two tiles consumed this way, gain 1 PE/ME (max of 3) for one turn, and debuff players in Burst 1 with -1PE/ME."
+  },  
+  "mixshot": {
+    "nom": "Mix Shot",
+    "Level": "Gelatinous Cube 6",
+    "Frequency": "Once",
+    "Accuracy": "3",
+    "Roll": "3d8+10",
+    "Type": "Magical/Standard",
+    "Target": "One/Foe/Range: 4",
+    "Desc": "If the user has consumed at least 3 sticky tiles and at least one item, this attack inflicts stun. (Any move that says it consumes sticky tiles counts for this, any item eaten (whether or not it has been used for fortify) also counts for this)."
+  },
+  "goostorm": {
+    "nom": "Goo Storm",
+    "Level": "Gelatinous Cube 6",
+    "Frequency": "Twice/EoT",
+    "Accuracy": "4",
+    "Roll": "2d10+8",
+    "Type": "Magical/Standard",
+    "Target": "Range/Foe(s)/Burst: 2",
+    "Desc": "This attack consumes up to 5 sticky tiles within burst 2 of the user, gaining additional rolls equal to the number of sticky tiles consumed. Each roll may target only one opponent in burst 2. Only add MAG to the first hit."
+  },
+  "engulf": {
+    "nom": "Engulf",
+    "Level": "Gelatinous Cube 7",
+    "Frequency": "Once",
+    "Accuracy": "5",
+    "Roll": "4d10+6",
+    "Type": "Physical/Standard",
+    "Target": "One/Foe/Melee",
+    "Desc": "The target is stunned unsupressably and moved into the Cube's position. While the player is inside the cube, they take 2d10 damage at the start of the Cube's turn. The player is released at the start of the Cube's turn 2 turn from when this move was used, or when the Cube sustains 60 or more damage from a single attack. When the player is released, the target is put in a random unoccupied tile adjacent tile, and that tile in each tile in a cardinal direction of that becomes Sticky."
+  }
+}

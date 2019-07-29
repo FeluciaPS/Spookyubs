@@ -12,20 +12,6 @@ try {
 let events = require('events');
 global.bot = new events.EventEmitter();
 
-// Globals
-global.FS = require('fs');
-global.colors = require('colors');
-global.logger = require('./logger.js');
-global.Parse = require('./parser.js');
-global.Rooms = require('./Room.js');
-global.Users = require('./User.js');
-global.Tournament = require('./Tournament.js');
-global.Commands = require('./commands.js');
-global.Utils = require('./utils.js');
-global.toId = Utils.toId;
-global.Send = Utils.send;
-global.Sendpm = Utils.sendpm;
-
 // Config
 try {
     global.Config = require('./config.js');
@@ -34,6 +20,22 @@ try {
     logger.emit('error', 'Config.js doesn\'t exist. Cloning from config-example.js...')
     FS.copyFile('config-example.js', 'config.js', function() {});
 }
+
+// Globals
+global.FS = require('fs');
+global.Utils = require('./utils.js');
+global.toId = Utils.toId;
+global.Send = Utils.send;
+global.Sendpm = Utils.sendpm;
+global.colors = require('colors');
+global.logger = require('./logger.js');
+global.Parse = require('./parser.js');
+global.Rooms = require('./Room.js');
+global.Users = require('./User.js');
+global.Players = require('./Player.js');
+global.Games = require('./Game.js');
+global.Tournament = require('./Tournament.js');
+global.Commands = require('./commands.js');
 
 // Connect
 let psurl = "ws://sim.smogon.com:8000/showdown/websocket";
@@ -63,6 +65,7 @@ let files = {
 };
 
 bot.on('reload', (file, room) => {
+    if (!file) file = 'commands';
     let all = file === "all";
     if (file === "parser" || all) {
         let events = bot.eventNames();
@@ -77,6 +80,6 @@ bot.on('reload', (file, room) => {
         let dt = files[f];
         eval("delete require.cache[require.resolve('./" + dt[1] + "')];");
         eval(dt[0] + " = require('./" + dt[1] + "');");
-        Send(room, f + " reloaded.");
+        room.send(f + " reloaded.");
     }
 });

@@ -1,0 +1,21 @@
+{
+    "nom": "Axe",
+    "branch": "heavy",
+    "stats": {
+        "hp": "35,40,45,50,50,55,60",
+        "mag": "1+1",
+        "atk": "9,10,12,13,14,16,17",
+        "md": "0+1",
+        "pd": "0+1",
+        "mp": "1"
+    },
+    "moves": {
+        "1": ["Bloodlust", "Feral Chop"], 
+        "2": "Power Swing",
+        "3": "Brutal Strike",
+        "4": "Chain Axe",
+        "5": "Sever",
+        "6": "Gash",
+        "7": "Amped Strike"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "nom": "Runes",
+    "branch": "regal",
+    "stats": {
+        "hp": "35+5",
+        "mag": "6+1",
+        "atk": "0+1",
+        "md": "9+1",
+        "pd": "5+1",
+        "mp": "3"
+    },
+    "moves": {
+        "1": ["Duality", "Altered Morality"],
+        "2": "Ways to Rule",
+        "3": "Corrupted Ambition",
+        "4": "Honor's Reward",
+        "5": "Emend",
+        "6": "Beyond Good and Evil",
+        "7": "Last Resort"
+    }
+}

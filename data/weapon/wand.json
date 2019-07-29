@@ -1,0 +1,21 @@
+{
+    "nom": "Wand",
+    "branch": "sorcerer",
+    "stats": {
+        "hp": "30,35,40,45,45,50,55",
+        "mag": "8,9,10,12,13,14,15",
+        "atk": "1+1",
+        "md": "0,1,2,3,4,5,5",
+        "pd": "0,1,2,3,4,5,5",
+        "mp": "1"
+    },
+    "moves": {
+        "1": "mag Shot",
+        "2": ["Arcane Soul", "Occult Blast"],
+        "3": "Energize",
+        "4": "Eldritch Shot",
+        "5": "Cyclone",
+        "6": "Blizzard",
+        "7": "Cataclysm"
+    }
+}

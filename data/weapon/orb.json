@@ -1,0 +1,21 @@
+{
+    "nom": "Orb",
+    "branch": "clairvoyant",
+    "stats": {
+        "hp": "30+5",
+        "mag": "7+1",
+        "atk": "1+1",
+        "md": "4+2",
+        "pd": "2,2,3,3,4,4,5",
+        "mp": "1"
+    },
+    "moves": {
+        "1": "Echo Burst", 
+        "2": "Spirit Shackle",
+        "3": "Scry",
+        "4": "Omen",
+        "5": ["Requite", "Foresight"],
+        "6": "Corruption",
+        "7": "Prophecy"
+    }
+}

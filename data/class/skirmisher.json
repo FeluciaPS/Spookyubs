@@ -1,0 +1,21 @@
+{
+    "nom": "Skirmisher",
+    "alts": ["Skirm"],
+    "stats": {
+        "hp": "40,45,50,50,55,55,60",
+        "mag": "3,4,5,6,6,7,8",
+        "atk": "3,4,5,6,6,7,8",
+        "md": "7,9,11,13,14,15,16",
+        "pd": "7,9,11,13,14,15,16",
+        "mp": "4"
+    },
+    "moves": {
+        "1": "Quick Thinking", 
+        "2": "Glide", 
+        "3": "Calculated Strike",
+        "4": "Stealth", 
+        "5": "Outmaneuver",
+        "6": "Tunneling", 
+        "7": "Time's Edge"
+    }
+}

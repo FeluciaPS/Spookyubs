@@ -1,0 +1,21 @@
+{
+    "nom": "PyroKinetic",
+    "alts": ["Pyro"],
+    "stats": {
+        "hp": "40,40,45,45,50,50,55",
+        "mag": "5,6,7,8,8,9,10",
+        "atk": "5,6,7,8,8,9,10",
+        "md": "7,9,11,13,14,15,16",
+        "pd": "7,9,11,13,14,15,16",
+        "mp": "3"
+    },
+    "moves": {
+        "1": "Invoke: Fire", 
+        "2": "Comet", 
+        "3": "Ignition",
+        "4": "Potential Energy", 
+        "5": "Afterburn",
+        "6": "Inferno", 
+        "7": "Kinetic Energy"
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "nom": "Crossbow",
+    "alts": ["Cbow"],
+    "branch": "archer",
+    "stats": {
+        "hp": "40,45,50,50,55,60,65",
+        "mag": "1+1",
+        "atk": "6,7,8,8,9,10,11",
+        "md": "6,7,8,9,11,13,14",
+        "pd": "6,7,8,9,11,12,13",
+        "mp": "1"
+    },
+    "moves": {
+        "1": ["Hunter's Mark", "Arrow Flurry"], 
+        "2": "Arrow Net", 
+        "3": "Shadow Quiver", 
+        "4": "Ice Arrows", 
+        "5": "Pierce",
+        "6": "Explosive Shot", 
+        "7": "Ballista"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "nom": "Lance",
+    "branch": "heavy",
+    "stats": {
+        "hp": "35+5",
+        "mag": "0",
+        "atk": "7+1",
+        "md": "3,3,4,4,5,5,5",
+        "pd": "9+1",
+        "mp": "1"
+    },
+    "moves": {
+        "1": "Impale", 
+        "2": "Pulverize", 
+        "3": "Head Stack",
+        "4": "Precise Jab", 
+        "5": "Echelon",
+        "6": "Piercing Blow", 
+        "7": "Impulse Skewer"
+    }
+}

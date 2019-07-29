@@ -1,0 +1,21 @@
+{
+    "nom": "Hammer",
+    "branch": "heavy",
+    "stats": {
+        "hp": "35+5",
+        "mag": "1+1",
+        "atk": "8+1",
+        "md": "2,3,4,5,5,6,6",
+        "pd": "4+2",
+        "mp": "1"
+    },
+    "moves": {
+        "1": "Cyclone Sweep", 
+        "2": "Storm Strike", 
+        "3": "Hammerang",
+        "4": "Crush", 
+        "5": "Earth Render",
+        "6": "Lagging Spin", 
+        "7": "Thunder Strike"
+    }
+}

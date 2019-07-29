@@ -1,0 +1,22 @@
+{
+    "nom": "Gladius",
+    "alts": ["Glad"],
+    "branch": "dueler",
+    "stats": {
+        "hp": "35+5",
+        "mag": "0",
+        "atk": "6,7,8,9,10,12,13",
+        "md": "4+1",
+        "pd": "9+1",
+        "mp": "2"
+    },
+    "moves": {
+        "1": ["Berserk", "Cleave"], 
+        "2": "Sunder", 
+        "3": "Swipe", 
+        "4": "Savage Blow", 
+        "5": "Bone Sword",
+        "6": "Adrenaline", 
+        "7": "Etruia"
+    }
+}

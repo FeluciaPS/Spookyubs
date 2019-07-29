@@ -1,0 +1,21 @@
+{
+    "nom": "CryoKinetic",
+    "alts": ["Cryo"],
+    "stats": {
+        "hp": "45,50,50,55,55,60,65",
+        "mag": "3,4,4,5,6,6,7",
+        "atk": "3,4,4,5,6,6,7",
+        "md": "9+2",
+        "pd": "9+2",
+        "mp": "3"
+    },
+    "moves": {
+        "1": "Invoke: Ice", 
+        "2": "Frozen Heart", 
+        "3": "Mist",
+        "4": "Subzero", 
+        "5": "Ice Wall",
+        "6": "Frost Barrier", 
+        "7": "Absolute Zero"
+    }
+}

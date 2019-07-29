@@ -34,6 +34,7 @@ exports.sendpm = function(user, message) {
 };
 
 exports.toId = function(ting) {
+    if (!ting) return ting;
 	return ('' + ting).toLowerCase().replace(/[^a-z0-9]+/g, '');
 };
 
@@ -86,4 +87,19 @@ exports.clean = function(thing) {
 String.prototype.capitalize = function() {
     let str = this.toLowerCase();
     return str.charAt(0).toUpperCase() + str.substring(1);
+}
+
+exports.natList = function(arr) {
+    if (arr.length <= 1) return arr.join(", ");
+    let copy = Object.assign([], arr);
+    let last = copy.pop();
+    return copy.join(", ") + " and " + last;
+}
+
+exports.statCalc = function(statstr, level) {
+    let stats = statstr.split(",");
+    if (stats.length > 1) return parseInt(stats[level - 1]);
+    stats = statstr.split("+");
+    if (stats.length === 1) return parseInt(statstr);
+    return parseInt(stats[0]) + ((level - 1) * parseInt(stats[1]));
 }

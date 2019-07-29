@@ -1,0 +1,22 @@
+{
+    "nom": "Tarot Cards",
+    "alts": ["Cards"],
+    "branch": "clairvoyant",
+    "stats": {
+        "hp": "35+5",
+        "mag": "5+1",
+        "atk": "0,1,1,2,3,3,4",
+        "md": "3,4,5,6,7,9,10",
+        "pd": "3+1",
+        "mp": "2"
+    },
+    "moves": {
+        "1": "Discard",
+        "2": "Card Flip",
+        "3": "Hi-Lo",
+        "4": "Full House",
+        "5": "Roulette",
+        "6": "Gamble",
+        "7": "Stacked Deck"
+    }
+}

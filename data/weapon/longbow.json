@@ -1,0 +1,22 @@
+{
+    "nom": "Longbow",
+    "alts": ["lbow"],
+    "branch": "archer",
+    "stats": {
+        "hp": "30,35,40,45,45,50,55",
+        "mag": "1,1,1,1,2,2,2",
+        "atk": "6+1",
+        "md": "0+1",
+        "pd": "0+1",
+        "mp": "1"
+    },
+    "moves": {
+        "1": ["Controlled Heartbeat", "Crimson Collage"], 
+        "2": "Chase Arrow",
+        "3": "Crippling Shot",
+        "4": "Scatter Shot",
+        "5": "Flaming Shot",
+        "6": "Squall Volley",
+        "7": "Snipe"
+    }
+}

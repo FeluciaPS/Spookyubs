@@ -1,0 +1,22 @@
+{
+    "nom": "Spellbook",
+    "alts": ["Book"],
+    "branch": "sorcerer",
+    "stats": {
+        "hp": "35,40,45,50,50,55,60",
+        "mag": "6,7,8,9,10,10,11",
+        "atk": "0",
+        "md": "13+2",
+        "pd": "0,1,2,3,4,5,5",
+        "mp": "1"
+    },
+    "moves": {
+        "1": "Fireball",
+        "2": "Hex",
+        "3": "Lightning",
+        "4": "Fog",
+        "5": "Faith",
+        "6": "Soul Drain",
+        "7": "Plague"
+    }
+}

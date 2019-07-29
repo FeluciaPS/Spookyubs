@@ -1,0 +1,22 @@
+{
+    "nom": "Talisman",
+    "alts": ["Tali", "sman"],
+    "branch": "regal",
+    "stats": {
+        "hp": "35+5",
+        "mag": "5,6,6,7,8,9,10",
+        "atk": "3,3,4,4,5,6,7",
+        "md": "9+1",
+        "pd": "9+1",
+        "mp": "2"
+    },
+    "moves": {
+        "1": "Solomon's Wisdom",
+        "2": "Purify",
+        "3": "Tempting Fate",
+        "4": "Absolution",
+        "5": ["Blessing of Kings", "Retribution"],
+        "6": "Karmic Sanction",
+        "7": "Echo of Light"
+    }
+}

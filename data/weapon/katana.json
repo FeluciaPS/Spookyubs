@@ -1,0 +1,22 @@
+{
+    "nom": "Katana",
+    "alts": ["tana"],
+    "branch": "dueler",
+    "stats": {
+        "hp": "40,45,50,55,55,60,65",
+        "mag": "0",
+        "atk": "5,6,7,8,8,9,10",
+        "md": "6+1",
+        "pd": "6+1",
+        "mp": "3"
+    },
+    "moves": {
+        "1": ["Fallen Blade", "Cursed Slice"], 
+        "2": "Ki Blade", 
+        "3": "Revenge",
+        "4": "Lotus Strike", 
+        "5": "Lunge",
+        "6": "Shadow Slash", 
+        "7": "Giant Slayer"
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "nom": "Solar Rod",
+    "alts": ["Rod", "Rof"],
+    "branch": "clairvoyant",
+    "stats": {
+        "hp": "30+5",
+        "mag": "8+1",
+        "atk": "0,0,0,1,1,2,2",
+        "md": "3+1",
+        "pd": "3+1",
+        "mp": "1"
+    },
+    "moves": {
+        "1": ["Solar System", "Sun Rays"],
+        "2": "Searing Shot",
+        "3": "Solar Recharge",
+        "4": "Pyroclasm",
+        "5": ["Pocket Dimension", "Radiant Dawn"],
+        "6": "Meteor Shower",
+        "7": "Supernova"
+    }
+}

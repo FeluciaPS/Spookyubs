@@ -1,0 +1,1294 @@
+{
+    "tauntball": {
+        "nom": "Taunt Ball",
+        "id": 1,
+        "class": "E",
+        "type": "Active",
+        "frequency": "Once/Free",
+        "boost": {},
+        "effect": "Pick a target in your range 5. If the target doesn't attack the user on their next full turn, they take 2d10+15 damage. This has an MR of 5 that ignores evasions.",
+        "price": "25 Gold",
+        "materials": {
+            "amber": 2,
+            "pearl": 2
+        }
+    },
+    "pushring": {
+        "nom": "Push Ring",
+        "id": 2,
+        "class": "E",
+        "type": "Active",
+        "frequency": "OaT/Swift",
+        "boost": {},
+        "effect": "Push any adjacent target one space away from you.",
+        "price": "25 Gold",
+        "materials": {
+            "topaz": 2,
+            "quartz": 2
+        }
+    },
+    "attackring": {
+        "nom": "Attack Ring",
+        "id": 3,
+        "class": "E",
+        "type": "Active",
+        "frequency": "Twice/Swift",
+        "boost": {},
+        "effect": "Deal 1d10+2 damage to a random target in the game (excluding the user). The damage does not benefit from user's stat bonus and cannot be influenced by outside sources.",
+        "price": "25 Gold",
+        "materials": {
+            "pearl": 2,
+            "topaz": 2
+        }
+    },
+    "switchring": {
+        "nom": "Switch Ring",
+        "id": 4,
+        "class": "E",
+        "type": "Active",
+        "frequency": "OaT/Swift",
+        "boost": {},
+        "effect": "Move any adjacent player to another space in your melee.",
+        "price": "25 Gold",
+        "materials": {
+            "quartz": 2,
+            "amber": 2
+        }
+    },
+    "fan": {
+        "nom": "Fan",
+        "id": 5,
+        "class": "D",
+        "type": "Active",
+        "frequency": "Twice/Free",
+        "boost": {},
+        "effect": "Push all enemies in Cone-3 range one space away from the user.",
+        "price": "50 Gold",
+        "materials": {
+            "topaz": 5
+        }
+    },
+    "blackbelt": {
+        "nom": "Black Belt",
+        "id": 6,
+        "class": "C",
+        "type": "Active",
+        "frequency": "Twice/Swift",
+        "boost": {},
+        "effect": "Increase your critical range by 2 for one turn.",
+        "price": "85 Gold",
+        "materials": {
+            "lapis": 2,
+            "emerald": 2,
+            "sapphire": 2,
+            "ruby": 2,
+            "amber": 8
+        }
+    },
+    "soulorb": {
+        "nom": "Soul Orb",
+        "id": 7,
+        "class": "C",
+        "type": "Active",
+        "frequency": "Trigger",
+        "boost": {},
+        "effect": "Before each attack, you may choose to sacrifice 2 HP for +2 Damage (only applies to first hit if multihit). You may only go up to 4 HP/Damage with this per attack. Lose all Damage buffs from this item at the end of your turn.",
+        "price": "85 Gold",
+        "materials": {
+            "onyx": 4,
+            "sapphire": 4,
+            "lapis": 2,
+            "emerald": 2
+        }
+    },
+    "bullshitring": {
+        "nom": "Bullshit Ring",
+        "id": 8,
+        "class": "C",
+        "type": "Active",
+        "frequency": "Twice/Swift",
+        "boost": {},
+        "effect": "Increase the accuracy range of your attacks' secondary effects by 2 for one turn.",
+        "price": "85 Gold",
+        "materials": {
+            "onyx": 3,
+            "sapphire": 3,
+            "ruby": 3
+        }
+    },
+    "bsring": "==bullshitring",
+    "wingedcape": {
+        "nom": "Winged Cape",
+        "id": 9,
+        "class": "C",
+        "type": "Active",
+        "frequency": "Once/Free",
+        "boost": {},
+        "effect": "Increase the range of melee or Range 2/3 attacks by 1 until the end of your turn.",
+        "price": "85 Gold",
+        "materials": {
+            "onyx": 5,
+            "quartz": 2,
+            "pearl": 2
+        }
+    },
+    "berserkring": {
+        "nom": "Berserk Ring",
+        "id": 10,
+        "class": "B",
+        "type": "Active",
+        "frequency": "Once/Swift",
+        "boost": {},
+        "effect": "You may choose to gain +10 ATK or MAG for one turn. You will be sealed for the remainder of the turn. This seal cannot be removed by the effects of White Cape.",
+        "price": "145 Gold",
+        "materials": {
+            "emerald": 2,
+            "amber": 6
+        }
+    },
+    "20sideddie": {
+        "nom": "20-Sided Die",
+        "id": 11,
+        "class": "B",
+        "type": "Active",
+        "frequency": "Twice/Interrupt",
+        "boost": {},
+        "effect": "The user may choose to roll another accuracy roll for secondary effects after the first accuracy roll of your moves.",
+        "price": "145 Gold",
+        "materials": {
+            "onyx": 4,
+            "ruby": 4,
+            "sapphire": 4
+        }
+    },
+    "malevolentring": {
+        "nom": "Malevolent Ring",
+        "id": 12,
+        "class": "B",
+        "type": "Active",
+        "frequency": "Twice/Free",
+        "boost": {},
+        "effect": "For one turn, add +5 burn/poison/bleed damage to the next ability of yours that inflicts one of these statuses, to a maximum of 10 status damage.",
+        "price": "145 Gold",
+        "materials": {
+            "lapis": 2,
+            "pearl": 6
+        }
+    },
+    "malring": "==malevolentring",
+    "magicmirror": {
+        "nom": "Magic Mirror",
+        "id": 13,
+        "class": "A",
+        "type": "Active",
+        "frequency": "Twice/Standard",
+        "boost": {},
+        "effect": "You may use any weapon skill that is a Standard OaT/EoT (not including Twice/EoT) move of a player in range 3. That move's range and frequency still apply.",
+        "price": "215 Gold",
+        "materials": {
+            "lapis": 2,
+            "emerald": 2,
+            "sapphire": 2,
+            "ruby": 2,
+            "pearl": 8
+        }
+    },
+    "mm": "==magicmirror",
+    "mirror": "==magicmirror",
+    "neutralring": {
+        "nom": "Neutral Ring",
+        "id": 14,
+        "class": "A",
+        "type": "Active",
+        "frequency": "Once/Interrupt",
+        "boost": {},
+        "effect": "Use this item to cancel out an attack's secondary effect. This doesn't affect moves with X in their base roll (e.g. Head Stack, Hi-Lo, etc.).  You may not target yourself with this item. See the Glossary section titled Dazing Shot for specific rulings.",
+        "price": "215 Gold",
+        "materials": {
+            "lapis": 2,
+            "emerald": 2,
+            "onyx": 4,
+            "amber": 4,
+            "pearl": 4
+        }
+    },
+    "nring": "==neutralring",
+    "bloodring": {
+        "nom": "Blood Ring",
+        "id": 15,
+        "class": "S",
+        "type": "Active",
+        "frequency": "Twice/E2T",
+        "boost": {},
+        "effect": "You may inflict a Basic Attack (P/M) on your opponent. This attack only heals half damage dealt, but deals the full amount of damage. The damage cannot be affected by negative outside sources.",
+        "price": "350 Gold",
+        "materials": {
+            "diamond": 3,
+            "emerald": 3,
+            "ruby": 4,
+            "amber": 5
+        }
+    },
+    "illusionmask": {
+        "nom": "Illusion Mask",
+        "id": 16,
+        "class": "S",
+        "type": "Active",
+        "frequency": "Once/Swift",
+        "boost": {},
+        "effect": "This attack is considered \"Status\" and has MR 5. Confuses all enemies in Burst-1 range of the user for 2 turns.",
+        "price": "350 Gold",
+        "materials": {
+            "diamond": 3,
+            "onyx": 5,
+            "quartz": 5,
+            "pearl": 5
+        }
+    },
+    "crystalhourglass": {
+        "nom": "Crystal Hourglass",
+        "id": 17,
+        "class": "S+",
+        "type": "Active",
+        "frequency": "Once/Interrupt",
+        "boost": {},
+        "effect": "Use this item after any accuracy roll to reroll it. The new accuracy roll has -1 acc. An accuracy roll may only be rerolled once.",
+        "price": "500 Gold",
+        "materials": {
+            "diamond": 5,
+            "emerald": 4,
+            "lapis": 4,
+            "ruby": 3,
+            "sapphire": 3,
+            "onyx": 3,
+            "amber": 2,
+            "quartz": 2,
+            "topaz": 2,
+            "pearl": 2
+        }
+    },
+    "ch": "==crystalhourglass",
+    "fortunecoin": {
+        "nom": "Fortune Coin",
+        "id": 18,
+        "class": "A",
+        "type": "Active",
+        "frequency": "Twice/Standard",
+        "boost": {},
+        "effect": "Next time you attack, roll a D20 and add the result of this roll to your damage.",
+        "price": "215 Gold",
+        "materials": {
+            "lapis": 2,
+            "emerald": 2,
+            "onyx": 2,
+            "quartz": 4
+        }
+    },
+    "fcoin": "==fortunecoin",
+    "nightmaregrimoire": {
+        "nom": "Nightmare Grimoire",
+        "id": 19,
+        "class": "A",
+        "type": "Active",
+        "frequency": "Once/Swift",
+        "boost": {
+            "mag": -3,
+            "atk": -3
+        },
+        "effect": "Target an opponent in range 4. Select one of the target's active abilities. The next time the target uses that ability the opponent is sealed on their next turn.",
+        "price": "215 Gold",
+        "materials": {
+            "lapis": 3,
+            "ruby": 3,
+            "sapphire": 3
+        }
+    },
+    "ng": "==nightmaregrimoire",
+    "kitesail": {
+        "nom": "Kitesail",
+        "id": 20,
+        "class": "B",
+        "type": "Active",
+        "frequency": "OaT/Movement",
+        "boost": {},
+        "effect": "The user may move up to 2 spaces in any direction, including over any for and any tile.",
+        "price": "145 Gold",
+        "materials": {
+            "lapis": 2,
+            "amber": 6
+        }
+    },
+    "boomerang": {
+        "nom": "Boomerang",
+        "id": 21,
+        "class": "B",
+        "type": "Active",
+        "frequency": "E2T/Standard",
+        "boost": {},
+        "effect": "Deal damage to all enemies in the user's Line-5. This has a MR 5 (ignore evasions and DR) and deals 2d10+(highest stat bonus ATK or MAG) damage.",
+        "price": "145 Gold",
+        "materials": {
+            "lapis": 2,
+            "onyx": 2,
+            "ruby": 2,
+            "amber": 4
+        }
+    },
+    "bloodlustring": {
+        "nom": "Bloodlust Ring",
+        "id": 22,
+        "class": "A",
+        "type": "Active",
+        "frequency": "OaT/Trigger",
+        "boost": {},
+        "effect": "After killing a player, roll 3d6+3 and do not add your ATK/MAG stat. Heal yourself equal to the roll.",
+        "price": "215 Gold",
+        "materials": {
+            "lapis": 3,
+            "emerald": 3,
+            "onyx": 4,
+            "sapphire": 4
+        }
+    },
+    "blring": "==bloodlustring",
+    "fractureddice": {
+        "nom": "Fractured Dice",
+        "id": 23,
+        "class": "S+",
+        "type": "Active",
+        "frequency": "Twice/EoT/Swift",
+        "boost": {
+            "hp": -7
+        },
+        "effect": "Use this item before your next accuracy roll, for that move instead of rolling a 20, roll a 25. If the roll is greater than or equal to your current crit range, that move critical hits.",
+        "price": "500 Gold",
+        "materials": {
+            "diamond": 5,
+            "emerald": 5,
+            "lapis": 3,
+            "ruby": 2,
+            "sapphire": 2,
+            "onyx": 2,
+            "amber": 10,
+            "quartz": 3,
+            "topaz": 3,
+            "pearl": 10
+        }
+    },
+    "fracdice": "==fractureddice",
+    "fd": "==fractureddice",
+    "twinshadows": {
+        "nom": "Twin Shadows",
+        "id": 24,
+        "class": "S+",
+        "type": "Active",
+        "frequency": "Every Turn/Trigger",
+        "boost": {},
+        "effect": "At the start of the game, choose between: Phy DR, Mag DR, Generic DR. At the start of your turn, gain +2 Generic DR, max 4, or +3 Phy/Mag DR, max 6. Activation: Convert DR from this item into respective buff: +1 DMG per DR (Phy/Mag)/+1 acc per 2 DR (Generic). Lose these buffs at the end of your turn.",
+        "price": "500 Gold",
+        "materials": {
+            "diamond": 5,
+            "emerald": 3,
+            "lapis": 5,
+            "ruby": 2,
+            "sapphire": 2,
+            "onyx": 4,
+            "amber": 2,
+            "quartz": 10,
+            "topaz": 10,
+            "pearl": 2
+        }
+    },
+    "ts": "==twinshadows",
+    "sunblade": {
+        "nom": "Sunblade",
+        "id": 46,
+        "class": "A",
+        "type": "Passive",
+        "frequency": "-",
+        "boost": {},
+        "effect": "Every other turn (starting Turn 1), your attacks debuff the target for -1 ATK/MAG and -5 DR for your attacks until you die. If your attack is affected by Moonblade, the target is instead debuffed for -2 ATK/MAG, and -10 DR for your attacks. A foe cannot receive debuffs from this item more than once.",
+        "price": "215 Gold",
+        "materials": {
+            "emerald": 3,
+            "onyx": 4,
+            "ruby": 4,
+            "topaz": 5,
+            "amber": 5
+        }
+    },
+    "sunbad": "==sunblade",
+    "lastwill": {
+        "nom": "Last Will",
+        "id": 26,
+        "class": "B",
+        "type": "Active",
+        "frequency": "Once/Interrupt",
+        "boost": {},
+        "effect": "When you die, you may perform a basic attack on one target in your Melee.",
+        "price": "145 Gold",
+        "materials": {
+            "onyx": 3,
+            "quartz": 10
+        }
+    },
+    "spiritjar": {
+        "nom": "Spirit Jar",
+        "id": 27,
+        "class": "A",
+        "type": "Active",
+        "frequency": "Once/Swift",
+        "boost": {},
+        "effect": "Increase your next accuracy roll by the amount of players that have died in this game.",
+        "price": "215 Gold",
+        "materials": {
+            "emerald": 1,
+            "ruby": 3,
+            "sapphire": 1,
+            "amber": 5,
+            "quartz": 4
+        }
+    },
+    "natureswrath": {
+        "nom": "Nature's Wrath",
+        "id": 28,
+        "class": "C",
+        "type": "Active",
+        "frequency": "Twice/Swift",
+        "boost": {},
+        "effect": "Target any player (including self) in your Range-3. Apply a random ND effect to the target. This effect uses Item priority, not ND priority.",
+        "price": "85",
+        "materials": {
+        	"onyx": 2,
+        	"ruby": 1,
+        	"quartz": 3
+        }
+    },
+    "ndmemes": "==natureswrath",
+    "deitysthunder": {
+        "nom": "Deity's Thunder",
+        "id": 29,
+        "class": "A",
+        "type": "Active",
+        "frequency": "Once/Swift",
+        "boost": {},
+        "effect": "The user's next successful single-target attack paralyzes the target for one turn.",
+        "price": "215",
+        "materials": {
+            "lapis": 2,
+            "onyx": 2,
+            "ruby": 3,
+            "topaz": 3
+        }
+    },
+    "death": "==deitysthunder",
+    "pocketsizedblackhole": {
+        "nom": "Pocket-Sized Black Hole",
+        "id": 30,
+        "class": "S++",
+        "type": "Active",
+        "frequency": "EoT/Swift",
+        "boost": {},
+        "effect": "Pull any player in your Range 4 into your melee range. The tile you pull them onto cannot be a lava tile.",
+        "price": "-",
+        "materials": {},
+        "achievement": "Zodiac Mastery"
+    },
+    "psbh": "==pocketsizedblackhole",
+    "present": {
+        "nom": "Present",
+        "id": 31,
+        "class": "B",
+        "type": "Active",
+        "frequency": "Once/Swift",
+        "boost": {},
+        "effect": "Target one foe in melee range. Roll a d4. Deal damage based on your roll. 1: 5 damage. 2: 10 damage, 3: 15 damage, 4: Heal the target for 20 health.",
+        "price": "145 Gold",
+        "materials": {
+            "topaz": 10,
+            "sapphire": 5,
+            "ruby": 1
+        }
+    },
+    "scrollofsecrets": {
+        "nom": "Scroll of Secrets",
+        "id": 32,
+        "class": "A",
+        "type": "Active",
+        "frequency": "Twice/E2T/Swift",
+        "boost": {},
+        "effect": "For two turns, gain a Level 1-2 Class Passive you don't already have.",
+        "price": "215 Gold",
+        "materials": {
+            "topaz": 4,
+            "quartz": 5,
+            "ruby": 3,
+            "lapis": 1
+        }
+    },
+    "sos": "==scrollofsecrets",
+    "amberbracers": {
+        "nom": "Amber Bracers",
+        "id": 1,
+        "class": "E",
+        "type": "Passive",
+        "frequency": "-",
+        "boost": {
+            "atk": 1
+        },
+        "effect": "-",
+        "price": "25 Gold",
+        "materials": {
+            "amber": 3
+        }
+    },
+    "topazamulets": {
+        "nom": "Topaz Amulets",
+        "id": 2,
+        "class": "E",
+        "type": "Passive",
+        "frequency": "-",
+        "boost": {
+            "mag": 1
+        },
+        "effect": "-",
+        "price": "25 Gold",
+        "materials": {
+            "topaz": 3
+        }
+    },
+    "geositem": "==topazamulets",
+    "quartzring": {
+        "nom": "Quartz Ring",
+        "id": 3,
+        "class": "E",
+        "type": "Passive",
+        "frequency": "-",
+        "boost": {
+            "pd": 5
+        },
+        "effect": "-",
+        "price": "25 Gold",
+        "materials": {
+            "quartz": 3
+        }
+    },
+    "pearlnecklace": {
+        "nom": "Pearl Necklace",
+        "id": 4,
+        "class": "E",
+        "type": "Passive",
+        "frequency": "-",
+        "boost": {
+            "md": 5
+        },
+        "effect": "-",
+        "price": "25 Gold",
+        "materials": {
+            "pearl": 3
+        }
+    },
+    "ambergauntlet": {
+        "nom": "Amber Gauntlet",
+        "id": 5,
+        "class": "C",
+        "type": "Passive",
+        "frequency": "-",
+        "boost": {
+            "mag": 3,
+            "atk": 3,
+            "hp": -8
+        },
+        "effect": "-",
+        "price": "85 Gold",
+        "materials": {
+            "amber": 3,
+            "topaz": 3,
+            "onyx": 2
+        }
+    },
+    "ag": "==ambergauntlet",
+    "quartzbracers": {
+        "nom": "Quartz Bracers",
+        "id": 6,
+        "class": "D",
+        "type": "Passive",
+        "frequency": "-",
+        "boost": {
+            "atk": 2,
+            "hp": -5
+        },
+        "effect": "-",
+        "price": "50 Gold",
+        "materials": {
+            "quartz": 5
+        }
+    },
+    "pearlamulets": {
+        "nom": "Pearl Amulets",
+        "id": 7,
+        "class": "D",
+        "type": "Passive",
+        "frequency": "-",
+        "boost": {
+            "mag": 2,
+            "hp": -5
+        },
+        "effect": "-",
+        "price": "50 Gold",
+        "materials": {
+            "pearl": 5
+        }
+    },
+    "battlebangle": {
+        "nom": "Battle Bangle",
+        "id": 8,
+        "class": "D",
+        "type": "Passive",
+        "frequency": "-",
+        "boost": {
+            "hp": 5
+        },
+        "effect": "-",
+        "price": "50 Gold",
+        "materials": {
+            "quartz": 3,
+            "pearl": 3
+        }
+    },
+    "firecharm": {
+        "nom": "Fire Charm",
+        "id": 9,
+        "class": "D",
+        "type": "Passive",
+        "frequency": "-",
+        "boost": {},
+        "effect": "The user is immune to Burn (except Burn inflicted from Star Rod). If the user would have been inflicted with Burn, the opponent that inflicted the suppressible status loses 2 accuracy for as long as the status would last.",
+        "price": "50 Gold",
+        "materials": {
+            "topaz": 3,
+            "quartz": 3
+        }
+    },
+    "starpendant": {
+        "nom": "Star Pendant",
+        "id": 10,
+        "class": "D",
+        "type": "Passive",
+        "frequency": "-",
+        "boost": {},
+        "effect": "The user is immune to Poison. If the user would have been inflicted with Poison, the opponent that inflicted the suppressible status loses 2 evasions for as long as the status would last.",
+        "price": "50 Gold",
+        "materials": {
+            "pearl": 3,
+            "amber": 3
+        }
+    },
+    "bandage": {
+        "nom": "Bandage",
+        "id": 11,
+        "class": "D",
+        "type": "Passive",
+        "frequency": "-",
+        "boost": {},
+        "effect": "The user is immune to Bleed (except Bleed inflicted from Claws). If the user would have been inflicted with Bleed, the opponent that inflicted the suppressible status loses 5 damage for as long as the status would last.",
+        "price": "50 Gold",
+        "materials": {
+            "amber": 3,
+            "topaz": 3
+        }
+    },
+    "forcegauntlet": {
+        "nom": "Force Gauntlet",
+        "id": 12,
+        "class": "C",
+        "type": "Passive",
+        "frequency": "-",
+        "boost": {},
+        "effect": "All of the user's attacks have a Push 1 effect. This does not apply to moves that naturally have push effects. This does not apply to global moves.",
+        "price": "85 Gold",
+        "materials": {
+            "amber": 5,
+            "ruby": 5
+        }
+    },
+    "unawarering": {
+        "nom": "Unaware Ring",
+        "id": 13,
+        "class": "A",
+        "type": "Passive",
+        "frequency": "-",
+        "boost": {},
+        "effect": "Attacks ignore any Damage Resistance the target(s) has as well as any negative damage factors (excluding damage multipliers). Cannot suppress opponent's class abilities.",
+        "price": "215 Gold",
+        "materials": {
+            "emerald": 1,
+            "sapphire": 5,
+            "topaz": 5
+        }
+    },
+    "onyxbangle": {
+        "nom": "Onyx Bangle",
+        "id": 14,
+        "class": "C",
+        "type": "Passive",
+        "frequency": "-",
+        "boost": {
+            "hp": 15,
+            "atk": -3,
+            "mag": -3
+        },
+        "effect": "-",
+        "price": "85 Gold",
+        "materials": {
+            "onyx": 4,
+            "quartz": 3,
+            "pearl": 3
+        }
+    },
+    "glidering": {
+        "nom": "Glide Ring",
+        "id": 15,
+        "class": "D",
+        "type": "Passive",
+        "frequency": "-",
+        "boost": {},
+        "effect": "If the user is inflicted with Slow or Paralysis, the user is immune to the effects of Slow.",
+        "price": "50 Gold",
+        "materials": {
+            "topaz": 3,
+            "pearl": 3
+        }
+    },
+    "focuslens": {
+        "nom": "Focus Lens",
+        "id": 16,
+        "class": "B",
+        "type": "Passive",
+        "frequency": "-",
+        "boost": {},
+        "effect": "All of the user's attacks classified as Melee (in the moves description) gain +1 accuracy.",
+        "price": "145 Gold",
+        "materials": {
+            "emerald": 2,
+            "quartz": 6
+        }
+    },
+    "flens": "==focuslens",
+    "whitecape": {
+        "nom": "White Cape",
+        "id": 17,
+        "class": "B",
+        "type": "Passive",
+        "frequency": "-",
+        "boost": {
+            "hp": 3
+        },
+        "effect": "If the user is inflicted with Seal, the user is immune to the effects of Seal.",
+        "price": "145 Gold",
+        "materials": {
+            "lapis": 2,
+            "sapphire": 3
+        }
+    },
+    "peacering": {
+        "nom": "Peace Ring",
+        "id": 18,
+        "class": "B",
+        "type": "Passive",
+        "frequency": "-",
+        "boost": {
+            "hp": 3
+        },
+        "effect": "If the user is inflicted with Confusion, the user is immune to the effects of Confusion.",
+        "price": "145 Gold",
+        "materials": {
+            "lapis": 1,
+            "emerald": 1,
+            "onyx": 3
+        }
+    },
+    "freedomring": {
+        "nom": "Freedom Ring",
+        "id": 19,
+        "class": "B",
+        "type": "Passive",
+        "frequency": "-",
+        "boost": {
+            "hp": 3
+        },
+        "effect": "If the user is inflicted with Root, the user is immune to the effects of Root.",
+        "price": "145 Gold",
+        "materials": {
+            "emerald": 2,
+            "ruby": 3
+        }
+    },
+    "reflectring": {
+        "nom": "Reflect Ring",
+        "id": 20,
+        "class": "B",
+        "type": "Passive",
+        "frequency": "Passive/Once",
+        "boost": {},
+        "effect": "The first status condition inflicted on the wielder by another player is reflected back to the inflictor. Claws' Bleed and Solar Rods' burn ignores this.",
+        "price": "145 Gold",
+        "materials": {
+            "lapis": 2,
+            "topaz": 6
+        }
+    },
+    "earthingrod": {
+        "nom": "Earthing Rod",
+        "id": 21,
+        "class": "A",
+        "type": "Passive",
+        "frequency": "-",
+        "boost": {
+            "hp": 3
+        },
+        "effect": "If the user is inflicted with Stun, the user is immune to the effects of Stun (excluding self-inflicted stun).",
+        "price": "215 Gold",
+        "materials": {
+            "lapis": 2,
+            "emerald": 2,
+            "onyx": 4,
+            "amber": 4,
+            "topaz": 4
+        }
+    },
+    "stilletto": {
+        "nom": "Stilletto",
+        "id": 22,
+        "class": "A",
+        "type": "Passive",
+        "frequency": "-",
+        "boost": {},
+        "effect": "Ignore negative terrain effects including damage caused by terrain.",
+        "price": "215 Gold",
+        "materials": {
+            "lapis": 2,
+            "emerald": 2,
+            "onyx": 4,
+            "ruby": 2,
+            "quartz": 4
+        }
+    },
+    "holyring": {
+        "nom": "Holy Ring",
+        "id": 23,
+        "class": "A",
+        "type": "Passive",
+        "frequency": "-",
+        "boost": {},
+        "effect": "Regenerate 2 HP per turn at the start of the user's turn.",
+        "price": "215 Gold",
+        "materials": {
+            "emerald": 3,
+            "lapis": 3,
+            "sapphire": 5,
+            "topaz": 5
+        }
+    },
+    "retributionring": {
+        "nom": "Retribution Ring",
+        "id": 24,
+        "class": "A",
+        "type": "Passive",
+        "frequency": "-",
+        "boost": {},
+        "effect": "The first two times that you sustain equal to or more than 40 HP of damage from a single attack, the inflictor takes 10 poison damage for 1 turn.",
+        "price": "215 Gold",
+        "materials": {
+            "lapis": 2,
+            "emerald": 3,
+            "sapphire": 2,
+            "ruby": 2,
+            "topaz": 8
+        }
+    },
+    "barbedwire": {
+        "nom": "Barbed Wire",
+        "id": 25,
+        "class": "A",
+        "type": "Passive",
+        "frequency": "-",
+        "boost": {},
+        "effect": "The first two times that you sustain more than 40 HP of damage from a single attack, the inflictor takes 15 raw damage.",
+        "price": "215 Gold",
+        "materials": {
+            "lapis": 3,
+            "emerald": 2,
+            "sapphire": 2,
+            "ruby": 2,
+            "quartz": 8
+        }
+    },
+    "badwire": "==barbedwire",
+    "wire": "==barbedwire",
+    "shellbell": {
+        "nom": "Shell Bell",
+        "id": 26,
+        "class": "S",
+        "type": "Passive",
+        "frequency": "-",
+        "boost": {},
+        "effect": "This effect does not work with the added bonus of Crimson Pact. Recover 10% of the damage dealt with all single target attacks the user makes.",
+        "price": "350 Gold",
+        "materials": {
+            "diamond": 3,
+            "lapis": 1,
+            "emerald": 1,
+            "sapphire": 3,
+            "ruby": 3
+        }
+    },
+    "sbell": "==shellbell",
+    "bell": "==shellbell",
+    "adjustablelens": {
+        "nom": "Adjustable Lens",
+        "id": 27,
+        "class": "A",
+        "type": "Passive",
+        "frequency": "-",
+        "boost": {},
+        "effect": "Every time you miss an attack, you gain +1 accuracy for the rest of the game. This does not activate if you miss while under an accuracy lowering effect.",
+        "price": "215 Gold",
+        "materials": {
+            "lapis": 2,
+            "emerald": 2,
+            "sapphire": 2,
+            "topaz": 1
+        }
+    },
+    "alens": "==adjustablelens",
+    "reapercloth": {
+        "nom": "Reaper Cloth",
+        "id": 28,
+        "class": "B",
+        "type": "Passive",
+        "frequency": "-",
+        "boost": {},
+        "effect": "Deal +3 DMG to foe(s) with less HP than you.",
+        "price": "145 Gold",
+        "materials": {
+            "ruby": 2,
+            "sapphire": 2,
+            "onyx": 1,
+            "pearl": 3
+        }
+    },
+    "dragonblade": {
+        "nom": "Dragon Blade",
+        "id": 29,
+        "class": "A",
+        "type": "Passive",
+        "frequency": "Once",
+        "boost": {},
+        "effect": "Upon killing an Opponent resets the frequency of EoT, E2T, and Twice/EoT abilities. (It does not give an extra use, but resets the EoT).",
+        "price": "215 Gold",
+        "materials": {
+            "lapis": 3,
+            "emerald": 2,
+            "ruby": 4,
+            "quartz": 4,
+            "amber": 4
+        }
+    },
+    "luckycharm": {
+        "nom": "Lucky Charm",
+        "id": 30,
+        "class": "B",
+        "type": "Passive",
+        "frequency": "-",
+        "boost": {},
+        "effect": "When your health reaches below 30% become immune to all status effects. (except for ND)",
+        "price": "145 Gold",
+        "materials": {
+            "sapphire": 2,
+            "ruby": 2,
+            "quartz": 4
+        }
+    },
+    "shackles": {
+        "nom": "Shackles",
+        "id": 31,
+        "class": "A",
+        "type": "Passive",
+        "frequency": "-",
+        "boost": {
+            "hp": 5
+        },
+        "effect": "Neither you nor opponents in your melee may leave that melee.",
+        "price": "215 Gold",
+        "materials": {
+            "emerald": 2,
+            "onyx": 3,
+            "sapphire": 3,
+            "amber": 5
+        }
+    },
+    "canoingropes": {
+        "nom": "Canoing Ropes",
+        "id": 32,
+        "class": "C",
+        "type": "Passive",
+        "frequency": "-",
+        "boost": {},
+        "effect": "Invert and double the effect given by Water and Forest Tiles (becomes -6MDR, +2ME, applies before other factors to terrain effects.",
+        "price": "85 Gold",
+        "materials": {
+            "emerald": 1,
+            "ruby": 4,
+            "pearl": 6
+        }
+    },
+    "firstimpression": {
+        "nom": "First Impression",
+        "id": 33,
+        "class": "D",
+        "type": "Passive",
+        "frequency": "-",
+        "boost": {},
+        "effect": "When you target a player for the first time, your attack gains +1 accuracy (with multiple targets, the accuracy can still be gained).",
+        "price": "50 Gold",
+        "materials": {
+            "amber": 5
+        }
+    },
+    "pacifistring": {
+        "nom": "Pacifist Ring",
+        "id": 34,
+        "class": "B",
+        "type": "Passive",
+        "frequency": "-",
+        "boost": {},
+        "effect": "If you idle on any turn, you will gain +5 DR until your next turn.",
+        "price": "145 Gold",
+        "materials": {
+            "emerald": 3,
+            "quartz": 4
+        }
+    },
+    "realknife": {
+        "nom": "Real Knife",
+        "id": 35,
+        "class": "S",
+        "type": "Passive",
+        "frequency": "-",
+        "boost": {
+            "hp": -5
+        },
+        "effect": "For each player that has died, you gain +3 ATK and MAG. This caps at +9.",
+        "price": "350 Gold",
+        "materials": {
+            "diamond": 3,
+            "lapis": 3,
+            "sapphire": 5,
+            "topaz": 5
+        }
+    },
+    "shieldofdawn": {
+        "nom": "Shield of Dawn",
+        "id": 36,
+        "class": "B",
+        "type": "Passive",
+        "frequency": "-",
+        "boost": {},
+        "effect": "Gain 5 DR if there are 2+ foes in the user's Burst 2.",
+        "price": "145 Gold",
+        "materials": {
+            "lapis": 1,
+            "ruby": 2,
+            "pearl": 4
+        }
+    },
+    "wings": {
+        "nom": "Wings",
+        "id": 37,
+        "class": "A",
+        "type": "Passive",
+        "frequency": "-",
+        "boost": {
+            "mp": 2
+        },
+        "effect": "The user takes 6 more damage from all damaging standard actions targetting them.",
+        "price": "215 Gold",
+        "materials": {
+            "emerald": 4,
+            "lapis": 1,
+            "ruby": 2,
+            "sapphire": 5,
+            "onyx": 1,
+            "amber": 3,
+            "topaz": 3
+        }
+    },
+    "simplesash": {
+        "nom": "Simple Sash",
+        "id": 38,
+        "class": "A",
+        "type": "Passive",
+        "frequency": "-",
+        "boost": {},
+        "effect": "Your Basic Attacks gain an extra hit. Only add ATK or MAG to the first hit.",
+        "price": "215 Gold",
+        "materials": {
+            "emerald": 3,
+            "onyx": 2,
+            "ruby": 3,
+            "sapphire": 1,
+            "quartz": 4,
+            "amber": 4
+        }
+    },
+    "sash": "==simplesash",
+    "moonblade": {
+        "nom": "Moonblade",
+        "id": 39,
+        "class": "A",
+        "type": "Active",
+        "frequency": "OaT/Trigger",
+        "boost": {
+            "atk": 1,
+            "mag": 1,
+            "hp": 5
+        },
+        "effect": "During your turn, as you attack, you may choose to not add ATK or MAG to your attacks for this turn. For each affected attack that hits, double Moonblade's passive buffs (for HP, both HP cap and current HP increase). These HP buffs cap at +20, and ATK and MAG buffs are capped at 16.",
+        "price": "215 Gold",
+        "materials": {
+            "lapis": 3,
+            "onyx": 4,
+            "sapphire": 4,
+            "pearl": 5,
+            "quartz": 2
+        }
+    },
+    "radlantern": "==radiantlantern",
+    "moonbad": "==moonblade",
+    "radiantlantern": {
+        "nom": "Radiant Lantern",
+        "id": 40,
+        "class": "S",
+        "type": "Passive",
+        "frequency": "-",
+        "boost": {},
+        "effect": "Every other turn, at the start of your turn (starting Turn 1), all foes in your Burst-2 lose 2 accuracy for 1 turn.",
+        "price": "350 Gold",
+        "materials": {
+            "diamond": 2,
+            "emerald": 3,
+            "onyx": 5
+        }
+    },
+    "blessedring": {
+        "nom": "Blessed Ring",
+        "id": 41,
+        "class": "B",
+        "type": "Passive",
+        "frequency": "-",
+        "boost": {
+            "pd": 4,
+            "md": 4,
+            "hp": -10
+        },
+        "effect": "-",
+        "price": "145 Gold",
+        "materials": {
+            "emerald": 1,
+            "onyx": 3,
+            "pearl": 3,
+            "quartz": 3,
+            "topaz": 1
+        }
+    },
+    "poisondarts": {
+        "nom": "Poison Darts",
+        "id": 42,
+        "class": "C",
+        "type": "Passive",
+        "frequency": "-",
+        "boost": {},
+        "effect": "Your attacks inflict 5/1 Poison on accuracy rolls of 18+",
+        "price": "85 Gold",
+        "materials": {
+            "sapphire": 4,
+            "amber": 3
+        }
+    },
+    "whetstone": {
+        "nom": "Whetstone",
+        "id": 43,
+        "class": "C",
+        "type": "Passive",
+        "frequency": "-",
+        "boost": {},
+        "effect": "Your attacks inflict 5/1 Bleed on accuracy rolls of 18+",
+        "price": "85 Gold",
+        "materials": {
+            "onyx": 4,
+            "amber": 3
+        }
+    },
+    "eternalflame": {
+        "nom": "Eternal Flame",
+        "id": 44,
+        "class": "B",
+        "type": "Passive",
+        "frequency": "-",
+        "boost": {},
+        "effect": "Your attacks inflict 5/1 Burn on accuracy rolls of 18+",
+        "price": "145 Gold",
+        "materials": {
+        	"lapis": 1,
+            "ruby": 4,
+            "amber": 3
+        }
+    },
+    "dragonscaleplate": {
+        "nom": "Dragon Scaleplate",
+        "id": 45,
+        "class": "S",
+        "type": "Passive",
+        "frequency": "-",
+        "boost": {
+            "hp": 7,
+            "mp": -1
+        },
+        "effect": "If you would be affected by a damaging, supressable status (such as Burn), invert all effects (E.g. 5 Burn/2 would become 5HP restored at the start of each turn and +2ACC for 2 turns)",
+        "price": "-",
+        "materials": {},
+        "achievement": "Terra Mastery"
+    },
+    "dsp": "==dragonscaleplate",
+    "lurkerring": {
+        "nom": "Lurker Ring",
+        "id": 999,
+        "class": "Lurker",
+        "type": "Passive",
+        "frequency": "-",
+        "boost": {},
+        "effect": "You lurk forever, that's it",
+        "price": "-",
+        "achievement": "Art Of Lurking"
+    },
+    "adjustablegrip": {
+        "nom": "Adjustable Grip",
+        "id": 46,
+        "class": "S",
+        "type": "Active",
+        "frequency": "Twice/EoT/Swift",
+        "boost": {},
+        "effect": "This turn, your attacks classified as Every Turn, OaT, or EoT becomes Range/Foes/Burst-1 or Range/Foes/Line-4.  The attack loses any Splash and cannot gain it.",
+        "price": "350 Gold",
+        "materials": {
+            "diamond": 3,
+            "lapis": 1,
+            "onyx": 5,
+            "ruby": 2,
+            "sapphire": 2,
+            "pearl": 4, 
+            "topaz": 4
+        }
+    }
+}

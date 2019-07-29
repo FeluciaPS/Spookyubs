@@ -41,6 +41,7 @@ class User {
     }
     
     join(room, name) {
+        this.last = false;
         this.rooms[room] = name.charAt(0);
         Rooms[room].users[this.id] = this;
     }
@@ -48,7 +49,7 @@ class User {
     leave(room) {
         delete this.rooms[room];
         delete Rooms[room].users[this.id];
-        if (!Object.keys(this.rooms).length) bot.emit('dereg', 'user', this.id);
+        if (!Object.keys(this.rooms).length && this != Users.self) bot.emit('dereg', 'user', this.id);
     }
     
     rename(name) {
@@ -62,6 +63,10 @@ class User {
         if (rank === "all") return false;
         if (this.id === toId(Config.username)) return false;
         if (!room) return false;
+        if (rank === "apph") {
+            if (Players.get(this.id) && Players.get(this.id).apphost) return true;
+            rank = "+";
+        }
         if (room.id) room = room.id;
         return Ranks[this.rooms[room]] <= Ranks[rank];
     }
@@ -75,3 +80,6 @@ exports.add = function(name) {
     let id = toId(name);
     this[id] = new User(name);
 }
+
+exports[toId(Config.username)] = new User(" " + Config.username);
+exports.self = exports[toId(Config.username)]

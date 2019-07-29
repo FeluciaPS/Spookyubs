@@ -1,0 +1,21 @@
+{
+    "nom": "Rapier",
+    "branch": "dueler",
+    "stats": {
+        "hp": "40+5",
+        "mag": "3+1",
+        "atk": "5,6,7,8,8,9,10",
+        "md": "5+1",
+        "pd": "7+1",
+        "mp": "2"
+    },
+    "moves": {
+        "1": "Point-In-Line",
+        "2": "Counter",
+        "3": ["Riposte", "En Garde"],
+        "4": "Deflect",
+        "5": "Thrust",
+        "6": "Moulinet",
+        "7": "Glissade"
+    }
+}

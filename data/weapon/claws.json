@@ -1,0 +1,21 @@
+{
+    "nom": "Claws",
+    "branch": "fighter",
+    "stats": {
+        "hp": "40,45,50,50,55,60,65",
+        "mag": "1,2,3,3,3,4,4",
+        "atk": "8+1",
+        "md": "1,2,3,4,6,8,9",
+        "pd": "1,2,3,4,6,8,9",
+        "mp": "3"
+    },
+    "moves": {
+        "1": "Bagh Naka", 
+        "2": "Gouge",
+        "3": "Pounce",
+        "4": "Rend",
+        "5": "Eviscerate",
+        "6": "Rushdown",
+        "7": "Puncture"
+    }
+}

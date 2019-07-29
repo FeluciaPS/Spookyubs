@@ -1,0 +1,22 @@
+{
+    "nom": "Lunar Rod",
+    "alts": ["Rod", "Rof"],
+    "branch": "clairvoyant",
+    "stats": {
+        "hp": "45,50,50,55,60,65,70",
+        "mag": "6+1",
+        "atk": "0,0,0,1,1,2,2",
+        "md": "4+1",
+        "pd": "4+1",
+        "mp": "1"
+    },
+    "moves": {
+        "1": ["Lunar Phase", "Moonbeam"],
+        "2": "Lunar Gale",
+        "3": "Harvest Moon",
+        "4": "Illuminate",
+        "5": "Tidal Shatter",
+        "6": "Eclipse",
+        "7": "Lunar Corona"
+    }
+}

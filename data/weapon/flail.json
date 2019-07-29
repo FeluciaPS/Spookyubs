@@ -1,0 +1,22 @@
+{
+    "nom": "Flail",
+    "alts": ["Mace"],
+    "branch": "trophy",
+    "stats": {
+        "hp": "35+5",
+        "mag": "6,6,6,8,10,11,11",
+        "atk": "5,7,8,8,8,10,11",
+        "md": "4,5,6,6,7,8,8",
+        "pd": "4,5,6,6,7,8,8",
+        "mp": "2"
+    },
+    "moves": {
+        "1": ["Chaining", "Link", "Imbued Swing"],
+        "2": "Bludgeon",
+        "3": "Stored Power",
+        "4": "All-out Blow",
+        "5": "Rapid Blows",
+        "6": "Focused Strike",
+        "7": "Extended Sweep"
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "nom": "Paintbrush",
+    "alts": ["Brush"],
+    "branch": "trophy",
+    "stats": {
+        "hp": "35,35,40,40,45,50,55",
+        "mag": "6,7,8,8,9,10,12",
+        "atk": "0,0,0,1,1,1,2",
+        "md": "2,4,4,4,6,8,10",
+        "pd": "2,4,4,4,6,8,10",
+        "mp": "2"
+    },
+    "moves": {
+        "1": ["Pallette Swap", "Brushstroke"],
+        "2": ["Canvas", "Clean Slate"],
+        "3": "Fresco",
+        "4": "Color Theory",
+        "5": "Mural",
+        "6": "Paint Splatter",
+        "7": "Masterpiece"
+    }
+}

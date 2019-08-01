@@ -29,7 +29,7 @@ bot.on('c', (parts) => {
     let room = Utils.getRoom(parts[0]);
     let user = Users[toId(parts[3])];
     if (!parts[4]) return;
-    let message = parts[4].trim();
+    let message = parts.splice(4, parts.length - 4).join("|").trim();
     logger.emit('chat', Utils.getRoom(parts[0]), user.name, message);
     let time = parts[2];
     let [cmd, args, val] = Utils.SplitMessage(message);

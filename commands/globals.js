@@ -21,7 +21,6 @@ for (let f = 0; f < files.length; f++) {
     Object.assign(WhatIs, JSON.parse(FS.readFileSync(path)));
 }
 
-
 // Add Weapons, Branches and Classes
 global.Weapons = {};
 global.Branches = {};
@@ -86,8 +85,10 @@ for (let f = 0; f < files.length; f++) {
             aliases[i] = c;
             continue;
         }
+        let itemid = c.type.toLowerCase() + c.id;
         if (i in Items) throw new Error("Duplicate item ID " + i + " in " + file);
         Items[i] = c;
+        Items[itemid] = c;
     }
     for (let i in aliases) {
         let a = aliases[i];

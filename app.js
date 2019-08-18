@@ -33,9 +33,9 @@ global.Parse = require('./parser.js');
 global.Rooms = require('./Room.js');
 global.Users = require('./User.js');
 global.Players = require('./Player.js');
+global.Commands = require('./commands.js');
 global.Games = require('./Game.js');
 global.Tournament = require('./Tournament.js');
-global.Commands = require('./commands.js');
 
 // Connect
 let psurl = "ws://sim.smogon.com:8000/showdown/websocket";

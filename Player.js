@@ -160,7 +160,7 @@ class Player {
     
     getStats(includeitems = true) {
         let ret = {};
-        let stats = ["hp","atk","mag","pd","pe","mp"];
+        let stats = ["hp","atk","mag","pd","pe","me","mp"];
         for (let i = 0; i < stats.length; i++) {
             ret[stats[i]] = this.getStat(stats[i], includeitems);
         }

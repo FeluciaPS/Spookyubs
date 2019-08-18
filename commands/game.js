@@ -109,5 +109,68 @@ module.exports = {
             ret += "<b>Total:</b> " + total;
             room.send(ret);
         }
+    },
+    host: function(room, user, args) {
+        if (!user.can('battledome', 'apph') || !room.is('game+')) return;
+        if (!user.can('battledome', '+')) args[0] = user.name;
+        if (!args[0]) args[0] = user.name;
+        let player = Players.get(toId(args[0]));
+        if (!player) return room.send(`${args[0]} does not have a character.`);
+        if (player.host) return room.send(`${player.name} already has keys to squad ${player.host.squad}, please dehost them first before trying to host them again.`);
+        let squad = Games.add(player.id);
+        room.send(`${player.name} was handed the keys to squad ${squad}`);
+    },
+    dehost: function(room, user, args) {
+        if (!user.can(room, 'host+') || !room.is('game+')) return;
+        if (!user.can('battledome', '+')) args[0] = user.name;
+        if (!args[0]) args[0] = user.name;
+        let player = Players.get(toId(args[0]));
+        if (!player.host) return (user.can('battledome', '+') ? room : user).send((player.id === user.id ? "You are" : `${player.name} is`) + "n't hosting a game."); // this is a mess I'll change it later
+        Games.remove(player.host.squad);
+        room.send("dehosted.");
+    },
+    setmap: function(room, user, args) {
+        if (!room.is('game')) return;
+        let player = Players.get(user.id);
+        if (!player) return user.send("You don't have a character");
+        if (!player.host) return user.send("You're not hosting anything");
+        let mapname = toId(args[0]);
+        if (!mapname) return room.send("That's not a valid map name");
+        player.host.map = mapname;
+        room.send("Map (probably) set to ``" + mapname + "``.");
+    },
+    map: function(room, user, args) {
+        if (!room.is('game')) return;
+        let player = Players.get(user.id);
+        if (!player) return user.send("You don't have a character");
+        if (!player.host) return user.send("You're not hosting anything");
+        
+        
+        let css = args[0] === "css";
+        room.send("/addhtmlbox " + player.host.buildMap(css));
+    },
+    addp: function(room, user, args) {
+        if (!room.is('game')) return;
+        let player = Players.get(user.id);
+        if (!player) return user.send("You don't have a character");
+        if (!player.host) return user.send("You're not hosting anything");
+        let target = Players.get(toId(args[0]));
+        if (!target) return room.send("Target doesn't have a character.")
+        if (target.game) return room.send("Target is already in a game.");
+        player.host.addp(toId(args[0]));
+        room.send("thiny probably added to the game");
+    },
+    info: function(room, user, args) {
+        if (!room.is('game')) return;
+        let player = Players.get(user.id);
+        if (!player) return user.send("You don't have a character");
+        if (!player.host) return user.send("You're not hosting anything");
+        
+        let ret = `<div style="width:auto; height:auto; overflow:auto;"><details OPEN><summary>Map</summary>`;
+        ret += player.host.buildMap();
+        ret += "</details><details OPEN><summary>Player List</summary>";
+        ret += player.host.buildPL();
+        ret += "</details></div>"
+        room.send("/addhtmlbox " + ret);
     }
 }

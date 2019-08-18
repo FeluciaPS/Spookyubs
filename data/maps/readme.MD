@@ -1,0 +1,9 @@
+0: normal
+1: stop
+2: water
+3: forest
+4: ice
+5: air
+6: sticky
+7: lava
+8: broken

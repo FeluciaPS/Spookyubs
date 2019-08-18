@@ -1,11 +1,12 @@
 class Player {
     constructor(name, num, entity) {
+        console.log(name);
         if (name.startsWith("|")) {
             this.load(name);
             this.num = "P" + num;
             return; 
         }
-        this.entity = Players.get(toId(name));
+        this.entity = typeof name === "string" ? Players.get(toId(name)) : name;
         this.name = this.entity.name;
         let stats = {}
         if (!this.entity) stats = Utils.allZeros;
@@ -38,7 +39,7 @@ class Player {
         let dt = data.split("|");
         this.entity = Players.get(toId(dt[2]));
         this.name = this.entity.name;
-        this.entity.game = this;
+        this.entity;
         let stats = this.entity.getStats();
         this.maxhp = stats.hp;
         console.log(dt[9]);
@@ -111,12 +112,24 @@ class EntityList {
         return true;
     }
     
+    remp(name) {
+        let player = this.getPlayer(name);
+        if (!player) return;
+        this.playerlist.splice(this.playerlist.indexOf(player), 1);
+        player.game = false;
+    }
+    
     addm(monster) {
         if (this.Count() >= this.cap) return "capped";
         this.monsterlist.push(new Monster(monster, this.monsterlist.length + 1));
         return true;
     }
     
+    freeAll() {
+        for (let i of this.playerlist) {
+            i.entity.game = false;
+        }
+    }
     getPlayer(p) {
         p = toId(p);
         for (let i of this.playerlist) {
@@ -169,14 +182,16 @@ class EntityList {
     
     load(data) {
         let dt = data.split("-");
+        console.log(dt);
         let cap = 16;
         this.playerlist = [];
         this.monsterlist = [];
         this.otherlist = []; // Futureproofing, not used
+        if (!data) return;
         for (let i in dt) {
             let entity = dt[i].trim();
             if (entity.split("|")[1] === "true") this.addm(entity);
-            else this.addp(entity)
+            else this.addp(entity);
         }
     }
 }
@@ -208,7 +223,7 @@ class Game {
     
     addp(user) {
         this.entities.addp(user);
-        user.game = this;
+        this.getPlayer(user).entity.game = this;
         this.save();
     }
     
@@ -241,13 +256,23 @@ class Game {
         this.raid = (dt[4] === 'true');
         this.host.host = this;
         this.entities = new EntityList(data.split("--")[1].trim());
-        this.opl = data.split('--')[2].split('|')[1].split(',');
+        this.opl = data.split('--')[2].split('|')[1].trim().split(',');
         this.map = data.split('--')[2].split('|')[2].trim();
+        for (let i of this.entities.playerlist) {
+            i.entity.game = this;
+        }
     }
     buildMap(css = false) {
         let terrain = {
             "normal": "A9F5A9",
-            "stop": "a9a9a9"
+            "stop": "A9A9A9",
+            "water": "454FDF",
+            "forest": "226622",
+            "ice": "33E9E9",
+            "air": "#B8D3DE",
+            "sticky": "CCCC00",
+            "lava": "8B0000",
+            "broken": "000000",
         }
         let tiles = Object.keys(terrain);
         let letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -259,6 +284,7 @@ class Game {
             let rows = map.split("\n");
             for (let r in rows) {
                 let row = rows[r].trim();
+                if (!row) continue;
                 if (r === "0") {
                     ret += `<tr><td style="background:#EEEEEE" width="20px" height="20px"; align="center"><b>  </b></td>`;
                     for (let c in row.split(",")) {
@@ -402,6 +428,7 @@ game.squadManager = new SquadManager();
 
 game.remove = function(squad) {
     this.squadManager.dehost(squad);
+    this[squad].entities.freeAll();
     this[squad].host.host = false;
     delete this[squad];
 }

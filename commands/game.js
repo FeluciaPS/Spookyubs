@@ -137,6 +137,7 @@ module.exports = {
         let mapname = toId(args[0]);
         if (!mapname) return room.send("That's not a valid map name");
         player.host.map = mapname;
+        player.host.save();
         room.send("Map (probably) set to ``" + mapname + "``.");
     },
     map: function(room, user, args) {
@@ -155,10 +156,11 @@ module.exports = {
         if (!player) return user.send("You don't have a character");
         if (!player.host) return user.send("You're not hosting anything");
         let target = Players.get(toId(args[0]));
-        if (!target) return room.send("Target doesn't have a character.")
+        if (!target) return room.send("Target doesn't have a character.");
         if (target.game) return room.send("Target is already in a game.");
         player.host.addp(toId(args[0]));
-        room.send("thiny probably added to the game");
+        target.game = player.host;
+        room.send(`${target.name} successfully added to the game`);
     },
     info: function(room, user, args) {
         if (!room.is('game')) return;
@@ -172,5 +174,37 @@ module.exports = {
         ret += player.host.buildPL();
         ret += "</details></div>"
         room.send("/addhtmlbox " + ret);
-    }
+    },
+    move: function(room, user, args) {
+        if (!room.is('game')) return;
+        let player = Players.get(user.id);
+        if (!player || !player.host && !player.game) return;
+        let game = args[2] ? player.host : player.game;
+        let target = args[2] ? args[2] : player.id;
+        
+        let ent = game.getPlayer(target)
+        let letters = "abcdefghijklmnopqrstuvwxyz";
+        let x = letters.indexOf(toId(args[0]));
+        let y = parseInt(args[1]) - 1;
+        if (x === -1 || isNaN(y) || y < 0) return room.send("Correct format: ``%move [letter], [number], [user]``");
+        ent.pos = [x, y];
+        game.save();
+    },
+    hp: function(room, user, args) {
+        if (!room.is('game')) return;
+        let player = Players.get(user.id);
+        if (!player || !player.host && !player.game) return;
+        let game = args[1] ? player.host : player.game;
+        let targets = args[1] ? args : [player.id];
+        
+        let amount = parseInt(args.shift());
+        if (isNaN(amount)) return room.send("Correct format: ``%hp [amount], [player1], [player2], ...")
+        for (let i of targets) {
+            if (!game.getPlayer(i)) return room.send("Invalid player: " + i);
+        }
+        for (let i of targets) {
+            game.getPlayer(i).curhp += amount;
+        }
+        game.save();
+    },
 }

@@ -349,7 +349,7 @@ class Game {
             ret += `<th>${Classes[p.entity.class].nom}(${p.entity.levels[p.entity.class]})/${Weapons[p.entity.weapon].nom}(${p.entity.levels[p.entity.branch]})</th>`;
             ret += `<th>${p.curhp}/${p.maxhp}</th><th>${p.atk}</th><th>${p.mag}</th><th>${p.pe}</th><th>${p.me}</th><th>${p.mp}</th></tr>`
         }
-        ret += `<tr style="background:#A9A9F5;min-height:22px"><th colspan="11">Turn Order: ${Object.keys(this.to).join(",")}</th></tr>`
+        ret += `<tr style="background:#A9A9F5;min-height:22px"><th colspan="11">Turn Order: ${this.to.map(tup => tup[0]).join(", ")}</th></tr>`
         ret += `</table>`;
         return ret;
     }

@@ -54,6 +54,14 @@ let commands = {
         target.send(msg);
     },
 
+    update: function(room, user, args) {
+        if (!user.can(room, 'all')) return;
+        if (!Config.git) return room.say("No git url is configured for this bot.");
+        const child_process = require('child_process');
+        child_process.execSync('git pull ' + Config.git + ' master', {stdio: 'inherit'});
+        room.send("Code updated to the latest version.");
+    },
+    
     rl: 'reload',
     reload: function(room, user, args) {
         if (!user.can(room, 'all')) return;

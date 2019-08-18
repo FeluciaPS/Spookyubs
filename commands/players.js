@@ -75,7 +75,7 @@ module.exports = {
         return targetroom.send(ret + text);
     },
     regp: function(room, user, args) {
-        if (!user.can("battledome", "+")) return;
+        //if (!user.can("groupchat-1v1typechallenge-test", "+")) return;
         if (args.length < 3) return room.send("Usage: ``%regp [user], [class], [weapon]``");
         let target = args[0];
         let Class = Classes[toId(args[1])];
@@ -133,7 +133,7 @@ module.exports = {
     
     // XP, Gold, loot and levelups
     loot: function(room, user, args) {
-        if (!user.can("battledome", "+")) return;
+        if (!user.can("groupchat-1v1typechallenge-test", "+")) return;
         
         let getBase = function(type) {
             if (!isNaN(parseInt(type))) return parseInt(type);
@@ -173,10 +173,10 @@ module.exports = {
         if (success.length) ret += "Experience and Gold successfully given to " + Utils.natList(success);
         if (success.length && failure.length) ret += "<br>";
         if (failure.length) ret += "<span style='font-size:10px'>Experience and Gold unable to be given to " + Utils.natList(failure) + "</span>";
-        return Rooms['battledome'].send(ret);
+        return Rooms['groupchat-1v1typechallenge-test'].send(ret);
     },
     xp: function(room, user, args) {
-        if (!user.can("battledome", "+")) return;
+        if (!user.can("groupchat-1v1typechallenge-test", "+")) return;
         
         let getBase = function(type) {
             if (!isNaN(parseInt(type))) return parseInt(type);
@@ -215,10 +215,10 @@ module.exports = {
         if (success.length) ret += "Experience successfully given to " + Utils.natList(success);
         if (success.length && failure.length) ret += "<br>";
         if (failure.length) ret += "<span style='font-size:10px'>Experience unable to be given to " + Utils.natList(failure) + "</span>";
-        return Rooms['battledome'].send(ret);
+        return Rooms['groupchat-1v1typechallenge-test'].send(ret);
     },
     gold: function(room, user, args) {
-        if (!user.can("battledome", "+")) return;
+        if (!user.can("groupchat-1v1typechallenge-test", "+")) return;
         
         let getBase = function(type) {
             if (!isNaN(parseInt(type))) return parseInt(type);
@@ -256,6 +256,6 @@ module.exports = {
         if (success.length) ret += "Gold successfully given to " + Utils.natList(success);
         if (success.length && failure.length) ret += "<br>";
         if (failure.length) ret += "<span style='font-size:10px'>Gold unable to be given to " + Utils.natList(failure) + "</span>";
-        return Rooms['battledome'].send(ret);
+        return Rooms['groupchat-1v1typechallenge-test'].send(ret);
     }
 }

@@ -92,7 +92,7 @@ let commands = {
     
     join: 'joinroom',
     joinroom: function(room, user, args) {
-        if (!user.can(room, 'all')) return;
+        //if (!user.can(room, 'all')) return;
         if (!args[0]) return user.send('No room given.');
         room.send('/j ' + args[0]);
     }

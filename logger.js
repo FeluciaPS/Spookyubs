@@ -15,5 +15,9 @@ logger.on('log', (msg) => {
 });
 
 logger.on('chat', (room, user, msg) => {
-    console.log(`[${Rooms[room].name}] ${user.trim()}: ${msg.trim()}`)
+    console.log(`[${Rooms[room].name}] ${user.trim()}: ${msg.trim()}`);
+});
+
+logger.on('pm', (user, msg) => {
+	console.log(`[pm] ${user.trim()}: ${msg.trim()}`);
 });

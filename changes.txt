@@ -1,0 +1,7 @@
+-commands/game.js
+-commands/players.js
+
+battledome -> groupchat-1v1typechallenge-test
+
+comment out: //if (!user.can('groupchat-1v1typechallenge-test', 'apph') || !room.is('game+')) return;
+commnet out if (!room.is('game')) return;

@@ -131,6 +131,7 @@ module.exports = {
     },
     setmap: function(room, user, args) {
         if (!room.is('game')) return;
+
         let player = Players.get(user.id);
         if (!player) return user.send("You don't have a character");
         if (!player.host) return user.send("You're not hosting anything");
@@ -142,18 +143,26 @@ module.exports = {
     },
     gento: function(room, user, args) {
         if (!room.is('game')) return;
+
         let player = Players.get(user.id);
         if (!player) return user.send("You don't have a character");
         if (!player.host) return user.send("You're not hosting anything");
-        let entities = [];
+        let entities = {};
         for (let i of player.host.entities.playerlist) {
-            entities.push(i.name);
+            entities[i.name] = i.mp + Math.floor(Math.random() * 8); // + 1 but for a true d8 but it literally doesn't matter
         }
-        player.host.to = entities;
-        return room.send("The following turn order has been generated: " + entities.join(", "));
+        let tuples = Object.keys(entities).map(function(key) {
+          return [key, entities[key]];
+        });
+        tuples.sort(function(first, second) {
+          return second[1] - first[1];
+        });
+        player.host.to = tuples;
+        return room.send("The following turn order has been generated: " + tuples.map(tup => tup[0]).join(", "));
     },
     map: function(room, user, args) {
         if (!room.is('game')) return;
+
         let player = Players.get(user.id);
         if (!player) return user.send("You don't have a character");
         if (!player.host) return user.send("You're not hosting anything");
@@ -164,6 +173,7 @@ module.exports = {
     },
     addp: function(room, user, args) {
         if (!room.is('game')) return;
+
         let player = Players.get(user.id);
         if (!player) return user.send("You don't have a character");
         if (!player.host) return user.send("You're not hosting anything");
@@ -176,6 +186,7 @@ module.exports = {
     },
     info: function(room, user, args) {
         if (!room.is('game')) return;
+
         let player = Players.get(user.id);
         if (!player) return user.send("You don't have a character");
         if (!player.host) return user.send("You're not hosting anything");
@@ -187,8 +198,10 @@ module.exports = {
         ret += "</details></div>"
         room.send("/addhtmlbox " + ret);
     },
+
     move: function(room, user, args) {
         if (!room.is('game')) return;
+
         let player = Players.get(user.id);
         if (!player || !player.host && !player.game) return;
         let game = args[2] ? player.host : player.game;
@@ -204,6 +217,7 @@ module.exports = {
     },
     hp: function(room, user, args) {
         if (!room.is('game')) return;
+
         let player = Players.get(user.id);
         if (!player || !player.host && !player.game) return;
         let game = args[1] ? player.host : player.game;

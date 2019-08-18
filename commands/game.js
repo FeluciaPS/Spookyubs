@@ -140,6 +140,18 @@ module.exports = {
         player.host.save();
         room.send("Map (probably) set to ``" + mapname + "``.");
     },
+    gento: function(room, user, args) {
+        if (!room.is('game')) return;
+        let player = Players.get(user.id);
+        if (!player) return user.send("You don't have a character");
+        if (!player.host) return user.send("You're not hosting anything");
+        let entities = [];
+        for (let i of player.host.entities.playerlist) {
+            entities.push(i.name);
+        }
+        player.host.to = entities;
+        return room.send("The following turn order has been generated: " + entities.join(", "));
+    },
     map: function(room, user, args) {
         if (!room.is('game')) return;
         let player = Players.get(user.id);

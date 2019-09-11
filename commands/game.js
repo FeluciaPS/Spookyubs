@@ -145,12 +145,19 @@ module.exports = {
         let player = Players.get(user.id);
         if (!player) return user.send("You don't have a character");
         if (!player.host) return user.send("You're not hosting anything");
-        let entities = [];
+        let entities = {};
         for (let i of player.host.entities.playerlist) {
-            entities.push(i.name);
+            entities[i.name] = i.mp + Math.floor(Math.random() * 8); // + 1 for a true d8 but it literally doesn't matter
         }
-        player.host.to = entities;
-        return room.send("The following turn order has been generated: " + entities.join(", "));
+
+        let tuples = Object.keys(entities).map(function(key) {
+          return [key, entities[key]];
+        });
+        tuples.sort(function(first, second) {
+          return second[1] - first[1];
+        });
+        player.host.to = tuples;
+        return room.send("The following turn order has been generated: " + tuples.map(tup => tup[0]).join(", "));
     },
     map: function(room, user, args) {
         if (!room.is('game')) return;
